@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
 import logging
 import time
 from datetime import datetime
@@ -26,7 +25,7 @@ import requests
 from requests.exceptions import ConnectionError, RequestException, Timeout
 from tqdm import tqdm
 
-from _client import MPLADS_BASE, UA
+from _client import MPLADS_BASE, UA, JsonlCache
 
 MAX_RETRIES = 5
 BACKOFF_BASE = 10.0
@@ -42,35 +41,6 @@ logging.basicConfig(
     format="%(asctime)s %(levelname)s %(message)s",
 )
 logger = logging.getLogger(__name__)
-
-
-class JsonlCache:
-    def __init__(self, path: Path) -> None:
-        self.path = Path(path)
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        self._mem: dict[str, Any] = {}
-        if self.path.exists():
-            with self.path.open() as f:
-                for line in f:
-                    line = line.strip()
-                    if not line:
-                        continue
-                    rec = json.loads(line)
-                    self._mem[rec["key"]] = rec["value"]
-
-    def __contains__(self, key: str) -> bool:
-        return key in self._mem
-
-    def get(self, key: str) -> Any:
-        return self._mem.get(key)
-
-    def put(self, key: str, value: Any) -> None:
-        self._mem[key] = value
-        with self.path.open("a") as f:
-            f.write(json.dumps({"key": key, "value": value}, ensure_ascii=False) + "\n")
-
-    def __len__(self) -> int:
-        return len(self._mem)
 
 
 def make_session() -> requests.Session:

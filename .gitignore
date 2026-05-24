@@ -35,10 +35,13 @@ uv.lock
 *.swo
 *~
 
-# Data - ignore raw cache, keep final outputs
-data/raw/
+# Data - ignore raw cache/logs, keep final outputs and elections
+data/raw/*.jsonl
+data/raw/*.log
 data/interim/
 !data/final/
+!data/elections/
+!data/crosswalks/
 
 # Cache
 .cache/

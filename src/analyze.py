@@ -37,6 +37,7 @@ def normalize_constituency(name: str) -> str:
     s = s.replace("&", "AND")
     s = s.replace("-", " ")
     s = re.sub(r"_[A-Z]{2}$", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
 
     replacements = {
         "ANANTHAPUR": "ANANTAPUR",
@@ -58,6 +59,7 @@ def normalize_constituency(name: str) -> str:
         "GADCHIROLI   CHIMUR": "GADCHIROLI CHIMUR",
         "HATKANANGALE": "HATKANANGLE",
         "RATNAGIRI  SINDHUDURG": "RATNAGIRI SINDHUDURG",
+        "RATNAGIRI SINDHUDURG": "RATNAGIRI SINDHUDURG",
         "YAVATMAL  WASHIM": "YAVATMAL WASHIM",
         "BATHINDA": "BHATINDA",
         "DHARMAPURI": "DHARAMAPURI",
@@ -71,6 +73,16 @@ def normalize_constituency(name: str) -> str:
         "ARAMBAGH": "ARAMBAG",
         "SRERAMPUR": "SREERAMPUR",
         "ARUKU": "ARAKU",
+        "CHANDINI CHOWK": "CHANDNI CHOWK",
+        "CHIKKBALLAPUR": "CHIKBALLAPUR",
+        "GUWAHATI": "GAUHATI",
+        "DARRANG UDALGURI": "MANGALDOI",
+        "DIPHU": "AUTONOMOUS DISTRICT",
+        "KAZIRANGA": "KALIABOR",
+        "SONITPUR": "TEZPUR",
+        "BHANDARA GONDIYA": "BHANDARA GONDIYA",
+        "AHMEDNAGAR": "AHMADNAGAR",
+        "ANAKAPALLE": "ANAKAPALLI",
     }
     return replacements.get(s, s)
 
@@ -117,7 +129,7 @@ def load_elections(data_dir: Path) -> dict[str, pd.DataFrame]:
     """Load election data by tenure."""
     elections = {}
     for tenure, filename in ELECTION_FILES.items():
-        path = data_dir / "raw" / filename
+        path = data_dir / "elections" / filename
         if path.exists():
             df = pd.read_csv(path)
             df["const_norm"] = df["constituency"].apply(normalize_constituency)

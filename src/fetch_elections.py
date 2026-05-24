@@ -127,7 +127,7 @@ def compute_margins(df: pd.DataFrame, tenure: str) -> pd.DataFrame:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out-dir", default="data/raw")
+    ap.add_argument("--out-dir", default="data/elections")
     args = ap.parse_args()
 
     out_dir = Path(args.out_dir)

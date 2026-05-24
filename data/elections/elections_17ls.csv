@@ -1,0 +1,543 @@
+tenure,state,constituency,winner,winner_party,winner_votes,runner_up,runner_up_party,runner_up_votes,total_votes,margin_votes,margin_pct,competitiveness
+17th Lok Sabha,Andaman & Nicobar Islands,Andaman & Nicobar Islands,KULDEEP RAI SHARMA,Indian National Congress,95308,VISHAL JOLLY,Bharatiya Janata Party,93901,207296,1407,0.68,marginal
+17th Lok Sabha,Andhra Pradesh,Amalapuram,CHINTA ANURADHA,Yuvajana Sramika Rythu Congress Party,485313,GANTI HARISH MADHUR (BALAYOGI),Telugu Desam,445347,1230903,39966,3.25,marginal
+17th Lok Sabha,Andhra Pradesh,Anakapalli,Dr.Beesetti Venkata Satyavathi,Yuvajana Sramika Rythu Congress Party,586226,ADARI ANAND KUMAR,Telugu Desam,497034,1238491,89192,7.2,competitive
+17th Lok Sabha,Andhra Pradesh,Anantapur,TALARI RANGAIAH,Yuvajana Sramika Rythu Congress Party,695208,J.C. PAVAN REDDY,Telugu Desam,553780,1342306,141428,10.54,competitive
+17th Lok Sabha,Andhra Pradesh,Aruku,GODDETI. MADHAVI,Yuvajana Sramika Rythu Congress Party,562190,KISHORE CHANDRA DEO,Telugu Desam,338101,1074538,224089,20.85,safe
+17th Lok Sabha,Andhra Pradesh,Bapatla,NANDIGAM SURESH,Yuvajana Sramika Rythu Congress Party,598257,MALYADRI SRIRAM,Telugu Desam,582192,1266492,16065,1.27,marginal
+17th Lok Sabha,Andhra Pradesh,Chittoor,N. REDDEPPA,Yuvajana Sramika Rythu Congress Party,686792,NARAMALLI SIVA PRASAD,Telugu Desam,549521,1319472,137271,10.4,competitive
+17th Lok Sabha,Andhra Pradesh,Eluru,KOTAGIRI SRIDHAR,Yuvajana Sramika Rythu Congress Party,676809,MAGANTTI VENKATESWARA RAO BABU,Telugu Desam,510884,1327923,165925,12.5,competitive
+17th Lok Sabha,Andhra Pradesh,Guntur,Jayadev Galla,Telugu Desam,587918,Modugula Venugopala Reddy,Yuvajana Sramika Rythu Congress Party,583713,1351474,4205,0.31,marginal
+17th Lok Sabha,Andhra Pradesh,Hindupur,KURUVA GORANTLA MADHAV,Yuvajana Sramika Rythu Congress Party,706602,KRISTAPPA . NIMMALA,Telugu Desam,565854,1338514,140748,10.52,competitive
+17th Lok Sabha,Andhra Pradesh,Kadapa,Y.S.Avinash Reddy,Yuvajana Sramika Rythu Congress Party,783799,Chadipirala Adi Narayana Reddy,Telugu Desam,402823,1228592,380976,31.01,safe
+17th Lok Sabha,Andhra Pradesh,Kakinada,VANGA GEETHAVISWANATH,Yuvajana Sramika Rythu Congress Party,537630,CHALAMALASETTY SUNIL,Telugu Desam,511892,1234655,25738,2.08,marginal
+17th Lok Sabha,Andhra Pradesh,Kurnool,AYUSHMAN DOCTOR SANJEEV KUMAR,Yuvajana Sramika Rythu Congress Party,602554,KOTLA JAYA SURYA PRAKASH REDDY,Telugu Desam,453665,1182011,148889,12.6,competitive
+17th Lok Sabha,Andhra Pradesh,Machilipatnam,BALASHOWRY VALLABHANENI,Yuvajana Sramika Rythu Congress Party,571436,KONAKALLA NARAYANA RAO,Telugu Desam,511295,1241605,60141,4.84,marginal
+17th Lok Sabha,Andhra Pradesh,Nandyal,POCHA . BRAHMANANDA REDDY,Yuvajana Sramika Rythu Congress Party,720888,MANDRA SIVANANDA REDDY,Telugu Desam,470769,1299093,250119,19.25,safe
+17th Lok Sabha,Andhra Pradesh,Narasaraopet,LAVU SRI KRISHNA DEVARAYALU,Yuvajana Sramika Rythu Congress Party,745089,RAYAPATI SAMBASIVARAO,Telugu Desam,591111,1437675,153978,10.71,competitive
+17th Lok Sabha,Andhra Pradesh,Narsapuram,KANUMURU RAGHU RAMA KRISHNA RAJU,Yuvajana Sramika Rythu Congress Party,447594,V.V. SIVA RAMA RAJU (KALAVAPUDI SIVA),Telugu Desam,415685,1174441,31909,2.72,marginal
+17th Lok Sabha,Andhra Pradesh,Nellore,Adala Prabhakara Reddy,Yuvajana Sramika Rythu Congress Party,683830,Beeda Masthan Rao,Telugu Desam,535259,1287036,148571,11.54,competitive
+17th Lok Sabha,Andhra Pradesh,Ongole,MAGUNTA SREENIVASULU REDDY,Yuvajana Sramika Rythu Congress Party,739202,SIDDA RAGHAVA RAO,Telugu Desam,524351,1342368,214851,16.01,safe
+17th Lok Sabha,Andhra Pradesh,Rajahmundry,MARGANI BHARAT,Yuvajana Sramika Rythu Congress Party,582024,MAGANTI ROOPA,Telugu Desam,460390,1250427,121634,9.73,competitive
+17th Lok Sabha,Andhra Pradesh,Rajampet,P.V.MIDHUN REDDY,Yuvajana Sramika Rythu Congress Party,702211,D A SATHYA PRABHA,Telugu Desam,433927,1224354,268284,21.91,safe
+17th Lok Sabha,Andhra Pradesh,Srikakulam,KINJARAPU RAM MOHAN NAIDU,Telugu Desam,534544,DUVVADA SRINIVAS,Yuvajana Sramika Rythu Congress Party,527891,1157329,6653,0.57,marginal
+17th Lok Sabha,Andhra Pradesh,Tirupati,Balli Durga Prasad Rao,Yuvajana Sramika Rythu Congress Party,722877,Panabaka Lakshmi,Telugu Desam,494501,1313515,228376,17.39,safe
+17th Lok Sabha,Andhra Pradesh,Vijayawada,KESINENI SRINIVAS (NANI),Telugu Desam,575498,POTLURI.V.PRASAD ( P V P ),Yuvajana Sramika Rythu Congress Party,566772,1277711,8726,0.68,marginal
+17th Lok Sabha,Andhra Pradesh,Visakhapatnam,M V V SATYANARAYANA,Yuvajana Sramika Rythu Congress Party,436906,BHARAT MATHUKUMILLI,Telugu Desam,432492,1239754,4414,0.36,marginal
+17th Lok Sabha,Andhra Pradesh,Vizianagaram,Bellana Chandra Sekhar,Yuvajana Sramika Rythu Congress Party,578418,Ashok Gajapathi Raju Pusapati,Telugu Desam,530382,1217890,48036,3.94,marginal
+17th Lok Sabha,Arunachal Pradesh,ARUNACHAL EAST,Tapir Gao,Bharatiya Janata Party,153883,Lowangcha Wanglat,Indian National Congress,83935,293781,69948,23.81,safe
+17th Lok Sabha,Arunachal Pradesh,ARUNACHAL WEST,KIREN RIJIJU,Bharatiya Janata Party,225796,NABAM TUKI,Indian National Congress,50953,358309,174843,48.8,safe
+17th Lok Sabha,Assam,Autonomous District,HOREN SING BEY,Bharatiya Janata Party,381316,BIREN SINGH ENGTI,Indian National Congress,141690,617735,239626,38.79,safe
+17th Lok Sabha,Assam,Barpeta,Abdul Khaleque,Indian National Congress,645173,Kumar Deepak Das,Asom Gana Parishad,504866,1458549,140307,9.62,competitive
+17th Lok Sabha,Assam,Dhubri,BADRUDDIN AJMAL,All India United Democratic Front,718764,ABU TAHER BEPARI,Indian National Congress,492506,1685005,226258,13.43,competitive
+17th Lok Sabha,Assam,Dibrugarh,RAMESWAR TELI,Bharatiya Janata Party,659583,PABAN SINGH GHATOWAR,Indian National Congress,295017,1015748,364566,35.89,safe
+17th Lok Sabha,Assam,Gauhati,QUEEN OJA,Bharatiya Janata Party,1008936,BOBBEETA SHARMA,Indian National Congress,663330,1763757,345606,19.59,safe
+17th Lok Sabha,Assam,Jorhat,TOPON KUMAR GOGOI,Bharatiya Janata Party,543288,SUSHANTA BORGOHAIN,Indian National Congress,460635,1057965,82653,7.81,competitive
+17th Lok Sabha,Assam,Kaliabor,Gaurav Gogoi,Indian National Congress,786092,Moni Madhab Mahanta,Asom Gana Parishad,576098,1424687,209994,14.74,competitive
+17th Lok Sabha,Assam,Karimganj,KRIPANATH MALLAH,Bharatiya Janata Party,473046,RADHESHYAM BISWAS,All India United Democratic Front,434657,1060072,38389,3.62,marginal
+17th Lok Sabha,Assam,Kokrajhar,Naba Kumar Sarania,Independent,484560,Pramila Rani Brahma,Bodoland Peoples Front,446774,1479485,37786,2.55,marginal
+17th Lok Sabha,Assam,Lakhimpur,PRADAN BARUAH,Bharatiya Janata Party,776406,ANIL BORGOHAIN,Indian National Congress,425855,1283589,350551,27.31,safe
+17th Lok Sabha,Assam,Mangaldoi,DILIP SAIKIA,Bharatiya Janata Party,735469,BHUBANESWAR KALITA,Indian National Congress,596924,1506107,138545,9.2,competitive
+17th Lok Sabha,Assam,Nowgong,Pradyut Bordoloi,Indian National Congress,739724,Sri Rupak Sharma,Bharatiya Janata Party,722972,1493475,16752,1.12,marginal
+17th Lok Sabha,Assam,Silchar,RAJDEEP ROY,Bharatiya Janata Party,499414,SUSHMITA DEV,Indian National Congress,417818,949696,81596,8.59,competitive
+17th Lok Sabha,Assam,Tezpur,PALLAB LOCHAN DAS,Bharatiya Janata Party,684166,M.G.V.K. BHANU,Indian National Congress,441325,1190196,242841,20.4,safe
+17th Lok Sabha,Bihar,Araria,PRADEEP KUMAR SINGH,Bharatiya Janata Party,618434,SARFARAZ ALAM,Rashtriya Janata Dal,481193,1169630,137241,11.73,competitive
+17th Lok Sabha,Bihar,Arrah,R. K. Singh,Bharatiya Janata Party,566480,Raju Yadav,Communist Party of India  (Marxist-Leninist)  (Liberation),419195,1080684,147285,13.63,competitive
+17th Lok Sabha,Bihar,Aurangabad,SUSHIL KUMAR SINGH,Bharatiya Janata Party,431541,UPENDRA PRASAD,Hindustani Awam Morcha (Secular),358934,941595,72607,7.71,competitive
+17th Lok Sabha,Bihar,Banka,GIRIDHARI YADAV,Janata Dal  (United),477788,JAI PRAKASH NARAYAN YADAV,Rashtriya Janata Dal,277256,995806,200532,20.14,safe
+17th Lok Sabha,Bihar,Begusarai,Giriraj Singh,Bharatiya Janata Party,692193,Kanhaiya Kumar,Communist Party of India,269976,1225594,422217,34.45,safe
+17th Lok Sabha,Bihar,Bhagalpur,AJAY KUMAR MANDAL,Janata Dal  (United),618254,SHAILESH KUMAR ALIAS VULO MANDAL,Rashtriya Janata Dal,340624,1042518,277630,26.63,safe
+17th Lok Sabha,Bihar,Buxar,Ashwini Kumar Choubey,Bharatiya Janata Party,473053,Jagadanand Singh,Rashtriya Janata Dal,355444,986861,117609,11.92,competitive
+17th Lok Sabha,Bihar,Darbhanga,Gopal Jee Thakur,Bharatiya Janata Party,586668,Abdul Bari Siddiqui,Rashtriya Janata Dal,318689,964996,267979,27.77,safe
+17th Lok Sabha,Bihar,Gaya (SC),Vijay Kumar,Janata Dal  (United),467007,Jitan Ram Manjhi,Hindustani Awam Morcha (Secular),314581,957248,152426,15.92,safe
+17th Lok Sabha,Bihar,Gopalganj (SC),DR. ALOK KUMAR SUMAN,Janata Dal  (United),568150,SURENDRA RAM,Rashtriya Janata Dal,281716,1024876,286434,27.95,safe
+17th Lok Sabha,Bihar,Hajipur (SC),PASHU PATI KUMAR PARAS,Lok Jan Shakti Party,541310,SHIV CHANDRA RAM,Rashtriya Janata Dal,335861,1006817,205449,20.41,safe
+17th Lok Sabha,Bihar,Jahanabad,CHANDESHWAR PRASAD,Janata Dal  (United),335584,SURENDRA PRASAD YADAV,Rashtriya Janata Dal,333833,822065,1751,0.21,marginal
+17th Lok Sabha,Bihar,Jamui (SC),CHIRAG KUMAR PASWAN,Lok Jan Shakti Party,529134,BHUDEO CHOUDHARY,Rashtriya Lok Samta Party,288085,949137,241049,25.4,safe
+17th Lok Sabha,Bihar,Jhanjharpur,Ramprit Mandal,Janata Dal  (United),602391,GULAB YADAV,Rashtriya Janata Dal,279440,1060562,322951,30.45,safe
+17th Lok Sabha,Bihar,Karakat,MAHABALI SINGH,Janata Dal  (United),398408,UPENDRA KUSHWAHA,Rashtriya Lok Samta Party,313866,868798,84542,9.73,competitive
+17th Lok Sabha,Bihar,Katihar,DULAL CHANDRA GOSWAMI,Janata Dal  (United),559423,TARIQ ANWAR,Indian National Congress,502220,1117734,57203,5.12,competitive
+17th Lok Sabha,Bihar,Khagaria,Choudhary Mehboob Ali Kaiser,Lok Jan Shakti Party,510193,Mukesh Sahani,Vikassheel Insaan Party,261623,966813,248570,25.71,safe
+17th Lok Sabha,Bihar,Kishanganj,Dr. Mohammad Jawed,Indian National Congress,367017,Syed Mahmood Ashraf,Janata Dal  (United),332551,1101603,34466,3.13,marginal
+17th Lok Sabha,Bihar,Madhepura,Dinesh Chandra Yadav,Janata Dal  (United),624334,Sharad Yadav,Rashtriya Janata Dal,322807,1147274,301527,26.28,safe
+17th Lok Sabha,Bihar,Madhubani,ASHOK KUMAR YADAV,Bharatiya Janata Party,595843,BADRI KUMAR PURBEY,Vikassheel Insaan Party,140903,963708,454940,47.21,safe
+17th Lok Sabha,Bihar,Maharajganj,"Janardan Singh 'Sigriwal""",Bharatiya Janata Party,546352,Randhir Kumar Singh,Rashtriya Janata Dal,315580,972703,230772,23.72,safe
+17th Lok Sabha,Bihar,Munger,RAJIV RANJAN SINGH ALIAS LALAN SINGH,Janata Dal  (United),528762,NILAM DEVI,Indian National Congress,360825,1036268,167937,16.21,safe
+17th Lok Sabha,Bihar,Muzaffarpur,Ajay Nishad,Bharatiya Janata Party,666878,Raj Bhushan Choudhary,Vikassheel Insaan Party,256890,1058086,409988,38.75,safe
+17th Lok Sabha,Bihar,Nalanda,Kaushlendra Kumar,Janata Dal  (United),540888,Ashok Kumar Azad,Hindustani Awam Morcha (Secular),284751,1031286,256137,24.84,safe
+17th Lok Sabha,Bihar,Nawada,Chandan Singh,Lok Jan Shakti Party,495684,Vibha Devi,Rashtriya Janata Dal,347612,942462,148072,15.71,safe
+17th Lok Sabha,Bihar,Paschim Champaran,DR. SANJAY JAISWAL,Bharatiya Janata Party,603706,BRIJESH KUMAR KUSHWAHA,Rashtriya Lok Samta Party,309800,1012936,293906,29.02,safe
+17th Lok Sabha,Bihar,Pataliputra,RAM KRIPAL YADAV,Bharatiya Janata Party,509557,MISHA BHARTI,Rashtriya Janata Dal,470236,1077749,39321,3.65,marginal
+17th Lok Sabha,Bihar,Patna Sahib,RAVI SHANKAR PRASAD,Bharatiya Janata Party,607506,SHATRUGHAN SINHA,Indian National Congress,322849,982285,284657,28.98,safe
+17th Lok Sabha,Bihar,Purnia,SANTOSH KUMAR,Janata Dal  (United),632924,UDAY SINGH ALIAS PAPPU SINGH,Indian National Congress,369463,1153940,263461,22.83,safe
+17th Lok Sabha,Bihar,Purvi Champaran,RADHA MOHAN SINGH,Bharatiya Janata Party,577787,AAKASH KUMAR SINGH,Rashtriya Lok Samta Party,284139,999400,293648,29.38,safe
+17th Lok Sabha,Bihar,Samastipur (SC),Ramchandra Paswan,Lok Jan Shakti Party,562443,Dr. Ashok Kumar,Indian National Congress,310800,1019025,251643,24.69,safe
+17th Lok Sabha,Bihar,Saran,Rajiv Pratap Rudy,Bharatiya Janata Party,499342,Chandrika Roy,Rashtriya Janata Dal,360913,941656,138429,14.7,competitive
+17th Lok Sabha,Bihar,Sasaram (SC),CHHEDI PASWAN,Bharatiya Janata Party,494800,MEIRA KUMAR,Indian National Congress,329055,974749,165745,17.0,safe
+17th Lok Sabha,Bihar,Sheohar,RAMA DEVI,Bharatiya Janata Party,608678,SYED FAISAL ALI,Rashtriya Janata Dal,268318,1004559,340360,33.88,safe
+17th Lok Sabha,Bihar,Sitamarhi,Sunil Kumar Pintu,Janata Dal  (United),567745,Arjun Ray,Rashtriya Janata Dal,317206,1038849,250539,24.12,safe
+17th Lok Sabha,Bihar,Siwan,Kavita Singh,Janata Dal  (United),448473,Hena Shahab,Rashtriya Janata Dal,331515,984810,116958,11.88,competitive
+17th Lok Sabha,Bihar,Supaul,Dileshwar Kamait,Janata Dal  (United),597377,Ranjeet Ranjan,Indian National Congress,330524,1110805,266853,24.02,safe
+17th Lok Sabha,Bihar,Ujiarpur,Nityanand Rai,Bharatiya Janata Party,543906,Upendra Kushwaha,Rashtriya Lok Samta Party,266628,969284,277278,28.61,safe
+17th Lok Sabha,Bihar,Vaishali,Veena Devi (W/o Dinesh Prasad Singh),Lok Jan Shakti Party,568215,Raghuvansh Prasad Singh,Rashtriya Janata Dal,333631,1074730,234584,21.83,safe
+17th Lok Sabha,Bihar,Valmiki Nagar,BAIDYANATH PRASAD MAHTO,Janata Dal  (United),602660,SHASHWAT KEDAR,Indian National Congress,248044,1032090,354616,34.36,safe
+17th Lok Sabha,Chandigarh,CHANDIGARH,KIRRON KHER,Bharatiya Janata Party,231188,PAWAN KUMAR BANSAL,Indian National Congress,184218,456568,46970,10.29,competitive
+17th Lok Sabha,Chhattisgarh,BASTAR,DEEPAK BAIJ,Indian National Congress,402527,BAIDU RAM KASHYAP,Bharatiya Janata Party,363545,912846,38982,4.27,marginal
+17th Lok Sabha,Chhattisgarh,BILASPUR,ARUN SAO,Bharatiya Janata Party,634559,ATAL SHRIVASTAV,Indian National Congress,492796,1209434,141763,11.72,competitive
+17th Lok Sabha,Chhattisgarh,DURG,VIJAY BAGHEL,Bharatiya Janata Party,849374,PRATIMA CHANDRAKAR,Indian National Congress,457396,1391996,391978,28.16,safe
+17th Lok Sabha,Chhattisgarh,JANJGIR-CHAMPA,GUHARAM AJGALLEY,Bharatiya Janata Party,572790,RAVI PARASRAM BHARDWAJ,Indian National Congress,489535,1247650,83255,6.67,competitive
+17th Lok Sabha,Chhattisgarh,KANKER,MOHAN MANDAVI,Bharatiya Janata Party,546233,BIRESH THAKUR,Indian National Congress,539319,1159193,6914,0.6,marginal
+17th Lok Sabha,Chhattisgarh,KORBA,JYOTSNA CHARANDAS MAHANT,Indian National Congress,523410,JYOTI NAND DUBEY,Bharatiya Janata Party,497061,1137003,26349,2.32,marginal
+17th Lok Sabha,Chhattisgarh,MAHASAMUND,CHUNNI LAL SAHU,Bharatiya Janata Party,616580,DHANENDRA SAHU,Indian National Congress,526069,1222335,90511,7.4,competitive
+17th Lok Sabha,Chhattisgarh,RAIGARH,GOMATI SAI,Bharatiya Janata Party,658335,LALJEET SINGH RATHIA,Indian National Congress,592308,1350124,66027,4.89,marginal
+17th Lok Sabha,Chhattisgarh,RAIPUR,Sunil Kumar Soni,Bharatiya Janata Party,837902,Pramod Dubey,Indian National Congress,489664,1396250,348238,24.94,safe
+17th Lok Sabha,Chhattisgarh,RAJNANDGAON,SANTOSH PANDEY,Bharatiya Janata Party,662387,BHOLA RAM SAHU,Indian National Congress,550421,1307033,111966,8.57,competitive
+17th Lok Sabha,Chhattisgarh,SARGUJA,Renuka Singh Saruta,Bharatiya Janata Party,663711,Khel Sai Singh,Indian National Congress,505838,1280689,157873,12.33,competitive
+17th Lok Sabha,Dadra & Nagar Haveli,Dadra And Nagar Haveli,DELKAR MOHANBHAI SANJIBHAI,Independent,90421,PATEL NATUBHAI GOMANBHAI,Bharatiya Janata Party,81420,198983,9001,4.52,marginal
+17th Lok Sabha,Daman & Diu,Daman & diu,LALUBHAI BABUBHAI PATEL,Bharatiya Janata Party,37597,KETAN DAHYABHAI PATEL,Indian National Congress,27655,87469,9942,11.37,competitive
+17th Lok Sabha,Goa,North Goa,SHRIPAD YESSO NAIK,Bharatiya Janata Party,244844,GIRISH RAYA CHODANKAR,Indian National Congress,164597,428628,80247,18.72,safe
+17th Lok Sabha,Goa,South Goa,COSME FRANCISCO CAITANO SARDINHA,Indian National Congress,201561,ADV. NARENDRA SAWAIKAR,Bharatiya Janata Party,191806,424575,9755,2.3,marginal
+17th Lok Sabha,Gujarat,Ahmedabad East,Patel Hasmukhbhai Somabhai,Bharatiya Janata Party,749834,Gitaben Patel,Indian National Congress,315504,1116367,434330,38.91,safe
+17th Lok Sabha,Gujarat,Ahmedabad West,DR. KIRIT P. SOLANKI,Bharatiya Janata Party,641622,RAJU PARMAR,Indian National Congress,320076,997024,321546,32.25,safe
+17th Lok Sabha,Gujarat,Amreli,Kachhadiya Naranbhai Bhikhabhai,Bharatiya Janata Party,529035,Paresh Dhanani,Indian National Congress,327604,909167,201431,22.16,safe
+17th Lok Sabha,Gujarat,Anand,PATEL MITESH RAMESHBHAI (BAKABHAI),Bharatiya Janata Party,633097,BHARATBHAI MADHAVSINH SOLANKI,Indian National Congress,435379,1108661,197718,17.83,safe
+17th Lok Sabha,Gujarat,Banaskantha,PARBATBHAI SAVABHAI PATEL,Bharatiya Janata Party,679108,PARTHIBHAI GALBABHAI BHATOL,Indian National Congress,310812,1102081,368296,33.42,safe
+17th Lok Sabha,Gujarat,Bardoli,PARBHUBHAI NAGARBHAI VASAVA,Bharatiya Janata Party,742273,CHAUDHARI DR. TUSHARBHAI AMARSINHBHAI,Indian National Congress,526826,1348038,215447,15.98,safe
+17th Lok Sabha,Gujarat,Bharuch,Mansukhbhai Dhanjibhai Vasava,Bharatiya Janata Party,637795,Sherkhan Abdulsakur Pathan,Indian National Congress,303581,1149725,334214,29.07,safe
+17th Lok Sabha,Gujarat,Bhavnagar,DR.BHARATIBEN DHIRUBHAI SHIYAL,Bharatiya Janata Party,661273,PATEL MANHARBHAI NAGJIBHAI (VASANI),Indian National Congress,331754,1041279,329519,31.65,safe
+17th Lok Sabha,Gujarat,Chhota Udaipur,RATHVA GITABEN VAJESINGBHAI,Bharatiya Janata Party,764445,RATHAVA RANJITSINH MOHANSINH,Indian National Congress,386502,1232459,377943,30.67,safe
+17th Lok Sabha,Gujarat,Dahod,JASHVANTSINH SUMANBHAI BHABHOR,Bharatiya Janata Party,561760,KATARA BABUBHAI KHIMABHAI,Indian National Congress,434164,1063212,127596,12.0,competitive
+17th Lok Sabha,Gujarat,Gandhinagar,AMIT SHAH,Bharatiya Janata Party,894624,Dr. C. J. CHAVDA,Indian National Congress,337610,1284090,557014,43.38,safe
+17th Lok Sabha,Gujarat,Jamnagar,POONAMBEN HEMATBHAI MAADAM,Bharatiya Janata Party,591588,KANDORIYA MULUBHAI RANMALBHAI,Indian National Congress,354784,1010965,236804,23.42,safe
+17th Lok Sabha,Gujarat,Junagadh,CHUDASAMA RAJESHBHAI NARANBHAI,Bharatiya Janata Party,547952,VANSH PUNJABHAI BHIMABHAI,Indian National Congress,397767,1005224,150185,14.94,competitive
+17th Lok Sabha,Gujarat,Kachchh,CHAVDA VINOD LAKHAMSHI,Bharatiya Janata Party,637034,NARESH NARANBHAI MAHESHWARI,Indian National Congress,331521,1023198,305513,29.86,safe
+17th Lok Sabha,Gujarat,Kheda,Chauhan Devusinh,Bharatiya Janata Party,714572,Bimal Shah,Indian National Congress,347427,1098633,367145,33.42,safe
+17th Lok Sabha,Gujarat,Mahesana,SHARDABEN ANILBHAI PATEL,Bharatiya Janata Party,659525,A. J. Patel,Indian National Congress,378006,1081938,281519,26.02,safe
+17th Lok Sabha,Gujarat,Navsari,C. R. Patil,Bharatiya Janata Party,972739,PATEL DHARMESHBHAI BHIMBHAI,Indian National Congress,283071,1308018,689668,52.73,safe
+17th Lok Sabha,Gujarat,Panchmahal,Ratansinh Magansinh Rathod,Bharatiya Janata Party,732136,Khant Vechatbhai Kuberbhai,Indian National Congress,303595,1083676,428541,39.55,safe
+17th Lok Sabha,Gujarat,Patan,DABHI BHARATSINHJI SHANKARJI,Bharatiya Janata Party,633368,JAGDISH THAKOR,Indian National Congress,439489,1126256,193879,17.21,safe
+17th Lok Sabha,Gujarat,Porbandar,RAMESHBHAI LAVJIBHAI DHADUK,Bharatiya Janata Party,563881,LALIT VASOYA,Indian National Congress,334058,949947,229823,24.19,safe
+17th Lok Sabha,Gujarat,Rajkot,KUNDARIA MOHANBHAI KALYANJIBHAI,Bharatiya Janata Party,758645,KAGATHARA LALITBHAI,Indian National Congress,390238,1195271,368407,30.82,safe
+17th Lok Sabha,Gujarat,Sabarkantha,RATHOD DIPSINH SHANKARSINH,Bharatiya Janata Party,701984,THAKOR RAJENDRASINH SHIVSINH,Indian National Congress,432997,1218354,268987,22.08,safe
+17th Lok Sabha,Gujarat,Surat,Darshana Vikram Jardosh,Bharatiya Janata Party,795651,Ashok Patel (Adhevada),Indian National Congress,247421,1068412,548230,51.31,safe
+17th Lok Sabha,Gujarat,Surendranagar,Dr. MUNJAPARA MAHENDRABHAI,Bharatiya Janata Party,631844,KOLI PATEL SOMABHAI GANDALAL,Indian National Congress,354407,1077726,277437,25.74,safe
+17th Lok Sabha,Gujarat,Vadodara,RANJANBEN BHATT,Bharatiya Janata Party,883719,PRASHANT PATEL (TIKO),Indian National Congress,294542,1222348,589177,48.2,safe
+17th Lok Sabha,Gujarat,Valsad,Dr.K.C.PATEL,Bharatiya Janata Party,771980,CHAUDHARI JITUBHAI HARJIBHAI,Indian National Congress,418183,1260377,353797,28.07,safe
+17th Lok Sabha,Haryana,Ambala,RATTAN LAL KATARIA,Bharatiya Janata Party,746508,SELJA,Indian National Congress,404163,1316235,342345,26.01,safe
+17th Lok Sabha,Haryana,Bhiwani-Mahendragarh,Dharambir Singh S/o Bhale Ram,Bharatiya Janata Party,736699,Shruti Choudhry,Indian National Congress,292236,1161115,444463,38.28,safe
+17th Lok Sabha,Haryana,Faridabad,KRISHAN PAL,Bharatiya Janata Party,913222,AVTAR SINGH BHADANA,Indian National Congress,274983,1327295,638239,48.09,safe
+17th Lok Sabha,Haryana,Gurgaon,RAO INDERJIT SINGH,Bharatiya Janata Party,881546,CAPT. AJAY SINGH,Indian National Congress,495290,1446509,386256,26.7,safe
+17th Lok Sabha,Haryana,Hisar,BRIJENDRA SINGH,Bharatiya Janata Party,603289,DUSHYANT CHAUTALA,Jannayak Janta Party,289221,1179869,314068,26.62,safe
+17th Lok Sabha,Haryana,Karnal,Sanjay Bhatia,Bharatiya Janata Party,911594,Kuldip Sharma,Indian National Congress,255452,1300722,656142,50.44,safe
+17th Lok Sabha,Haryana,Kurukshetra,NAYAB SINGH,Bharatiya Janata Party,688629,NIRMAL SINGH,Indian National Congress,304038,1230202,384591,31.26,safe
+17th Lok Sabha,Haryana,Rohtak,ARVIND KUMAR SHARMA,Bharatiya Janata Party,573845,DEEPENDER SINGH HOODA,Indian National Congress,566342,1220571,7503,0.61,marginal
+17th Lok Sabha,Haryana,Sirsa,Sunita Duggal,Bharatiya Janata Party,714351,Ashok Tanwar,Indian National Congress,404433,1369486,309918,22.63,safe
+17th Lok Sabha,Haryana,Sonipat,RAMESH CHANDER KAUSHIK,Bharatiya Janata Party,587664,BHUPINDER SINGH HOODA,Indian National Congress,422800,1129532,164864,14.6,competitive
+17th Lok Sabha,Himachal Pradesh,Hamirpur,ANURAG SINGH THAKUR,Bharatiya Janata Party,682692,RAM LAL THAKUR,Indian National Congress,283120,988765,399572,40.41,safe
+17th Lok Sabha,Himachal Pradesh,Kangra,Kishan Kapoor,Bharatiya Janata Party,725218,Pawan Kajal,Indian National Congress,247595,1006989,477623,47.43,safe
+17th Lok Sabha,Himachal Pradesh,Mandi,RAM SWAROOP SHARMA,Bharatiya Janata Party,647189,AASHRAY SHARMA,Indian National Congress,241730,941371,405459,43.07,safe
+17th Lok Sabha,Himachal Pradesh,Shimla,SURESH KUMAR KASHYAP,Bharatiya Janata Party,606183,DHANI RAM SHANDIL,Indian National Congress,278668,913608,327515,35.85,safe
+17th Lok Sabha,Jammu & Kashmir,Anantnag,HASNAIN MASOODI,Jammu & Kashmir National Conference,40180,GHULAM AHMAD MIR,Indian National Congress,33504,124896,6676,5.35,competitive
+17th Lok Sabha,Jammu & Kashmir,Baramulla,MOHAMMAD AKBAR LONE,Jammu & Kashmir National Conference,133426,RAJA AIJAZ ALI,Jammu & Kashmir People Conference,103193,455550,30233,6.64,competitive
+17th Lok Sabha,Jammu & Kashmir,Jammu,Jugal Kishore,Bharatiya Janata Party,858066,Raman Bhalla,Indian National Congress,555191,1478795,302875,20.48,safe
+17th Lok Sabha,Jammu & Kashmir,Ladakh,Jamyang Tsering Namgyal,Bharatiya Janata Party,42914,Sajjad Hussain,Independent,31984,126426,10930,8.65,competitive
+17th Lok Sabha,Jammu & Kashmir,Srinagar,Farooq Abdullah,Jammu & Kashmir National Conference,106750,Aga Syed Mohsin,Peoples Democratic Party,36700,186832,70050,37.49,safe
+17th Lok Sabha,Jammu & Kashmir,Udhampur,DR. JITENDRA SINGH,Bharatiya Janata Party,724311,VIKRAMADITYA SINGH,Indian National Congress,367059,1180123,357252,30.27,safe
+17th Lok Sabha,Jharkhand,Chatra,SUNIL KUMAR SINGH,Bharatiya Janata Party,528077,MANOJ KUMAR YADAV,Indian National Congress,150206,925937,377871,40.81,safe
+17th Lok Sabha,Jharkhand,Dhanbad,PASHUPATI NATH SINGH,Bharatiya Janata Party,827234,KIRTI AZAD,Indian National Congress,341040,1252817,486194,38.81,safe
+17th Lok Sabha,Jharkhand,Dumka,SUNIL SOREN,Bharatiya Janata Party,484923,SHIBU SOREN,Jharkhand Mukti Morcha,437333,1025968,47590,4.64,marginal
+17th Lok Sabha,Jharkhand,Giridih,Chandra Prakash Choudhary,AJSU Party,648277,Jagarnath Mahto,Jharkhand Mukti Morcha,399930,1106918,248347,22.44,safe
+17th Lok Sabha,Jharkhand,Godda,Nishikant Dubey,Bharatiya Janata Party,637610,Pradeep Yadav,Jharkhand Vikas Morcha (Prajatantrik),453383,1194036,184227,15.43,safe
+17th Lok Sabha,Jharkhand,Hazaribagh,JAYANT SINHA,Bharatiya Janata Party,728798,GOPAL PRASAD SAHU,Indian National Congress,249250,1080929,479548,44.36,safe
+17th Lok Sabha,Jharkhand,Jamshedpur,Bidyut Baran Mahato,Bharatiya Janata Party,679632,Champai Soren,Jharkhand Mukti Morcha,377542,1144226,302090,26.4,safe
+17th Lok Sabha,Jharkhand,Khunti,ARJUN MUNDA,Bharatiya Janata Party,382638,KALI CHARAN MUNDA,Indian National Congress,381193,832377,1445,0.17,marginal
+17th Lok Sabha,Jharkhand,Kodarma,ANNPURNA DEVI,Bharatiya Janata Party,753016,BABU LAL MARANDI,Jharkhand Vikas Morcha (Prajatantrik),297416,1209541,455600,37.67,safe
+17th Lok Sabha,Jharkhand,Lohardaga,SUDARSHAN BHAGAT,Bharatiya Janata Party,371595,SUKHDEO BHAGAT,Indian National Congress,361232,817550,10363,1.27,marginal
+17th Lok Sabha,Jharkhand,Palamau,VISHNU DAYAL RAM,Bharatiya Janata Party,755659,GHURAN RAM,Rashtriya Janata Dal,278053,1209747,477606,39.48,safe
+17th Lok Sabha,Jharkhand,Rajmahal,VIJAY KUMAR HANSDAK,Jharkhand Mukti Morcha,507830,HEMLAL MURMU,Bharatiya Janata Party,408635,1047657,99195,9.47,competitive
+17th Lok Sabha,Jharkhand,Ranchi,SANJAY SETH,Bharatiya Janata Party,706828,SUBODH KANT SAHAY,Indian National Congress,423802,1235441,283026,22.91,safe
+17th Lok Sabha,Jharkhand,Singhbhum,GEETA KORA,Indian National Congress,431815,LAXMAN GILUWA,Bharatiya Janata Party,359660,879329,72155,8.21,competitive
+17th Lok Sabha,Karnataka,Bagalkot,Gaddigoudar Parvatagouda Chandanagouda,Bharatiya Janata Party,664638,Veena Kashappanavar,Indian National Congress,496451,1204613,168187,13.96,competitive
+17th Lok Sabha,Karnataka,Bangalore North,D.V. Sadananda Gowda,Bharatiya Janata Party,824500,Krishna Byregowda,Indian National Congress,676982,1559459,147518,9.46,competitive
+17th Lok Sabha,Karnataka,Bangalore Rural,D.K. SURESH,Indian National Congress,878258,ASHWATHNARAYANGOWDA,Bharatiya Janata Party,671388,1621906,206870,12.75,competitive
+17th Lok Sabha,Karnataka,Bangalore South,TEJASVI SURYA,Bharatiya Janata Party,739229,B.K.HARIPRASAD,Indian National Congress,408037,1188491,331192,27.87,safe
+17th Lok Sabha,Karnataka,Bangalore central,P. C. Mohan,Bharatiya Janata Party,602853,Rizwan Arshad,Indian National Congress,531885,1197234,70968,5.93,competitive
+17th Lok Sabha,Karnataka,Belgaum,ANGADI SURESH CHANNABASAPPA,Bharatiya Janata Party,761991,Dr.SADHUNAVAR,Indian National Congress,370687,1205229,391304,32.47,safe
+17th Lok Sabha,Karnataka,Bellary,Y. DEVENDRAPPA,Bharatiya Janata Party,616388,V. S. UGRAPPA,Indian National Congress,560681,1221926,55707,4.56,marginal
+17th Lok Sabha,Karnataka,Bidar,BHAGWANTH KHUBA,Bharatiya Janata Party,585471,ESHWAR B. KHANDRE,Indian National Congress,468637,1117167,116834,10.46,competitive
+17th Lok Sabha,Karnataka,Bijapur,JIGAJINAGI RAMESH CHANDAPPA,Bharatiya Janata Party,635867,DR. SUNITA DEVANAND CHAVAN,Janata Dal  (Secular),377829,1111354,258038,23.22,safe
+17th Lok Sabha,Karnataka,Chamarajanagar,V. SRINIVAS PRASAD,Bharatiya Janata Party,568537,R. DHRUVANARAYANA,Indian National Congress,566720,1270658,1817,0.14,marginal
+17th Lok Sabha,Karnataka,Chikkballapur,B.N.Bache Gowda,Bharatiya Janata Party,745912,M.Veerappa Moily,Indian National Congress,563802,1386963,182110,13.13,competitive
+17th Lok Sabha,Karnataka,Chikkodi,ANNASAHEB SHANKAR JOLLE,Bharatiya Janata Party,645017,PRAKASH BABANNA HUKKERI,Indian National Congress,526140,1217549,118877,9.76,competitive
+17th Lok Sabha,Karnataka,Chitradurga,A NARAYANASWAMY,Bharatiya Janata Party,626195,B N CHANDRAPPA,Indian National Congress,546017,1245950,80178,6.44,competitive
+17th Lok Sabha,Karnataka,Dakshina Kannada,NALIN KUMAR KATEEL,Bharatiya Janata Party,774285,MITHUN M RAI,Indian National Congress,499664,1345039,274621,20.42,safe
+17th Lok Sabha,Karnataka,Davanagere,G M SIDDESHWAR,Bharatiya Janata Party,652996,H B MANJAPPA,Indian National Congress,483294,1194586,169702,14.21,competitive
+17th Lok Sabha,Karnataka,Dharwad,Pralhad Joshi,Bharatiya Janata Party,684837,Vinay Kulkarni,Indian National Congress,479765,1213505,205072,16.9,safe
+17th Lok Sabha,Karnataka,Gulbarga,DR. UMESH G JADHAV,Bharatiya Janata Party,620192,MALLIKARJUN KHARGE,Indian National Congress,524740,1189361,95452,8.03,competitive
+17th Lok Sabha,Karnataka,Hassan,PRAJWAL REVANNA,Janata Dal  (Secular),676606,MANJU A,Bharatiya Janata Party,535282,1277552,141324,11.06,competitive
+17th Lok Sabha,Karnataka,Haveri,UDASI. S.C.,Bharatiya Janata Party,683660,D.R. PATIL,Indian National Congress,542778,1266679,140882,11.12,competitive
+17th Lok Sabha,Karnataka,Kolar,S. MUNISWAMY,Bharatiya Janata Party,709165,K.H. MUNIYAPPA,Indian National Congress,499144,1258551,210021,16.69,safe
+17th Lok Sabha,Karnataka,Koppal,KARADI SANGANNA AMARAPPA,Bharatiya Janata Party,586783,K.RAJASHEKAR BASAVARAJ HITNAL,Indian National Congress,548386,1190347,38397,3.23,marginal
+17th Lok Sabha,Karnataka,Mandya,SUMALATHA AMBAREESH,Independent,703660,NIKHIL KUMARASWAMY,Janata Dal  (Secular),577784,1379210,125876,9.13,competitive
+17th Lok Sabha,Karnataka,Mysore,PRATHAP SIMHA,Bharatiya Janata Party,688974,C.H.VIJAYASHANKAR,Indian National Congress,550327,1318041,138647,10.52,competitive
+17th Lok Sabha,Karnataka,Raichur,RAJA AMARESHWARA NAIK,Bharatiya Janata Party,598337,B. V NAIK,Indian National Congress,480621,1124385,117716,10.47,competitive
+17th Lok Sabha,Karnataka,Shimoga,B.Y.RAGHAVENDRA.,Bharatiya Janata Party,729872,S.MADHUBANGARAPPA,Janata Dal  (Secular),506512,1283577,223360,17.4,safe
+17th Lok Sabha,Karnataka,Tumkur,G. S. BASAVARAJ,Bharatiya Janata Party,596127,H. D. DEVEGOWDA,Janata Dal  (Secular),582788,1244858,13339,1.07,marginal
+17th Lok Sabha,Karnataka,Udupi Chikmagalur,SHOBHA KARANDLAJE,Bharatiya Janata Party,718916,PRAMOD MADHWARAJ,Janata Dal  (Secular),369317,1151012,349599,30.37,safe
+17th Lok Sabha,Karnataka,Uttara Kannada,ANANTKUMAR HEGDE,Bharatiya Janata Party,786042,ANAND ASNOTIKAR,Janata Dal  (Secular),306393,1153480,479649,41.58,safe
+17th Lok Sabha,Kerala,Alappuzha,Adv. A M ARIFF,Communist Party of India  (Marxist),445970,Adv. SHANIMOL OSMAN,Indian National Congress,435496,1088728,10474,0.96,marginal
+17th Lok Sabha,Kerala,Alathur,RAMYA HARIDAS,Indian National Congress,533815,DR. P.K.BIJU,Communist Party of India  (Marxist),374847,1018743,158968,15.6,safe
+17th Lok Sabha,Kerala,Attingal,Adv. ADOOR PRAKASH,Indian National Congress,380995,Dr. A. SAMPATH,Communist Party of India  (Marxist),342748,1004888,38247,3.81,marginal
+17th Lok Sabha,Kerala,Chalakudy,BENNY BEHANAN,Indian National Congress,473444,INNOCENT,Communist Party of India  (Marxist),341170,990224,132274,13.36,competitive
+17th Lok Sabha,Kerala,Ernakulam,HIBI EDEN,Indian National Congress,491263,P RAJEEV,Communist Party of India  (Marxist),322110,967203,169153,17.49,safe
+17th Lok Sabha,Kerala,Idukki,Adv. DEAN KURIAKOSE,Indian National Congress,498493,"Adv, JOICE GEORGE",Independent,327440,919297,171053,18.61,safe
+17th Lok Sabha,Kerala,Kannur,K. SUDHAKARAN,Indian National Congress,529741,P. K. SREEMATHI TEACHER,Communist Party of India  (Marxist),435182,1053842,94559,8.97,competitive
+17th Lok Sabha,Kerala,Kasaragod,Rajmohan Unnithan,Indian National Congress,474961,K. P. Sathishchandran,Communist Party of India  (Marxist),434523,1100051,40438,3.68,marginal
+17th Lok Sabha,Kerala,Kollam,N.K.Premachandran,Revolutionary Socialist Party,499677,K.N.Balagopal,Communist Party of India  (Marxist),350821,968123,148856,15.38,safe
+17th Lok Sabha,Kerala,Kottayam,Thomas Chazhikadan,Kerala Congress  (M),421046,V.N. Vasavan,Communist Party of India  (Marxist),314787,910339,106259,11.67,competitive
+17th Lok Sabha,Kerala,Kozhikode,M.K.RAGHAVAN,Indian National Congress,493444,A.PRADEEP KUMAR,Communist Party of India  (Marxist),408219,1076193,85225,7.92,competitive
+17th Lok Sabha,Kerala,Malappuram,P.K. Kunhalikutty,Indian Union Muslim League,589873,V.P. Sanu,Communist Party of India  (Marxist),329720,1034618,260153,25.14,safe
+17th Lok Sabha,Kerala,Mavelikkara,KODIKUNNIL SURESH,Indian National Congress,440415,CHITTAYAM GOPAKUMAR,Communist Party of India,379277,971035,61138,6.3,competitive
+17th Lok Sabha,Kerala,Palakkad,V K SREEKANDAN,Indian National Congress,399274,M B RAJESH,Communist Party of India  (Marxist),387637,1028249,11637,1.13,marginal
+17th Lok Sabha,Kerala,Pathanamthitta,ANTO ANTONY,Indian National Congress,380927,VEENA GEORGE,Communist Party of India  (Marxist),336684,1026553,44243,4.31,marginal
+17th Lok Sabha,Kerala,Ponnani,E. T. Mohammed Basheer,Indian Union Muslim League,521824,P.V. Anvar Puthan Veetil,Independent,328551,1017265,193273,19.0,safe
+17th Lok Sabha,Kerala,Thiruvananthapuram,Dr. SHASHI THAROOR,Indian National Congress,416131,KUMMANAM RAJASEKHARAN,Bharatiya Janata Party,316142,1010180,99989,9.9,competitive
+17th Lok Sabha,Kerala,Thrissur,T. N. PRATHAPAN,Indian National Congress,415089,RAJAJI MATHEW THOMAS,Communist Party of India,321456,1041869,93633,8.99,competitive
+17th Lok Sabha,Kerala,Vadakara,K. MURALEEDHARAN,Indian National Congress,526755,P.JAYARAJAN,Communist Party of India  (Marxist),442092,1065619,84663,7.94,competitive
+17th Lok Sabha,Kerala,Wayanad,Rahul Gandhi,Indian National Congress,706367,P.P. Suneer,Communist Party of India,274597,1092197,431770,39.53,safe
+17th Lok Sabha,Lakshadweep,Lakshadweep,MOHAMMED FAIZAL PP,Nationalist Congress Party,22851,HAMDULLAH SAYEED,Indian National Congress,22028,47009,823,1.75,marginal
+17th Lok Sabha,Madhya Pradesh,BALAGHAT,DR DHAL SINGH BISEN,Bharatiya Janata Party,696102,MADHU BHAGAT,Indian National Congress,454036,1372018,242066,17.64,safe
+17th Lok Sabha,Madhya Pradesh,BETUL,DURGA DAS (D.D.) UIKEY,Bharatiya Janata Party,811248,RAMU TEKAM (ADVOCATE),Indian National Congress,451007,1357857,360241,26.53,safe
+17th Lok Sabha,Madhya Pradesh,BHIND,SANDHYA RAY,Bharatiya Janata Party,527694,DEVASHISH,Indian National Congress,327809,960687,199885,20.81,safe
+17th Lok Sabha,Madhya Pradesh,BHOPAL,SADHVI PRAGYA SINGH THAKUR,Bharatiya Janata Party,866482,DIGVIJAYA SINGH,Indian National Congress,501660,1407954,364822,25.91,safe
+17th Lok Sabha,Madhya Pradesh,CHHINDWARA,NAKUL KAMAL NATH,Indian National Congress,587305,NATHANSAHA KAWRETI,Bharatiya Janata Party,549769,1248031,37536,3.01,marginal
+17th Lok Sabha,Madhya Pradesh,DAMOH,PRAHALAD SINGH PATEL,Bharatiya Janata Party,704524,PRATAP SINGH,Indian National Congress,351113,1164226,353411,30.36,safe
+17th Lok Sabha,Madhya Pradesh,DEWAS,MAHENDRA SINGH SOLANKY,Bharatiya Janata Party,862429,PRAHLAD SINGH TIPANYA,Indian National Congress,490180,1398946,372249,26.61,safe
+17th Lok Sabha,Madhya Pradesh,DHAR,CHATTARSINGH DARBAR,Bharatiya Janata Party,722147,GIRWAL DINESH,Indian National Congress,566118,1344132,156029,11.61,competitive
+17th Lok Sabha,Madhya Pradesh,GUNA,"KRISHNA PAL SINGH ""Dr. K. P. YADAV""",Bharatiya Janata Party,614049,JYOTIRADITYA M. SCINDIA,Indian National Congress,488500,1178423,125549,10.65,competitive
+17th Lok Sabha,Madhya Pradesh,GWALIOR,VIVEK NARAYAN SHEJWALKAR,Bharatiya Janata Party,627250,ASHOK SINGH,Indian National Congress,480408,1196096,146842,12.28,competitive
+17th Lok Sabha,Madhya Pradesh,HOSHANGABAD,UDAY PRATAP SINGH,Bharatiya Janata Party,877927,SHAILENDRA DIWAN CHANDARBHAN SINGH,Indian National Congress,324245,1265869,553682,43.74,safe
+17th Lok Sabha,Madhya Pradesh,INDORE,SHANKAR LALWANI,Bharatiya Janata Party,1068569,PANKAJ SANGHVI,Indian National Congress,520815,1629108,547754,33.62,safe
+17th Lok Sabha,Madhya Pradesh,JABALPUR,RAKESH SINGH,Bharatiya Janata Party,826454,Pt. VIVEK KRISHNA TANKHA,Indian National Congress,371710,1263573,454744,35.99,safe
+17th Lok Sabha,Madhya Pradesh,KHAJURAHO,V.D. SHARMA (VISHNU DATT SHARMA),Bharatiya Janata Party,811135,MAHARANI KAVITA SINGH NATIRAJA,Indian National Congress,318753,1257783,492382,39.15,safe
+17th Lok Sabha,Madhya Pradesh,KHANDWA,NANDKUMAR SINGH CHOUHAN (NANDU BHAIYA),Bharatiya Janata Party,838909,ARUN SUBHASH CHANDRA YADAV,Indian National Congress,565566,1468138,273343,18.62,safe
+17th Lok Sabha,Madhya Pradesh,KHARGONE,GAJENDRA UMRAO SINGH PATEL,Bharatiya Janata Party,773550,DR. GOVIND SUBHAN MUJALDA,Indian National Congress,571040,1427607,202510,14.19,competitive
+17th Lok Sabha,Madhya Pradesh,MANDLA,FAGGAN SINGH KULASTE,Bharatiya Janata Party,737266,KAMAL SINGH MARAVI,Indian National Congress,639592,1517255,97674,6.44,competitive
+17th Lok Sabha,Madhya Pradesh,MANDSOUR,Sudheer Gupta,Bharatiya Janata Party,847786,Meenakshi Natarajan,Indian National Congress,471052,1370667,376734,27.49,safe
+17th Lok Sabha,Madhya Pradesh,MORENA,NARENDRA SINGH TOMAR,Bharatiya Janata Party,541689,RAMNIWAS RAWAT,Indian National Congress,428348,1137290,113341,9.97,competitive
+17th Lok Sabha,Madhya Pradesh,RAJGARH,RODMAL NAGAR,Bharatiya Janata Party,823824,MONA SUSTANI,Indian National Congress,392805,1260329,431019,34.2,safe
+17th Lok Sabha,Madhya Pradesh,RATLAM,GUMAN SINGH DAMOR,Bharatiya Janata Party,696103,KANTILAL BHURIA,Indian National Congress,605467,1400509,90636,6.47,competitive
+17th Lok Sabha,Madhya Pradesh,REWA,JANARDAN MISHRA,Bharatiya Janata Party,583745,"SIDDHARTH TIWARI ""RAJ""",Indian National Congress,270938,1013251,312807,30.87,safe
+17th Lok Sabha,Madhya Pradesh,SAGAR,RAJBAHADUR SINGH,Bharatiya Janata Party,646231,PRABHU SINGH THAKUR,Indian National Congress,340689,1037175,305542,29.46,safe
+17th Lok Sabha,Madhya Pradesh,SATNA,GANESH SINGH,Bharatiya Janata Party,588753,RAJARAM TRIPATHI,Indian National Congress,357280,1113656,231473,20.78,safe
+17th Lok Sabha,Madhya Pradesh,SHAHDOL,HIMADRI SINGH,Bharatiya Janata Party,747977,PRAMILA SINGH,Indian National Congress,344644,1237858,403333,32.58,safe
+17th Lok Sabha,Madhya Pradesh,SIDHI,Riti Pathak,Bharatiya Janata Party,698342,Ajay Arjun Singh,Indian National Congress,411818,1282705,286524,22.34,safe
+17th Lok Sabha,Madhya Pradesh,TIKAMGARH,Dr Virendra Kumar,Bharatiya Janata Party,672248,Ahirwar Kiran,Indian National Congress,324189,1096712,348059,31.74,safe
+17th Lok Sabha,Madhya Pradesh,UJJAIN,ANIL FIROJIYA,Bharatiya Janata Party,791663,BABULAL MALVIYA,Indian National Congress,426026,1252511,365637,29.19,safe
+17th Lok Sabha,Madhya Pradesh,VIDISHA,Ramakant Bhargava,Bharatiya Janata Party,853022,Shailendra Rameshchandra Patel,Indian National Congress,349938,1250244,503084,40.24,safe
+17th Lok Sabha,Maharashtra,Ahmadnagar,Dr. SUJAY RADHAKRISHNA VIKHEPATIL,Bharatiya Janata Party,704660,SANGRAM ARUNKAKA JAGTAP,Nationalist Congress Party,423186,1203797,281474,23.38,safe
+17th Lok Sabha,Maharashtra,Akola,Dhotre Sanjay Shamrao,Bharatiya Janata Party,554444,Ambedkar (Adv) Prakash Yashwant,Vanchit Bahujan Aaghadi,278848,1119440,275596,24.62,safe
+17th Lok Sabha,Maharashtra,Amravati,Navnit Ravi Rana,Independent,510947,Adsul Anandrao Vithoba,Shivsena,473996,1112385,36951,3.32,marginal
+17th Lok Sabha,Maharashtra,Aurangabad,Imtiaz Jaleel Syed,All India Majlis-E-Ittehadul Muslimeen,389042,Chandrakant Khaire,Shivsena,384550,1198221,4492,0.37,marginal
+17th Lok Sabha,Maharashtra,Baramati,Supriya Sule,Nationalist Congress Party,686714,Kanchan Rahul Kool,Bharatiya Janata Party,530940,1304728,155774,11.94,competitive
+17th Lok Sabha,Maharashtra,Beed,Pritam Gopinathrao Munde,Bharatiya Janata Party,678175,Bajrang Manohar Sonwane,Nationalist Congress Party,509807,1352399,168368,12.45,competitive
+17th Lok Sabha,Maharashtra,Bhandara - gondiya,Sunil Baburao Mendhe,Bharatiya Janata Party,650243,Panchabudhe Nana Jairam,Nationalist Congress Party,452849,1244931,197394,15.86,safe
+17th Lok Sabha,Maharashtra,Bhiwandi,KAPIL MORESHWAR PATIL,Bharatiya Janata Party,523583,TAWARE SURESH KASHINATH,Indian National Congress,367254,1005172,156329,15.55,safe
+17th Lok Sabha,Maharashtra,Buldhana,Jadhav Prataprao Ganpatrao,Shivsena,521977,Dr. Rajendra Bhaskarrav Shingne,Nationalist Congress Party,388690,1120359,133287,11.9,competitive
+17th Lok Sabha,Maharashtra,Chandrapur,Balubhau alias Suresh Narayan Dhanorkar,Indian National Congress,559507,Ahir Hansraj Gangaram,Bharatiya Janata Party,514744,1238474,44763,3.61,marginal
+17th Lok Sabha,Maharashtra,Dhule,Bhamre Subhash Ramrao,Bharatiya Janata Party,613533,Kunalbaba Rohidas Patil,Indian National Congress,384290,1085038,229243,21.13,safe
+17th Lok Sabha,Maharashtra,Dindori,Dr. Bharati Pravin Pawar,Bharatiya Janata Party,567470,Dhanraj Haribhau Mahale,Nationalist Congress Party,368691,1137631,198779,17.47,safe
+17th Lok Sabha,Maharashtra,Gadchiroli-Chimur,ASHOK MAHADEORAO NETE,Bharatiya Janata Party,519968,Dr. NAMDEO DALLUJI USENDI,Indian National Congress,442442,1142698,77526,6.78,competitive
+17th Lok Sabha,Maharashtra,Hatkanangle,Dhairyasheel Sambhajirao Mane,Shivsena,585776,Raju Anna Shetti,Swabhimani Paksha,489737,1252211,96039,7.67,competitive
+17th Lok Sabha,Maharashtra,Hingoli,Hemant Patil,Shivsena,586312,Wankhede Subhashrao Bapurao,Indian National Congress,308456,1157516,277856,24.0,safe
+17th Lok Sabha,Maharashtra,Jalgaon,Unmesh Bhaiyyasaheb Patil,Bharatiya Janata Party,713874,Gulabrao Baburao Deokar,Nationalist Congress Party,302257,1088277,411617,37.82,safe
+17th Lok Sabha,Maharashtra,Jalna,Danve Raosaheb Dadarao,Bharatiya Janata Party,698019,Autade Vilas Keshavrao,Indian National Congress,365204,1208139,332815,27.55,safe
+17th Lok Sabha,Maharashtra,Kalyan,Dr. SHRIKANT EKNATH SHINDE,Shivsena,559723,BABAJI BALARAM PATIL,Nationalist Congress Party,215380,890313,344343,38.68,safe
+17th Lok Sabha,Maharashtra,Kolhapur,Sanjay Sadashivrao Mandlik,Shivsena,749085,Dhananjay Mahadik,Nationalist Congress Party,478517,1330852,270568,20.33,safe
+17th Lok Sabha,Maharashtra,Latur,Sudhakar Tukaram Shrangare,Bharatiya Janata Party,661495,Kamant Machhindra Gunwantrao,Indian National Congress,372384,1176542,289111,24.57,safe
+17th Lok Sabha,Maharashtra,Madha,Ranjeetsinha Hindurao Naik- Nimbalkar,Bharatiya Janata Party,586314,Sanjaymama Vitthalrao Shinde,Nationalist Congress Party,500550,1216319,85764,7.05,competitive
+17th Lok Sabha,Maharashtra,Maval,SHRIRANG APPA CHANDU BARNE,Shivsena,720663,PARTH AJIT PAWAR,Nationalist Congress Party,504750,1368872,215913,15.77,safe
+17th Lok Sabha,Maharashtra,Mumbai   South,Arvind Ganpat Sawant,Shivsena,421937,Deora Milind Murli,Indian National Congress,321870,801611,100067,12.48,competitive
+17th Lok Sabha,Maharashtra,Mumbai North,Gopal Shetty,Bharatiya Janata Party,706678,Urmila Matondkar,Indian National Congress,241431,989759,465247,47.01,safe
+17th Lok Sabha,Maharashtra,Mumbai North East,Manoj Kotak,Bharatiya Janata Party,514599,Patil Sanjay Dina,Nationalist Congress Party,288113,908993,226486,24.92,safe
+17th Lok Sabha,Maharashtra,Mumbai North West,Gajanan Kirtikar,Shivsena,570063,Sanjay Nirupam,Indian National Congress,309735,941497,260328,27.65,safe
+17th Lok Sabha,Maharashtra,Mumbai North central,POONAM MAHAJAN,Bharatiya Janata Party,486672,DUTT PRIYA SUNIL,Indian National Congress,356667,901784,130005,14.42,competitive
+17th Lok Sabha,Maharashtra,Mumbai South central,Rahul Ramesh Shewale,Shivsena,424913,Eknath M. Gaikwad,Indian National Congress,272774,797250,152139,19.08,safe
+17th Lok Sabha,Maharashtra,Nagpur,NITIN JAIRAM GADKARI,Bharatiya Janata Party,660221,NANA PATOLE,Indian National Congress,444212,1186051,216009,18.21,safe
+17th Lok Sabha,Maharashtra,Nanded,Prataprao Patil Chikhalikar,Bharatiya Janata Party,486806,Ashok Shankarrao Chavan,Indian National Congress,446658,1129350,40148,3.55,marginal
+17th Lok Sabha,Maharashtra,Nandurbar,Dr. Heena Vijaykumar Gavit,Bharatiya Janata Party,639136,Adv. K. C. Padavi,Indian National Congress,543507,1281738,95629,7.46,competitive
+17th Lok Sabha,Maharashtra,Nashik,Godse Hemant Tukaram,Shivsena,563599,Sameer Magan Bhujbal,Nationalist Congress Party,271395,1121232,292204,26.06,safe
+17th Lok Sabha,Maharashtra,Osmanabad,Omprakash Bhupalsinh Alias Pawan Rajenimbalkar,Shivsena,596640,Ranajagjitsinha Padmasinha Patil,Nationalist Congress Party,469074,1204730,127566,10.59,competitive
+17th Lok Sabha,Maharashtra,Palghar,Rajendra Dhedya Gavit,Shivsena,580479,Baliram Sukur Jadhav,Bahujan Vikas Aaghadi,491596,1201941,88883,7.39,competitive
+17th Lok Sabha,Maharashtra,Parbhani,JADHAV SANJAY (BANDU) HARIBHAU,Shivsena,538941,RAJESH UTTAMRAO VITEKAR,Nationalist Congress Party,496742,1252782,42199,3.37,marginal
+17th Lok Sabha,Maharashtra,Pune,Girish Bhalchandra Bapat,Bharatiya Janata Party,632835,Mohan Joshi,Indian National Congress,308207,1035236,324628,31.36,safe
+17th Lok Sabha,Maharashtra,Raigad,Tatkare Sunil Dattatray,Nationalist Congress Party,486968,Anant Geete,Shivsena,455530,1025467,31438,3.07,marginal
+17th Lok Sabha,Maharashtra,Ramtek,Krupal Balaji Tumane,Shivsena,597126,Kishore Uttamrao Gajbhiye,Indian National Congress,470343,1196744,126783,10.59,competitive
+17th Lok Sabha,Maharashtra,Ratnagiri - sindhudurg,Vinayak Raut,Shivsena,458022,Nilesh Narayan Rane,"Maharashtra Swabhimaan Paksh,",279700,901102,178322,19.79,safe
+17th Lok Sabha,Maharashtra,Raver,Khadse Raksha Nikhil,Bharatiya Janata Party,655386,Dr.Ulhas Vasudeo Patil,Indian National Congress,319504,1092971,335882,30.73,safe
+17th Lok Sabha,Maharashtra,Sangli,Sanjaykaka Patil,Bharatiya Janata Party,508995,Vishal Prakashbapu Patil,Swabhimani Paksha,344643,1189958,164352,13.81,competitive
+17th Lok Sabha,Maharashtra,Satara,SHRIMANT CHH. UDAYANRAJE PRATAPSINHMAHARAJ BHONSLE,Nationalist Congress Party,579026,NARENDRA ANNASAHEB PATIL,Shivsena,452498,1115434,126528,11.34,competitive
+17th Lok Sabha,Maharashtra,Shirdi,SADASHIV KISAN LOKHANDE,Shivsena,486820,KAMBLE BHAUSAHEB MALHARI,Indian National Congress,366625,1029362,120195,11.68,competitive
+17th Lok Sabha,Maharashtra,Shirur,Dr. Amol Ramsing Kolhe,Nationalist Congress Party,635830,Adhalrao Shivaji Dattatrey,Shivsena,577347,1293117,58483,4.52,marginal
+17th Lok Sabha,Maharashtra,Solapur,SHRI. SHA. BRA. DR. JAI SIDHESHWAR SHIVACHARY MAHASWAMIJI,Bharatiya Janata Party,524985,SHINDE SUSHILKUMAR SAMBHAJIRAO,Indian National Congress,366377,1084514,158608,14.62,competitive
+17th Lok Sabha,Maharashtra,Thane,RAJAN BABURAO VICHARE,Shivsena,740969,ANAND PRAKASH PARANJPE,Nationalist Congress Party,328824,1170518,412145,35.21,safe
+17th Lok Sabha,Maharashtra,Wardha,Ramdas Chandrabhanji Tadas,Bharatiya Janata Party,578364,Charulata Rao Tokas,Indian National Congress,391173,1072570,187191,17.45,safe
+17th Lok Sabha,Maharashtra,Yavatmal-Washim,Bhavana Pundlikrao Gawali,Shivsena,542098,Thakre Manikrao Govindrao,Indian National Congress,424159,1174220,117939,10.04,competitive
+17th Lok Sabha,Manipur,Inner manipur,DR RAJKUMAR RANJAN SINGH,Bharatiya Janata Party,263632,OINAM NABAKISHORE SINGH,Indian National Congress,245877,759301,17755,2.34,marginal
+17th Lok Sabha,Manipur,Outer manipur,Lorho S. Pfoze,Naga Peoples Front,363527,Houlim Shokhopao Mate,Bharatiya Janata Party,289745,858029,73782,8.6,competitive
+17th Lok Sabha,Meghalaya,Shillong,VINCENT H. PALA,Indian National Congress,419689,JEMINO MAWTHOH,United Democratic Party,267256,784190,152433,19.44,safe
+17th Lok Sabha,Meghalaya,Tura,AGATHA K. SANGMA,National People's Party,304455,DR. MUKUL SANGMA,Indian National Congress,240425,583041,64030,10.98,competitive
+17th Lok Sabha,Mizoram,MIZORAM,C LALROSANGA,Mizo National Front,224286,LALNGHINGLOVA HMAR,Independent,216146,499621,8140,1.63,marginal
+17th Lok Sabha,NCT OF Delhi,CHANDNI CHOWK,HARSH VARDHAN,Bharatiya Janata Party,519055,JAI PRAKASH AGARWAL,Indian National Congress,290910,980390,228145,23.27,safe
+17th Lok Sabha,NCT OF Delhi,EAST DELHI,GAUTAM GAMBHIR,Bharatiya Janata Party,696156,ARVINDER SINGH LOVELY,Indian National Congress,304934,1257821,391222,31.1,safe
+17th Lok Sabha,NCT OF Delhi,NEW DELHI,MEENAKASHI LEKHI,Bharatiya Janata Party,504206,AJAY MAKAN,Indian National Congress,247702,920541,256504,27.86,safe
+17th Lok Sabha,NCT OF Delhi,NORTH EAST DELHI,MANOJ TIWARI,Bharatiya Janata Party,787799,SHEILA DIKSHIT,Indian National Congress,421697,1461475,366102,25.05,safe
+17th Lok Sabha,NCT OF Delhi,NORTH WEST DELHI,HANS RAJ HANS,Bharatiya Janata Party,848663,GUGAN SINGH,Aam Aadmi Party,294766,1402962,553897,39.48,safe
+17th Lok Sabha,NCT OF Delhi,SOUTH DELHI,RAMESH BIDHURI,Bharatiya Janata Party,687014,RAGHAV CHADHA,Aam Aadmi Party,319971,1214222,367043,30.23,safe
+17th Lok Sabha,NCT OF Delhi,WEST DELHI,PARVESH SAHIB SINGH VERMA,Bharatiya Janata Party,865648,MAHABAL MISHRA,Indian National Congress,287162,1441601,578486,40.13,safe
+17th Lok Sabha,Nagaland,Nagaland,Tokheho Yepthomi,Nationalist Democratic Progressive Party,500510,K L Chishi,Indian National Congress,484166,1006357,16344,1.62,marginal
+17th Lok Sabha,Odisha,Aska,Pramila Bisoyi,Biju Janata Dal,552749,Anita Subhadarshini,Bharatiya Janata Party,348042,1013862,204707,20.19,safe
+17th Lok Sabha,Odisha,Balasore,PRATAP CHANDRA SARANGI,Bharatiya Janata Party,483858,RABINDRA KUMAR JENA,Biju Janata Dal,470902,1157871,12956,1.12,marginal
+17th Lok Sabha,Odisha,Bargarh,Suresh Pujari,Bharatiya Janata Party,581245,Prasanna Acharya,Biju Janata Dal,517306,1247912,63939,5.12,competitive
+17th Lok Sabha,Odisha,Berhampur,CHANDRA SEKHAR SAHU,Biju Janata Dal,443843,BHRUGU BAXIPATRA,Bharatiya Janata Party,348999,989910,94844,9.58,competitive
+17th Lok Sabha,Odisha,Bhadrak,MANJULATA MANDAL,Biju Janata Dal,512305,AVIMANYU SETHI,Bharatiya Janata Party,483502,1223754,28803,2.35,marginal
+17th Lok Sabha,Odisha,Bhubaneswar,APARAJITA SARANGI,Bharatiya Janata Party,486991,Arup Mohan Patnaik,Biju Janata Dal,463152,1005215,23839,2.37,marginal
+17th Lok Sabha,Odisha,Bolangir,Sangeeta Kumari Singh Deo,Bharatiya Janata Party,498086,Kalikesh Narayan Singh Deo,Biju Janata Dal,478570,1306705,19516,1.49,marginal
+17th Lok Sabha,Odisha,Cuttack,BHARTRUHARI MAHTAB,Biju Janata Dal,524592,PRAKASH MISHRA,Bharatiya Janata Party,403391,1059490,121201,11.44,competitive
+17th Lok Sabha,Odisha,Dhenkanal,MAHESH SAHOO,Biju Janata Dal,522884,RUDRA NARAYAN PANY,Bharatiya Janata Party,487472,1131522,35412,3.13,marginal
+17th Lok Sabha,Odisha,Jagatsinghpur,RAJASHREE MALLICK,Biju Janata Dal,619985,BIBHU PRASAD TARAI,Bharatiya Janata Party,348330,1229190,271655,22.1,safe
+17th Lok Sabha,Odisha,Jajpur,SARMISTHA SETHI,Biju Janata Dal,544020,AMIYA KANTA MALLICK,Bharatiya Janata Party,442327,1092084,101693,9.31,competitive
+17th Lok Sabha,Odisha,Kalahandi,BASANTA KUMAR PANDA,Bharatiya Janata Party,433074,PUSPENDRA SINGH DEO,Biju Janata Dal,406260,1228292,26814,2.18,marginal
+17th Lok Sabha,Odisha,Kandhamal,ACHYUTANANDA SAMANTA,Biju Janata Dal,461679,Mahameghabahan Aira Kharabela Swain,Bharatiya Janata Party,312463,941985,149216,15.84,safe
+17th Lok Sabha,Odisha,Kendrapara,Anubhav Mohanty,Biju Janata Dal,628939,BAIJAYANT PANDA,Bharatiya Janata Party,476355,1236466,152584,12.34,competitive
+17th Lok Sabha,Odisha,Keonjhar,Chandrani Murmu,Biju Janata Dal,526359,Ananta Nayak,Bharatiya Janata Party,460156,1176292,66203,5.63,competitive
+17th Lok Sabha,Odisha,Koraput,SAPTAGIRI SANKAR ULAKA,Indian National Congress,371129,KAUSALYA HIKAKA,Biju Janata Dal,367516,1080161,3613,0.33,marginal
+17th Lok Sabha,Odisha,Mayurbhanj,BISHWESWAR TUDU,Bharatiya Janata Party,483812,DR DEBASHIS MARNDI,Biju Janata Dal,458556,1150357,25256,2.2,marginal
+17th Lok Sabha,Odisha,Nabarangpur,RAMESH CHANDRA MAJHI,Biju Janata Dal,392504,PRADEEP KUMAR MAJHI,Indian National Congress,350870,1159700,41634,3.59,marginal
+17th Lok Sabha,Odisha,Puri,PINAKI MISRA,Biju Janata Dal,538321,Dr Sambit Patra,Bharatiya Janata Party,526607,1135620,11714,1.03,marginal
+17th Lok Sabha,Odisha,Sambalpur,NITESH GANGA DEB,Bharatiya Janata Party,473770,NALINI KANTA PRADHAN,Biju Janata Dal,464608,1124455,9162,0.81,marginal
+17th Lok Sabha,Odisha,Sundargarh,Jual Oram,Bharatiya Janata Party,500056,Sunita Biswal,Biju Janata Dal,276991,1100129,223065,20.28,safe
+17th Lok Sabha,Puducherry,Puducherry,Ve. VAITHILINGAM,Indian National Congress,444981,Dr. NARAYANASAMY KESAVAN,All India N.R. Congress,247956,790760,197025,24.92,safe
+17th Lok Sabha,Punjab,Amritsar,GURJEET SINGH AUJLA,Indian National Congress,445032,HARDEEP SINGH PURI,Bharatiya Janata Party,345406,859513,99626,11.59,competitive
+17th Lok Sabha,Punjab,Anandpur Sahib,Manish Tewari,Indian National Congress,428045,Professor Prem Singh Chandumajra,Shiromani Akali Dal,381161,1081727,46884,4.33,marginal
+17th Lok Sabha,Punjab,Bathinda,Harsimrat Kaur Badal,Shiromani Akali Dal,492824,Amrinder Singh Raja Warring,Indian National Congress,471052,1200810,21772,1.81,marginal
+17th Lok Sabha,Punjab,Faridkot,Mohammad Sadique,Indian National Congress,419065,Gulzar Singh Ranike,Shiromani Akali Dal,335809,974947,83256,8.54,competitive
+17th Lok Sabha,Punjab,Fatehgarh Sahib,AMAR SINGH,Indian National Congress,411651,DARBARA SINGH GURU,Shiromani Akali Dal,317753,985948,93898,9.52,competitive
+17th Lok Sabha,Punjab,Firozpur,SUKHBIR SINGH BADAL,Shiromani Akali Dal,633427,SHER SINGH GHUBAYA,Indian National Congress,434577,1172033,198850,16.97,safe
+17th Lok Sabha,Punjab,Gurdaspur,SUNNY DEOL,Bharatiya Janata Party,558719,SUNIL JAKHAR,Indian National Congress,476260,1103887,82459,7.47,competitive
+17th Lok Sabha,Punjab,Hoshiarpur,SOM PARKASH,Bharatiya Janata Party,421320,Dr. RAJ KUMAR CHABBEWAL,Indian National Congress,372790,990791,48530,4.9,marginal
+17th Lok Sabha,Punjab,Jalandhar,Santokh Singh Chaudhary,Indian National Congress,385712,Charanjit Singh Atwal,Shiromani Akali Dal,366221,1018998,19491,1.91,marginal
+17th Lok Sabha,Punjab,Khadoor Sahib,JASBIR SINGH GILL (DIMPA),Indian National Congress,459710,BIBI JAGIR KAUR,Shiromani Akali Dal,319137,1046032,140573,13.44,competitive
+17th Lok Sabha,Punjab,Ludhiana,RAVNEET SINGH BITTU,Indian National Congress,383795,SIMARJEET SINGH BAINS,Lok Insaaf Party,307423,1046955,76372,7.29,competitive
+17th Lok Sabha,Punjab,Patiala,Preneet Kaur,Indian National Congress,532027,Surjit Singh Rakhra,Shiromani Akali Dal,369309,1177903,162718,13.81,competitive
+17th Lok Sabha,Punjab,Sangrur,BHAGWANT MANN,Aam Aadmi Party,413561,KEWAL SINGH DHILLON,Indian National Congress,303350,1105888,110211,9.97,competitive
+17th Lok Sabha,Rajasthan,Ajmer,Bhagirath Chaudhary,Bharatiya Janata Party,815076,Riju Jhunjhunwala,Indian National Congress,398652,1262214,416424,32.99,safe
+17th Lok Sabha,Rajasthan,Alwar,Balak Nath,Bharatiya Janata Party,760201,Bhanwar Jitendra Singh,Indian National Congress,430230,1265674,329971,26.07,safe
+17th Lok Sabha,Rajasthan,BHARATPUR,RANJEETA KOLI,Bharatiya Janata Party,707992,ABHIJEET KUMAR JATAV,Indian National Congress,389593,1146797,318399,27.76,safe
+17th Lok Sabha,Rajasthan,Banswara,KANAKMAL KATARA,Bharatiya Janata Party,711709,TARACHAND BHAGORA,Indian National Congress,406245,1439671,305464,21.22,safe
+17th Lok Sabha,Rajasthan,Barmer,KAILASH CHOUDHARY,Bharatiya Janata Party,846526,MANVENDRA SINGH,Indian National Congress,522718,1422271,323808,22.77,safe
+17th Lok Sabha,Rajasthan,Bhilwara,SUBHASH CHANDRA BAHERIA,Bharatiya Janata Party,938160,RAM PAL SHARMA,Indian National Congress,326160,1310513,612000,46.7,safe
+17th Lok Sabha,Rajasthan,Bikaner (SC),ARJUN RAM MEGHWAL,Bharatiya Janata Party,657743,MADAN GOPAL MEGHWAL,Indian National Congress,393662,1099598,264081,24.02,safe
+17th Lok Sabha,Rajasthan,Chittorgarh,Chandra Prakash Joshi,Bharatiya Janata Party,982942,Gopal Singh Shekhawat,Indian National Congress,406695,1458760,576247,39.5,safe
+17th Lok Sabha,Rajasthan,Churu,RAHUL KASWAN,Bharatiya Janata Party,792999,RAFIQUE MANDELIA,Indian National Congress,458597,1328422,334402,25.17,safe
+17th Lok Sabha,Rajasthan,Dausa,Jaskaur Meena,Bharatiya Janata Party,548733,Savita Meena,Indian National Congress,470289,1062834,78444,7.38,competitive
+17th Lok Sabha,Rajasthan,Ganganagar,NIHAL CHAND,Bharatiya Janata Party,897177,BHARAT RAM MEGHWAL,Indian National Congress,490199,1451765,406978,28.03,safe
+17th Lok Sabha,Rajasthan,JHALAWAR-BARAN,DUSHYANT SINGH,Bharatiya Janata Party,887400,PRAMOD SHARMA,Indian National Congress,433472,1369868,453928,33.14,safe
+17th Lok Sabha,Rajasthan,Jaipur,Ramcharan Bohra,Bharatiya Janata Party,924065,Jyoti Khandelwal,Indian National Congress,493439,1456404,430626,29.57,safe
+17th Lok Sabha,Rajasthan,Jaipur Rural,COL. RAJYAVARDHAN RATHORE,Bharatiya Janata Party,820132,KRISHNA POONIA,Indian National Congress,426961,1276693,393171,30.8,safe
+17th Lok Sabha,Rajasthan,Jalore,Devaji Patel,Bharatiya Janata Party,772833,Ratan Devasi,Indian National Congress,511723,1361619,261110,19.18,safe
+17th Lok Sabha,Rajasthan,Jhunjhunu,NARENDRA KUMAR,Bharatiya Janata Party,738163,SHARWAN KUMAR S/O GOKAL RAM,Indian National Congress,435616,1198927,302547,25.23,safe
+17th Lok Sabha,Rajasthan,Jodhpur,Gajendra Singh Shekhawat,Bharatiya Janata Party,788888,Vaibhav Gehlot,Indian National Congress,514448,1346243,274440,20.39,safe
+17th Lok Sabha,Rajasthan,KARAULI-DHOLPUR,MANOJ RAJORIA,Bharatiya Janata Party,526443,SANJAY KUMAR,Indian National Congress,428761,998044,97682,9.79,competitive
+17th Lok Sabha,Rajasthan,Kota,OM BIRLA,Bharatiya Janata Party,800051,RAMNARAIN MEENA,Indian National Congress,520374,1367034,279677,20.46,safe
+17th Lok Sabha,Rajasthan,Nagaur,HANUMAN BENIWAL,Rashtriya Loktantrik Party,660051,DR. JYOTI MIRDHA,Indian National Congress,478791,1203124,181260,15.07,safe
+17th Lok Sabha,Rajasthan,Pali,P. P. CHAUDHARY,Bharatiya Janata Party,900149,BADRIRAM JAKHAR,Indian National Congress,418552,1359799,481597,35.42,safe
+17th Lok Sabha,Rajasthan,Rajsamand,Diya Kumari,Bharatiya Janata Party,863039,Devkinandan (Kaka),Indian National Congress,311123,1239845,551916,44.51,safe
+17th Lok Sabha,Rajasthan,Sikar,Sumedhanand Saraswati,Bharatiya Janata Party,772104,Subhash Maharia,Indian National Congress,474948,1326969,297156,22.39,safe
+17th Lok Sabha,Rajasthan,TONK-SAWAI MADHOPUR,Sukhbir Singh Jaunapuria,Bharatiya Janata Party,644319,Namonarayan,Indian National Congress,533028,1233458,111291,9.02,competitive
+17th Lok Sabha,Rajasthan,Udaipur,ARJUNLAL MEENA,Bharatiya Janata Party,871548,RAGHUVIR SINGH MEENA,Indian National Congress,433634,1454518,437914,30.11,safe
+17th Lok Sabha,Sikkim,Sikkim,INDRA HANG SUBBA,Sikkim Krantikari Morcha,166922,DEK BAHADUR KATWAL,Sikkim Democratic Front,154489,351746,12433,3.53,marginal
+17th Lok Sabha,Tamil Nadu,Arakkonam,S. JAGATHRAKSHAKAN,Dravida Munnetra Kazhagam,672190,A.K. MOORTHY,Pattali Makkal Katchi,343234,1178060,328956,27.92,safe
+17th Lok Sabha,Tamil Nadu,Arani,VISHNU PRASAD M K,Indian National Congress,617760,ELUMALAI V,All India Anna Dravida Munnetra Kazhagam,386954,1143907,230806,20.18,safe
+17th Lok Sabha,Tamil Nadu,Chennai North,Dr. KALANIDHI VEERASWAMY,Dravida Munnetra Kazhagam,590986,ALAGAAPURAM R. MOHANRAJ,Desiya Murpokku Dravida Kazhagam,129468,955545,461518,48.3,safe
+17th Lok Sabha,Tamil Nadu,Chennai South,T.SUMATHY (A) THAMIZHACHI THANGAPANDIAN,Dravida Munnetra Kazhagam,564872,Dr.J.JAYAVARDHAN,All India Anna Dravida Munnetra Kazhagam,302649,1125857,262223,23.29,safe
+17th Lok Sabha,Tamil Nadu,Chennai central,DAYANIDHI MARAN,Dravida Munnetra Kazhagam,448911,SAM PAUL. S.R.,Pattali Makkal Katchi,147391,785450,301520,38.39,safe
+17th Lok Sabha,Tamil Nadu,Chidambaram,THIRUMAAVALAVAN THOL,Viduthalai Chiruthaigal Katchi,500229,CHANDRASEKAR P,All India Anna Dravida Munnetra Kazhagam,497010,1153192,3219,0.28,marginal
+17th Lok Sabha,Tamil Nadu,Coimbatore,NATARAJAN. P.R,Communist Party of India  (Marxist),571150,RADHAKRISHNAN. C.P,Bharatiya Janata Party,392007,1250885,179143,14.32,competitive
+17th Lok Sabha,Tamil Nadu,Cuddalore,T. R. V .S. RAMESH,Dravida Munnetra Kazhagam,522160,Dr. R. GOVINDASAMY,Pattali Makkal Katchi,378177,1043202,143983,13.8,competitive
+17th Lok Sabha,Tamil Nadu,Dharmapuri,DNV SENTHILKUMAR. S.,Dravida Munnetra Kazhagam,574988,ANBUMANI RAMADOSS,Pattali Makkal Katchi,504235,1223205,70753,5.78,competitive
+17th Lok Sabha,Tamil Nadu,Dindigul,"VELUSAMY, P.",Dravida Munnetra Kazhagam,746523,"JOTHIMUTHU, K.",Pattali Makkal Katchi,207551,1160046,538972,46.46,safe
+17th Lok Sabha,Tamil Nadu,Erode,GANESHAMURTHI A,Dravida Munnetra Kazhagam,563591,MANIMARAN G,All India Anna Dravida Munnetra Kazhagam,352973,1067863,210618,19.72,safe
+17th Lok Sabha,Tamil Nadu,Kallakurichi,Gautham Sigamani Pon,Dravida Munnetra Kazhagam,721713,Sudhish L K,Desiya Murpokku Dravida Kazhagam,321794,1204375,399919,33.21,safe
+17th Lok Sabha,Tamil Nadu,Kancheepuram,Selvam.G,Dravida Munnetra Kazhagam,684004,Maragatham K,All India Anna Dravida Munnetra Kazhagam,397372,1237612,286632,23.16,safe
+17th Lok Sabha,Tamil Nadu,Kanniyakumari,Vasanthakumar. H,Indian National Congress,627235,RADHAKRISHNAN. P,Bharatiya Janata Party,367302,1048377,259933,24.79,safe
+17th Lok Sabha,Tamil Nadu,Karur,Jothimani S,Indian National Congress,695697,Thambidurai M,All India Anna Dravida Munnetra Kazhagam,275151,1103165,420546,38.12,safe
+17th Lok Sabha,Tamil Nadu,Krishnagiri,Dr.A.CHELLAKUMAR,Indian National Congress,611298,K.P.MUNUSAMY,All India Anna Dravida Munnetra Kazhagam,454533,1161369,156765,13.5,competitive
+17th Lok Sabha,Tamil Nadu,Madurai,VENKATESAN S,Communist Party of India  (Marxist),447075,RAJ SATYEN V.V.R,All India Anna Dravida Munnetra Kazhagam,307680,1016026,139395,13.72,competitive
+17th Lok Sabha,Tamil Nadu,Mayiladuthurai,RAMALINGAM. S,Dravida Munnetra Kazhagam,599292,ASAIMANI. S,All India Anna Dravida Munnetra Kazhagam,337978,1097243,261314,23.82,safe
+17th Lok Sabha,Tamil Nadu,Nagapattinam,SELVARAJ M,Communist Party of India,522892,SARAVANAN M,All India Anna Dravida Munnetra Kazhagam,311539,1002208,211353,21.09,safe
+17th Lok Sabha,Tamil Nadu,Namakkal,CHINRAJ A.K.P,Dravida Munnetra Kazhagam,626293,KALIAPPAN P,All India Anna Dravida Munnetra Kazhagam,361142,1133774,265151,23.39,safe
+17th Lok Sabha,Tamil Nadu,Nilgiris,"RAJA, A.",Dravida Munnetra Kazhagam,547832,"THIYAGARAJAN, M.",All India Anna Dravida Munnetra Kazhagam,342009,1010719,205823,20.36,safe
+17th Lok Sabha,Tamil Nadu,Perambalur,"Dr.PAARIVENDHAR, T. R",Dravida Munnetra Kazhagam,683697,"SIVAPATHY, N.R",All India Anna Dravida Munnetra Kazhagam,280179,1102767,403518,36.59,safe
+17th Lok Sabha,Tamil Nadu,Pollachi,SHANMUGA SUNDARAM. K,Dravida Munnetra Kazhagam,554230,MAHENDRAN. C,All India Anna Dravida Munnetra Kazhagam,378347,1081875,175883,16.26,safe
+17th Lok Sabha,Tamil Nadu,Ramanathapuram,K. NAVASKANI,Indian Union Muslim League,469943,NAINAR NAGENTHRAN,Bharatiya Janata Party,342821,1066146,127122,11.92,competitive
+17th Lok Sabha,Tamil Nadu,Salem,PARTHIBAN.S.R,Dravida Munnetra Kazhagam,606302,SARAVANAN.K.R.S,All India Anna Dravida Munnetra Kazhagam,459376,1255459,146926,11.7,competitive
+17th Lok Sabha,Tamil Nadu,Sivaganga,KARTI P CHIDAMBARAM,Indian National Congress,566104,H.RAJA,Bharatiya Janata Party,233860,1084468,332244,30.64,safe
+17th Lok Sabha,Tamil Nadu,Sriperumbudur,Baalu.T.R.,Dravida Munnetra Kazhagam,793281,Vaithilingam A,Pattali Makkal Katchi,285326,1406782,507955,36.11,safe
+17th Lok Sabha,Tamil Nadu,Tenkasi,DHANUSH.M.KUMAR,Dravida Munnetra Kazhagam,476156,Dr.KRISHNASAMY.K,All India Anna Dravida Munnetra Kazhagam,355870,1065569,120286,11.29,competitive
+17th Lok Sabha,Tamil Nadu,Thanjavur,"PALANIMANICKAM,S.S.",Dravida Munnetra Kazhagam,588978,"NATARAJAN,N.R .",Tamil Maanila Congress  (Moopanar),220849,1059223,368129,34.75,safe
+17th Lok Sabha,Tamil Nadu,Theni,"RAVEENDRANATH KUMAR, P",All India Anna Dravida Munnetra Kazhagam,504813,"ELANGOVAN, E.V.K.S.",Indian National Congress,428120,1173489,76693,6.54,competitive
+17th Lok Sabha,Tamil Nadu,Thiruvallur,Dr.K.Jayakumar,Indian National Congress,767292,Dr.P.Venugopal,All India Anna Dravida Munnetra Kazhagam,410337,1408189,356955,25.35,safe
+17th Lok Sabha,Tamil Nadu,Thoothukkudi,KANIMOZHI KARUNANIDHI,Dravida Munnetra Kazhagam,563143,DR. TAMILISAI SOUNDARARAJAN,Bharatiya Janata Party,215934,991263,347209,35.03,safe
+17th Lok Sabha,Tamil Nadu,Tiruchirappalli,Thirunavukkarasar. SU,Indian National Congress,621285,DR.Elangovan. V,Desiya Murpokku Dravida Kazhagam,161999,1048062,459286,43.82,safe
+17th Lok Sabha,Tamil Nadu,Tirunelveli,GNANATHIRAVIAM S,Dravida Munnetra Kazhagam,522623,PAUL MANOJ PANDIAN,All India Anna Dravida Munnetra Kazhagam,337166,1039761,185457,17.84,safe
+17th Lok Sabha,Tamil Nadu,Tiruppur,"SUBBARAYAN, K.",Communist Party of India,508725,"ANANDAN, M.S.M.",All India Anna Dravida Munnetra Kazhagam,415357,1119584,93368,8.34,competitive
+17th Lok Sabha,Tamil Nadu,Tiruvannamalai,ANNADURAI C N,Dravida Munnetra Kazhagam,666272,AGRI KRISHNAMURTHY S S,All India Anna Dravida Munnetra Kazhagam,362085,1151729,304187,26.41,safe
+17th Lok Sabha,Tamil Nadu,Viluppuram,RAVIKUMAR D,Dravida Munnetra Kazhagam,559585,VADIVEL RAVANAN S,Pattali Makkal Katchi,431517,1135540,128068,11.28,competitive
+17th Lok Sabha,Tamil Nadu,Virudhunagar,"MANICKAM TAGORE, B.",Indian National Congress,470883,"ALAGARSAMY, R.",Desiya Murpokku Dravida Kazhagam,316329,1074735,154554,14.38,competitive
+17th Lok Sabha,Telangana,Adilabad,SOYAM BAPU RAO,Bharatiya Janata Party,377374,Godam Nagesh,Telangana Rashtra Samithi,318814,1063730,58560,5.51,competitive
+17th Lok Sabha,Telangana,Bhongir,Komati Reddy Venkat Reddy,Indian National Congress,532795,Dr. Boora Narsaiah Goud,Telangana Rashtra Samithi,527576,1212631,5219,0.43,marginal
+17th Lok Sabha,Telangana,CHEVELLA,Dr. G. Ranjith Reddy,Telangana Rashtra Samithi,528148,Konda Vishweshwar Reddy,Indian National Congress,513831,1300194,14317,1.1,marginal
+17th Lok Sabha,Telangana,Hyderabad,ASADUDDIN OWAISI,All India Majlis-E-Ittehadul Muslimeen,517471,Dr. BHAGAVANTH RAO,Bharatiya Janata Party,235285,877872,282186,32.14,safe
+17th Lok Sabha,Telangana,Karimnagar,BANDI SANJAY KUMAR,Bharatiya Janata Party,498276,BOIANAPALLI VINOD KUMAR,Telangana Rashtra Samithi,408768,1147697,89508,7.8,competitive
+17th Lok Sabha,Telangana,Khammam,NAMA NAGESWR RAO,Telangana Rashtra Samithi,567459,RENUKA CHOWDHURY,Indian National Congress,399397,1139831,168062,14.74,competitive
+17th Lok Sabha,Telangana,Mahabubabad,Kavitha Malothu,Telangana Rashtra Samithi,462109,Balaram Naik Porika,Indian National Congress,315446,983535,146663,14.91,competitive
+17th Lok Sabha,Telangana,Mahbubnagar,MANNE SRINIVAS REDDY,Telangana Rashtra Samithi,411402,ARUNA D.K,Bharatiya Janata Party,333573,984634,77829,7.9,competitive
+17th Lok Sabha,Telangana,Malkajgiri,ANUMULA REVANTH REDDY,Indian National Congress,603748,RAJASHEKAR REDDY MARRI,Telangana Rashtra Samithi,592829,1563063,10919,0.7,marginal
+17th Lok Sabha,Telangana,Medak,Kotha Prabhakar Reddy,Telangana Rashtra Samithi,596048,Anil Kumar Gali,Indian National Congress,279621,1150223,316427,27.51,safe
+17th Lok Sabha,Telangana,Nagarkurnool,POTHUGANTI RAMULU,Telangana Rashtra Samithi,499672,DR MALLU RAVI,Indian National Congress,309924,989847,189748,19.17,safe
+17th Lok Sabha,Telangana,Nalgonda,UTTAM KUMAR REDDY NALAMADA,Indian National Congress,526028,VEMIREDDY NARASIMHA REDDY,Telangana Rashtra Samithi,500346,1175703,25682,2.18,marginal
+17th Lok Sabha,Telangana,Nizamabad,ARVIND DHARMAPURI,Bharatiya Janata Party,480584,KALVAKUNTLA KAVITHA,Telangana Rashtra Samithi,409709,1062768,70875,6.67,competitive
+17th Lok Sabha,Telangana,Peddapalle,Venkatesh Netha Borlakunta,Telangana Rashtra Samithi,441321,Agam Chandrasekhar,Indian National Congress,346141,970051,95180,9.81,competitive
+17th Lok Sabha,Telangana,Secundrabad,G . KISHAN REDDY,Bharatiya Janata Party,384780,TALASANI SAI KIRAN YADAV,Telangana Rashtra Samithi,322666,915106,62114,6.79,competitive
+17th Lok Sabha,Telangana,Warangal,DAYAKAR PASUNOORI,Telangana Rashtra Samithi,612498,DOMMATI SAMBAIAH,Indian National Congress,262200,1061645,350298,33.0,safe
+17th Lok Sabha,Telangana,Zahirabad,B.B.PATIL,Telangana Rashtra Samithi,434244,MADAN MOHAN RAO,Indian National Congress,428015,1044365,6229,0.6,marginal
+17th Lok Sabha,Tripura,Tripura East,Rebati Tripura,Bharatiya Janata Party,482126,Maharaj kumari Pragya DebBurman,Indian National Congress,277836,1045417,204290,19.54,safe
+17th Lok Sabha,Tripura,Tripura West,Pratima Bhoumik,Bharatiya Janata Party,573532,Subal Bhowmik,Indian National Congress,267843,1107755,305689,27.6,safe
+17th Lok Sabha,Uttar Pradesh,Agra,Satyapal Singh Baghel,Bharatiya Janata Party,646875,Manoj Kumar Soni,Bahujan Samaj Party,435329,1145323,211546,18.47,safe
+17th Lok Sabha,Uttar Pradesh,Akbarpur,Devendra Singh 'Bhole',Bharatiya Janata Party,581282,Nisha Sachan,Bahujan Samaj Party,306140,1025314,275142,26.83,safe
+17th Lok Sabha,Uttar Pradesh,Aligarh,SATISH KUMAR GAUTAM,Bharatiya Janata Party,656215,DR. AJEET BALIYAN,Bahujan Samaj Party,426954,1163184,229261,19.71,safe
+17th Lok Sabha,Uttar Pradesh,Allahabad,Rita Bahuguna Joshi,Bharatiya Janata Party,494454,Rajendra Singh Patel,Samajwadi Party,310179,889056,184275,20.73,safe
+17th Lok Sabha,Uttar Pradesh,Ambedkar Nagar,Ritesh Pandey,Bahujan Samaj Party,564118,Mukut Bihari,Bharatiya Janata Party,468238,1090152,95880,8.8,competitive
+17th Lok Sabha,Uttar Pradesh,Amethi,Smriti Irani,Bharatiya Janata Party,468514,Rahul Gandhi,Indian National Congress,413394,942453,55120,5.85,competitive
+17th Lok Sabha,Uttar Pradesh,Amroha,KUNWAR DANISH ALI,Bahujan Samaj Party,601082,KANWAR SINGH TANWAR,Bharatiya Janata Party,537834,1169182,63248,5.41,competitive
+17th Lok Sabha,Uttar Pradesh,Aonla,DHARMENDRA KASHYAP,Bharatiya Janata Party,537675,RUCHIVIRA,Bahujan Samaj Party,423932,1052795,113743,10.8,competitive
+17th Lok Sabha,Uttar Pradesh,Azamgarh,Akhilesh Yadav,Samajwadi Party,621578,Dinesh Lal Yadav Nirahua,Bharatiya Janata Party,361704,1029112,259874,25.25,safe
+17th Lok Sabha,Uttar Pradesh,Badaun,Dr. Sanghmitra Maurya,Bharatiya Janata Party,511352,Dharmendra Yadav,Samajwadi Party,492898,1081108,18454,1.71,marginal
+17th Lok Sabha,Uttar Pradesh,Baghpat,Dr. SATYAPAL SINGH,Bharatiya Janata Party,525789,JAYANT CHAUDHARY,Rashtriya Lok Dal,502287,1044894,23502,2.25,marginal
+17th Lok Sabha,Uttar Pradesh,Bahraich,AKSHAIBAR LAL,Bharatiya Janata Party,525982,SHABBIR BALMIKI,Samajwadi Party,397230,989848,128752,13.01,competitive
+17th Lok Sabha,Uttar Pradesh,Ballia,Virendra Singh,Bharatiya Janata Party,469114,Sanatan Pandey,Samajwadi Party,453595,989732,15519,1.57,marginal
+17th Lok Sabha,Uttar Pradesh,Banda,R.K. SINGH PATEL,Bharatiya Janata Party,477926,SHYAMA CHARAN GUPTA,Samajwadi Party,418988,1034549,58938,5.7,competitive
+17th Lok Sabha,Uttar Pradesh,Bansgaon,Kamlesh Paswan,Bharatiya Janata Party,546673,Sadal Prasad,Bahujan Samaj Party,393205,969136,153468,15.84,safe
+17th Lok Sabha,Uttar Pradesh,Barabanki,Upendra Singh Rawat,Bharatiya Janata Party,535917,Ram Sagar Rawat,Samajwadi Party,425777,1155341,110140,9.53,competitive
+17th Lok Sabha,Uttar Pradesh,Bareilly,SANTOSH KUMAR GANGWAR,Bharatiya Janata Party,565270,BHAGWAT SARAN GANGWAR,Samajwadi Party,397988,1068342,167282,15.66,safe
+17th Lok Sabha,Uttar Pradesh,Basti,HARISH CHANDRA ALIAS HARISH DWIVEDI,Bharatiya Janata Party,471162,RAM PRASAD CHAUDHARY,Bahujan Samaj Party,440808,1054539,30354,2.88,marginal
+17th Lok Sabha,Uttar Pradesh,Bhadohi,RAMESH CHAND,Bharatiya Janata Party,510029,RANGNATH MISHRA,Bahujan Samaj Party,466414,1039390,43615,4.2,marginal
+17th Lok Sabha,Uttar Pradesh,Bijnor,MALOOK NAGAR,Bahujan Samaj Party,561045,RAJA BHARATENDRA SINGH,Bharatiya Janata Party,491104,1100763,69941,6.35,competitive
+17th Lok Sabha,Uttar Pradesh,Bulandshahr,BHOLA SINGH,Bharatiya Janata Party,681321,YOGESH VERMA,Bahujan Samaj Party,391264,1123629,290057,25.81,safe
+17th Lok Sabha,Uttar Pradesh,Chandauli,Dr. Mahendra Nath Pandey,Bharatiya Janata Party,510733,Sanjay Singh Chauhan,Samajwadi Party,496774,1084961,13959,1.29,marginal
+17th Lok Sabha,Uttar Pradesh,Deoria,RAMAPATI RAM TRIPATHI,Bharatiya Janata Party,580644,BINOD KUMAR JAISWAL,Bahujan Samaj Party,330713,1015363,249931,24.61,safe
+17th Lok Sabha,Uttar Pradesh,Dhaurahra,REKHA VERMA,Bharatiya Janata Party,512905,ARSHAD ILIYAS SIDDIQUI,Bahujan Samaj Party,352294,1063840,160611,15.1,safe
+17th Lok Sabha,Uttar Pradesh,Domariyaganj,JAGDAMBIKA PAL,Bharatiya Janata Party,492253,AFTAB ALAM,Bahujan Samaj Party,386932,985269,105321,10.69,competitive
+17th Lok Sabha,Uttar Pradesh,Etah,Rajveer Singh (Raju Bhaiya),Bharatiya Janata Party,545348,Ku. Devendra Singh Yadav,Samajwadi Party,422678,999607,122670,12.27,competitive
+17th Lok Sabha,Uttar Pradesh,Etawah,Dr RAM SHANKAR KATHERIA,Bharatiya Janata Party,522119,KAMLESH KUMAR,Samajwadi Party,457682,1027815,64437,6.27,competitive
+17th Lok Sabha,Uttar Pradesh,Faizabad,LALLU SINGH,Bharatiya Janata Party,529021,ANAND SEN,Samajwadi Party,463544,1087121,65477,6.02,competitive
+17th Lok Sabha,Uttar Pradesh,Farrukhabad,Mukesh Rajput,Bharatiya Janata Party,569880,Manoj Agarwal,Bahujan Samaj Party,348178,1002953,221702,22.1,safe
+17th Lok Sabha,Uttar Pradesh,Fatehpur,NIRANJAN JYOTI,Bharatiya Janata Party,566040,SUKHDEV PRASAD VERMA,Bahujan Samaj Party,367835,1043655,198205,18.99,safe
+17th Lok Sabha,Uttar Pradesh,Fatehpur Sikri,RAJKUMAR CHAHAR,Bharatiya Janata Party,667147,RAJ BABBAR,Indian National Congress,172082,1037151,495065,47.73,safe
+17th Lok Sabha,Uttar Pradesh,Firozabad,Dr. Chandra Sen Jadon,Bharatiya Janata Party,495819,Akshay Yadav,Samajwadi Party,467038,1075866,28781,2.68,marginal
+17th Lok Sabha,Uttar Pradesh,Gautam Buddha Nagar,Dr. MAHESH SHARMA,Bharatiya Janata Party,830812,SATVEER,Bahujan Samaj Party,493890,1392952,336922,24.19,safe
+17th Lok Sabha,Uttar Pradesh,Ghaziabad,Vijay Kumar Singh,Bharatiya Janata Party,944503,Suresh Bansal,Samajwadi Party,443003,1524456,501500,32.9,safe
+17th Lok Sabha,Uttar Pradesh,Ghazipur,AFZAL ANSARI,Bahujan Samaj Party,566082,MANOJ SINHA,Bharatiya Janata Party,446690,1105627,119392,10.8,competitive
+17th Lok Sabha,Uttar Pradesh,Ghosi,ATUL KUMAR SINGH,Bahujan Samaj Party,573829,HARINARAYAN,Bharatiya Janata Party,451261,1140781,122568,10.74,competitive
+17th Lok Sabha,Uttar Pradesh,Gonda,KIRTI VARDHAN SINGH ALIAS RAJA BHAIYA,Bharatiya Janata Party,508190,VINOD KUMAR ALIAS PANDIT SINGH,Samajwadi Party,341830,923816,166360,18.01,safe
+17th Lok Sabha,Uttar Pradesh,Gorakhpur,Ravindra Shyamnarayan Shukla alias Ravi Kishan,Bharatiya Janata Party,717122,Rambhual Nishad,Samajwadi Party,415458,1184635,301664,25.46,safe
+17th Lok Sabha,Uttar Pradesh,Hamirpur,KUNWAR PUSHPENDRA SINGH CHANDEL,Bharatiya Janata Party,575122,DILIP KUMAR SINGH,Bahujan Samaj Party,326470,1089778,248652,22.82,safe
+17th Lok Sabha,Uttar Pradesh,Hardoi,Jai Prakash,Bharatiya Janata Party,568143,Usha Verma,Samajwadi Party,435669,1057558,132474,12.53,competitive
+17th Lok Sabha,Uttar Pradesh,Hathras,RAJVIR DILER,Bharatiya Janata Party,684299,RAMJI LAL SUMAN,Samajwadi Party,424091,1150294,260208,22.62,safe
+17th Lok Sabha,Uttar Pradesh,Jalaun,BHANU PRATAP SINGH VERMA,Bharatiya Janata Party,581763,AJAY SINGH (PANKAJ),Bahujan Samaj Party,423386,1129955,158377,14.02,competitive
+17th Lok Sabha,Uttar Pradesh,Jaunpur,SHYAM SINGH YADAV,Bahujan Samaj Party,521128,KRISHNA PRATAP SINGH K.P.,Bharatiya Janata Party,440192,1040652,80936,7.78,competitive
+17th Lok Sabha,Uttar Pradesh,Jhansi,Anurag Sharma,Bharatiya Janata Party,809272,Shyam Sundar Singh,Samajwadi Party,443589,1380890,365683,26.48,safe
+17th Lok Sabha,Uttar Pradesh,Kairana,Pradeep Kumar,Bharatiya Janata Party,566961,Tabassum Begum,Samajwadi Party,474801,1124047,92160,8.2,competitive
+17th Lok Sabha,Uttar Pradesh,Kaiserganj,Brijbhusan Sharan Singh,Bharatiya Janata Party,581358,Chandradev Ram Yadav,Bahujan Samaj Party,319757,981400,261601,26.66,safe
+17th Lok Sabha,Uttar Pradesh,Kannauj,SUBRAT PATHAK,Bharatiya Janata Party,563087,DIMPLE YADAV,Samajwadi Party,550734,1140496,12353,1.08,marginal
+17th Lok Sabha,Uttar Pradesh,Kanpur,Satyadev Pachauri,Bharatiya Janata Party,468937,Sriprakash Jaiswal,Indian National Congress,313003,842994,155934,18.5,safe
+17th Lok Sabha,Uttar Pradesh,Kaushambi,VINOD KUMAR SONKAR,Bharatiya Janata Party,383009,INDRAJEET SAROJ,Samajwadi Party,344287,974438,38722,3.97,marginal
+17th Lok Sabha,Uttar Pradesh,Kheri,Ajay Kumar,Bharatiya Janata Party,609589,Dr. Purvi Verma,Samajwadi Party,390782,1136660,218807,19.25,safe
+17th Lok Sabha,Uttar Pradesh,Kushi Nagar,VIJAY KUMAR DUBEY,Bharatiya Janata Party,597039,N.P. KUSHWAHA ALIAS NATHUNI PRASAD KUSHWAHA,Samajwadi Party,259479,1053117,337560,32.05,safe
+17th Lok Sabha,Uttar Pradesh,Lalganj,Sangeeta Azad,Bahujan Samaj Party,518820,Neelam Sonker,Bharatiya Janata Party,357223,960568,161597,16.82,safe
+17th Lok Sabha,Uttar Pradesh,Lucknow,Rajnath Singh,Bharatiya Janata Party,633026,Poonam Shatrughan Sinha,Samajwadi Party,285724,1116445,347302,31.11,safe
+17th Lok Sabha,Uttar Pradesh,Machhlishahr,Bholanath (B.P. Saroj),Bharatiya Janata Party,488397,Tribhuvan Ram (T.Ram),Bahujan Samaj Party,488216,1034925,181,0.02,marginal
+17th Lok Sabha,Uttar Pradesh,Maharajganj,PANKAJ CHOUDHARY,Bharatiya Janata Party,726349,AKHILESH,Samajwadi Party,385925,1226916,340424,27.75,safe
+17th Lok Sabha,Uttar Pradesh,Mainpuri,MULAYAM SINGH YADAV,Samajwadi Party,524926,PREM SINGH SHAKYA,Bharatiya Janata Party,430537,976518,94389,9.67,competitive
+17th Lok Sabha,Uttar Pradesh,Mathura,HEMA MALINI,Bharatiya Janata Party,671293,KUNWAR NARENDRA SINGH,Rashtriya Lok Dal,377822,1102731,293471,26.61,safe
+17th Lok Sabha,Uttar Pradesh,Meerut,RAJENDRA AGARWAL,Bharatiya Janata Party,586184,HAJI MOHAMMAD YAQOOB,Bahujan Samaj Party,581455,1216413,4729,0.39,marginal
+17th Lok Sabha,Uttar Pradesh,Mirzapur,Anupriya Singh Patel,Apna Dal (Soneylal),591564,Ramcharitra Nishad,Samajwadi Party,359556,1108965,232008,20.92,safe
+17th Lok Sabha,Uttar Pradesh,Misrikh,Ashok Kumar Rawat,Bharatiya Janata Party,534429,Dr Neelu Satyarthi,Bahujan Samaj Party,433757,1026668,100672,9.81,competitive
+17th Lok Sabha,Uttar Pradesh,Mohanlalganj,Kaushal Kishore,Bharatiya Janata Party,629748,C. L. Verma,Bahujan Samaj Party,539519,1269040,90229,7.11,competitive
+17th Lok Sabha,Uttar Pradesh,Moradabad,Dr. S.T. HASAN,Samajwadi Party,649416,KUNWAR SARVESH KUMAR,Bharatiya Janata Party,551538,1282206,97878,7.63,competitive
+17th Lok Sabha,Uttar Pradesh,Muzaffarnagar,Sanjeev Kumar Balyan,Bharatiya Janata Party,573780,Ajit Singh,Rashtriya Lok Dal,567254,1160071,6526,0.56,marginal
+17th Lok Sabha,Uttar Pradesh,Nagina,GIRISH CHANDRA,Bahujan Samaj Party,568378,DR. YASHWANT SINGH,Bharatiya Janata Party,401546,1009456,166832,16.53,safe
+17th Lok Sabha,Uttar Pradesh,Phulpur,Keshari Devi Patel,Bharatiya Janata Party,544701,Pandhari Yadav,Samajwadi Party,372733,978236,171968,17.58,safe
+17th Lok Sabha,Uttar Pradesh,Pilibhit,Feroze Varun Gandhi,Bharatiya Janata Party,704549,Hemraj Verma,Samajwadi Party,448922,1186589,255627,21.54,safe
+17th Lok Sabha,Uttar Pradesh,Pratapgarh,SANGAM LAL GUPTA,Bharatiya Janata Party,436291,ASHOK TRIPATHI,Bahujan Samaj Party,318539,914665,117752,12.87,competitive
+17th Lok Sabha,Uttar Pradesh,Rae Bareli,SONIA GANDHI,Indian National Congress,534918,DINESH PRATAP SINGH,Bharatiya Janata Party,367740,958556,167178,17.44,safe
+17th Lok Sabha,Uttar Pradesh,Rampur,Mohammad Azam Khan,Samajwadi Party,559177,Jayaprada Nahata,Bharatiya Janata Party,449180,1060921,109997,10.37,competitive
+17th Lok Sabha,Uttar Pradesh,Robertsganj,PAKAURI LAL KOL,Apna Dal (Soneylal),447914,BHAI LAL,Samajwadi Party,393578,988287,54336,5.5,competitive
+17th Lok Sabha,Uttar Pradesh,Saharanpur,HAJI FAZLUR REHMAN,Bahujan Samaj Party,514139,RAGHAV LAKHANPAL,Bharatiya Janata Party,491722,1231746,22417,1.82,marginal
+17th Lok Sabha,Uttar Pradesh,Salempur,RAVINDER,Bharatiya Janata Party,467241,R S KUSHWAHA,Bahujan Samaj Party,354764,921066,112477,12.21,competitive
+17th Lok Sabha,Uttar Pradesh,Sambhal,DR. SHAFIQUR REHMAN BARQ,Samajwadi Party,658006,PARAMESHVAR LAL SAINI,Bharatiya Janata Party,483180,1183469,174826,14.77,competitive
+17th Lok Sabha,Uttar Pradesh,Sant Kabir Nagar,PRAVEEN KUMAR NISHAD,Bharatiya Janata Party,467543,BHEESHMA SHANKAR,Bahujan Samaj Party,431794,1063390,35749,3.36,marginal
+17th Lok Sabha,Uttar Pradesh,Shahjahanpur,Arun Kumar Sagar,Bharatiya Janata Party,688990,Amar Chandra Jauhar,Bahujan Samaj Party,420572,1186157,268418,22.63,safe
+17th Lok Sabha,Uttar Pradesh,Shrawasti,RAM SHIROMANI,Bahujan Samaj Party,441771,DADDAN MISHRA,Bharatiya Janata Party,436451,997007,5320,0.53,marginal
+17th Lok Sabha,Uttar Pradesh,Sitapur,Rajesh Verma,Bharatiya Janata Party,514528,Nakul Dubey,Bahujan Samaj Party,413695,1064521,100833,9.47,competitive
+17th Lok Sabha,Uttar Pradesh,Sultanpur,MANEKA SANJAI GANDHI,Bharatiya Janata Party,459196,"CHANDRA BHADRA SINGH ""SSONU""",Bahujan Samaj Party,444670,1000316,14526,1.45,marginal
+17th Lok Sabha,Uttar Pradesh,Unnao,Swami Sakshi Ji Maharaj,Bharatiya Janata Party,703507,Arun Shanker Shukla,Samajwadi Party,302551,1237076,400956,32.41,safe
+17th Lok Sabha,Uttar Pradesh,Varanasi,NARENDRA MODI,Bharatiya Janata Party,674664,SHALINI YADAV,Samajwadi Party,195159,1060476,479505,45.22,safe
+17th Lok Sabha,Uttarakhand,Almora,Ajay Tamta,Bharatiya Janata Party,444651,Pradeep Tamta,Indian National Congress,211665,694472,232986,33.55,safe
+17th Lok Sabha,Uttarakhand,Garhwal,Tirath Singh Rawat,Bharatiya Janata Party,506980,Manish Khanduri,Indian National Congress,204311,742784,302669,40.75,safe
+17th Lok Sabha,Uttarakhand,Hardwar,Ramesh Pokhriyal 'Nishank',Bharatiya Janata Party,665674,Ambrish Kumar,Indian National Congress,406945,1271030,258729,20.36,safe
+17th Lok Sabha,Uttarakhand,Nainital-udhamsingh Nagar,Ajay Bhatt,Bharatiya Janata Party,772195,Harish Rawat,Indian National Congress,433099,1258570,339096,26.94,safe
+17th Lok Sabha,Uttarakhand,Tehri Garhwal,MALA RAJYA LAXMI SHAH,Bharatiya Janata Party,565333,PRITAM SINGH,Indian National Congress,264747,876069,300586,34.31,safe
+17th Lok Sabha,West Bengal,Alipurduars,JOHN BARLA,Bharatiya Janata Party,750804,DASRATH TIRKEY,All India Trinamool Congress,506815,1380217,243989,17.68,safe
+17th Lok Sabha,West Bengal,Arambagh,APARUPA PODDAR (AFRIN ALI),All India Trinamool Congress,649929,TAPAN KUMAR RAY,Bharatiya Janata Party,648787,1471981,1142,0.08,marginal
+17th Lok Sabha,West Bengal,Asansol,BABUL SUPRIYO,Bharatiya Janata Party,633378,MOON MOON SEN,All India Trinamool Congress,435741,1238135,197637,15.96,safe
+17th Lok Sabha,West Bengal,Baharampur,ADHIR RANJAN CHOWDHURY,Indian National Congress,591106,APURBA SARKAR (DAVID),All India Trinamool Congress,510410,1299997,80696,6.21,competitive
+17th Lok Sabha,West Bengal,Balurghat,Sukanta Majumdar,Bharatiya Janata Party,539317,Arpita Ghosh,All India Trinamool Congress,506024,1197849,33293,2.78,marginal
+17th Lok Sabha,West Bengal,Bangaon,SHANTANU THAKUR,Bharatiya Janata Party,687622,MAMATA THAKUR,All India Trinamool Congress,576028,1407758,111594,7.93,competitive
+17th Lok Sabha,West Bengal,Bankura,DR. SUBHAS SARKAR,Bharatiya Janata Party,675319,SUBRATA MUKHERJEE,All India Trinamool Congress,500986,1371855,174333,12.71,competitive
+17th Lok Sabha,West Bengal,Barasat,Dr. Kakoli Ghoshdastidar,All India Trinamool Congress,648084,Mrinal Kanti Debnath,Bharatiya Janata Party,538101,1394766,109983,7.89,competitive
+17th Lok Sabha,West Bengal,Bardhaman Durgapur,S.S AHLUWALIA,Bharatiya Janata Party,598376,DR. MAMTAZ SANGHAMITA,All India Trinamool Congress,595937,1433007,2439,0.17,marginal
+17th Lok Sabha,West Bengal,Bardhaman Purba,SUNIL KUMAR MONDAL,All India Trinamool Congress,640834,PARESH CHANDRA DAS,Bharatiya Janata Party,551523,1439286,89311,6.21,competitive
+17th Lok Sabha,West Bengal,Barrackpore,ARJUN SINGH,Bharatiya Janata Party,472994,DINESH TRIVEDI,All India Trinamool Congress,458137,1104517,14857,1.35,marginal
+17th Lok Sabha,West Bengal,Basirhat,Nusrat Jahan Ruhi,All India Trinamool Congress,782078,Sayantan Basu,Bharatiya Janata Party,431709,1433339,350369,24.44,safe
+17th Lok Sabha,West Bengal,Birbhum,SATABDI ROY,All India Trinamool Congress,654077,DUDH KUMAR MONDAL,Bharatiya Janata Party,565153,1449423,88924,6.14,competitive
+17th Lok Sabha,West Bengal,Bishnupur,KHAN SAUMITRA,Bharatiya Janata Party,657019,SHYAMAL SANTRA,All India Trinamool Congress,578972,1420648,78047,5.49,competitive
+17th Lok Sabha,West Bengal,Bolpur,ASIT KUMAR MAL,All India Trinamool Congress,699171,DAS RAMPRASAD,Bharatiya Janata Party,592769,1461269,106402,7.28,competitive
+17th Lok Sabha,West Bengal,Cooch behar,NISITH PRAMANIK,Bharatiya Janata Party,731594,ADHIKARY PARESH CHANDRA,All India Trinamool Congress,677363,1524683,54231,3.56,marginal
+17th Lok Sabha,West Bengal,Darjeeling,RAJU BISTA,Bharatiya Janata Party,750067,AMAR SINGH RAI,All India Trinamool Congress,336624,1267270,413443,32.62,safe
+17th Lok Sabha,West Bengal,Diamond harbour,ABHISHEK BANERJEE,All India Trinamool Congress,791127,NILANJAN ROY,Bharatiya Janata Party,470533,1409002,320594,22.75,safe
+17th Lok Sabha,West Bengal,Dum dum,SOUGATA RAY,All India Trinamool Congress,512062,SAMIK BHATTACHARYA,Bharatiya Janata Party,459060,1204660,53002,4.4,marginal
+17th Lok Sabha,West Bengal,Ghatal,ADHIKARI DEEPAK (DEV),All India Trinamool Congress,717959,BHARATI GHOSH,Bharatiya Janata Party,609986,1488818,107973,7.25,competitive
+17th Lok Sabha,West Bengal,Hooghly,LOCKET CHATTERJEE,Bharatiya Janata Party,671448,DR. RATNA DE (NAG),All India Trinamool Congress,598086,1457842,73362,5.03,competitive
+17th Lok Sabha,West Bengal,Howrah,Prasun Banerjee,All India Trinamool Congress,576711,Rantidev Sengupta,Bharatiya Janata Party,473016,1222293,103695,8.48,competitive
+17th Lok Sabha,West Bengal,Jadavpur,MIMI CHAKRABORTY,All India Trinamool Congress,688472,ANUPAM HAZRA,Bharatiya Janata Party,393233,1436894,295239,20.55,safe
+17th Lok Sabha,West Bengal,Jalpaiguri,Dr. JAYANTA KUMAR ROY,Bharatiya Janata Party,760145,BIJOY CHANDRA BARMAN,All India Trinamool Congress,576141,1500922,184004,12.26,competitive
+17th Lok Sabha,West Bengal,Jangipur,KHALILUR RAHAMAN,All India Trinamool Congress,562838,MAFUJA KHATUN,Bharatiya Janata Party,317056,1304504,245782,18.84,safe
+17th Lok Sabha,West Bengal,Jhargram,Kunar Hembram,Bharatiya Janata Party,626583,Birbaha Saren,All India Trinamool Congress,614816,1406214,11767,0.84,marginal
+17th Lok Sabha,West Bengal,Joynagar,PRATIMA MONDAL,All India Trinamool Congress,761202,DR. ASHOK KANDARY,Bharatiya Janata Party,444427,1356102,316775,23.36,safe
+17th Lok Sabha,West Bengal,Kanthi,Adhikari Sisir,All India Trinamool Congress,711872,Dr. Debasish Samanta,Bharatiya Janata Party,600204,1424247,111668,7.84,competitive
+17th Lok Sabha,West Bengal,Kolkata Dakshin,Mala Roy,All India Trinamool Congress,573119,Chandra Kumar Bose,Bharatiya Janata Party,417927,1206645,155192,12.86,competitive
+17th Lok Sabha,West Bengal,Kolkata Uttar,BANDYOPADHYAY SUDIP,All India Trinamool Congress,474891,RAHUL (BISWAJIT) SINHA,Bharatiya Janata Party,347796,950613,127095,13.37,competitive
+17th Lok Sabha,West Bengal,Krishnanagar,MAHUA MOITRA,All India Trinamool Congress,614872,KALYAN CHAUBEY,Bharatiya Janata Party,551654,1366443,63218,4.63,marginal
+17th Lok Sabha,West Bengal,Maldaha Dakshin,ABU HASEM KHAN CHOWDHURY (DALU),Indian National Congress,444270,SREERUPA MITRA CHAUDHURY,Bharatiya Janata Party,436048,1279202,8222,0.64,marginal
+17th Lok Sabha,West Bengal,Maldaha Uttar,KHAGEN MURMU,Bharatiya Janata Party,509524,MAUSAM NOOR,All India Trinamool Congress,425236,1354706,84288,6.22,competitive
+17th Lok Sabha,West Bengal,Mathurapur,CHOUDHURY MOHAN JATUA,All India Trinamool Congress,726828,SHYAMAPRASAD HALDER,Bharatiya Janata Party,522854,1401953,203974,14.55,competitive
+17th Lok Sabha,West Bengal,Medinipur,Dilip Ghosh,Bharatiya Janata Party,685433,Manas Ranjan Bhunia,All India Trinamool Congress,596481,1409815,88952,6.31,competitive
+17th Lok Sabha,West Bengal,Murshidabad,ABU TAHER KHAN,All India Trinamool Congress,604346,"ABU HENA, S/O - LATE ABDUS SATTAR",Indian National Congress,377929,1453755,226417,15.57,safe
+17th Lok Sabha,West Bengal,Purulia,JYOTIRMAY SINGH MAHATO,Bharatiya Janata Party,668107,Dr. MRIGANKA MAHATO,All India Trinamool Congress,463375,1355236,204732,15.11,safe
+17th Lok Sabha,West Bengal,Raiganj,DEBASREE CHAUDHURI,Bharatiya Janata Party,511652,AGARWAL KANAIALAL,All India Trinamool Congress,451078,1277109,60574,4.74,marginal
+17th Lok Sabha,West Bengal,Ranaghat,JAGANNATH SARKAR,Bharatiya Janata Party,783253,RUPALI BISWAS,All India Trinamool Congress,549825,1484035,233428,15.73,safe
+17th Lok Sabha,West Bengal,Srerampur,KALYAN BANERJEE,All India Trinamool Congress,637707,DEBJIT SARKAR,Bharatiya Janata Party,539171,1401705,98536,7.03,competitive
+17th Lok Sabha,West Bengal,Tamluk,Adhikari Dibyendu,All India Trinamool Congress,724433,Sidharthashankar Naskar,Bharatiya Janata Party,534268,1446499,190165,13.15,competitive
+17th Lok Sabha,West Bengal,Uluberia,SAJDA AHMED,All India Trinamool Congress,694945,JOY BANERJEE,Bharatiya Janata Party,479586,1311099,215359,16.43,safe
