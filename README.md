@@ -2,45 +2,68 @@
 
 Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area Development Scheme).
 
-## Key Findings (18th Lok Sabha, 398 MPs)
+## Key Findings (18th Lok Sabha, 543 MPs)
 
 | Stage | Amount | Rate |
 |-------|--------|------|
-| Allocated | ₹6,038 Cr | 100% |
-| Recommended | ₹3,424 Cr | 57% of allocated |
-| Sanctioned | ₹2,482 Cr | 72% of recommended |
-| Completed | ₹714 Cr | 25% of sanctioned |
-| **Utilization** | | **11.8%** |
+| Allocated | ₹8,269 Cr | 100% |
+| Recommended | ₹4,775 Cr | 58% of allocated |
+| Sanctioned | ₹3,544 Cr | 43% of allocated |
+| Completed | ₹1,051 Cr | 13% of allocated |
 
 **Per-MP Statistics:**
-- Median completion rate: **6.8%** (mean 11.8% - skewed by top performers)
-- 17% of MPs have **zero completions** (67 MPs)
-- Only 15 MPs (4%) have >50% completion rate
-- 62,125 works recommended → 14,550 completed (23% conversion)
+- Median completion rate: **7.3%** (mean 12.6%)
+- 18% of MPs have **zero completions** (96 MPs)
+- Only 22 MPs (4%) have >50% completion rate
+- 88,611 works recommended → 21,775 completed (25% conversion)
 
-**Bottleneck:** Recommendation (only 57% of allocation recommended) and execution (only 25% of sanctioned works completed).
+**Bottleneck:** Recommendation (only 58% of allocation recommended) and execution (only 32% of sanctioned works completed).
+
+## Competitiveness Analysis
+
+Does electoral competition drive MPLADS spending? We merged 2024 election results to test whether MPs in closer races complete more works.
+
+| Seat Type | N | Mean Completion | Median Completion |
+|-----------|---|-----------------|-------------------|
+| Safe (>15% margin) | 191 | 12.0% | 7.3% |
+| Competitive (5-15%) | 218 | 11.9% | 6.8% |
+| Marginal (<5%) | 131 | 14.8% | 8.8% |
+
+**Finding:** Weak relationship. Correlation between vote margin and completion is -0.03. Marginal seats show slightly higher completion, but the effect is small.
+
+**Party-wise (top 5 by N):**
+| Party | MPs | Mean Completion |
+|-------|-----|-----------------|
+| BJP | 237 | 12.0% |
+| INC | 99 | 9.9% |
+| SP | 38 | 17.2% |
+| TMC | 29 | 10.0% |
+| DMK | 22 | 19.3% |
 
 ## Scripts
 
 ```
 src/
-├── _client.py        # Shared HTTP client, throttling, caching
-├── fetch_mplads.py   # Main scraper: gets MPs + spending tiles in one pass
-├── fetch_works.py    # Fetch work-level details (optional)
-├── analyze.py        # Spending analysis (pooled & per-MP metrics)
-└── check_data.py     # Check data collection progress
+├── _client.py          # Shared HTTP client, throttling, caching
+├── fetch_mplads.py     # Main scraper: gets MPs + spending tiles in one pass
+├── fetch_works.py      # Fetch work-level details (optional)
+├── fetch_elections.py  # Download election results (2019, 2024)
+├── analyze.py          # Spending + competitiveness analysis
+└── check_data.py       # Check data collection progress
 ```
 
 ## Data Files
 
 ```
 data/
-├── mplads_full.csv                  # Main output: one row per MP × tenure
+├── mplads_18ls.csv                  # 18th Lok Sabha spending data
+├── mplads_17ls.csv                  # 17th Lok Sabha spending data (when available)
 ├── final/
-│   └── mp_spending_by_tenure.csv    # With computed metrics
+│   └── mp_spending_with_elections.csv  # Merged with election competitiveness
 └── raw/
-    ├── mplads_full_cache.jsonl      # Cache for resumability
-    └── unified_scraper.log          # Fetch log
+    ├── elections_18ls.csv           # 2024 election results with margins
+    ├── elections_17ls.csv           # 2019 election results with margins
+    └── mplads_*_cache.jsonl         # Cache for resumability
 ```
 
 ## Quick Start
@@ -52,7 +75,10 @@ uv sync
 uv run python src/fetch_mplads.py --tenure-id 7  # 18th LS
 uv run python src/fetch_mplads.py --tenure-id 5  # 17th LS
 
-# Analyze (works with partial data)
+# Fetch election results
+uv run python src/fetch_elections.py
+
+# Analyze (includes competitiveness)
 uv run python src/analyze.py
 
 # Check progress
@@ -93,3 +119,4 @@ Requires session cookies from `/digigov/dashboard.html`.
 - **Resumability:** JSONL cache. Re-running skips cached data.
 - **Rate Limiting:** Server rate-limits aggressively. Scripts retry with exponential backoff.
 - **Data Model:** Primary key is (mp_id, tenure_id). Same MP across tenures = separate rows.
+- **17th vs 18th LS:** The 18th Lok Sabha began in June 2024 with works still in progress. The 17th LS ran full tenure (2019-2024), hence higher completion rates.
