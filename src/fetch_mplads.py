@@ -141,10 +141,14 @@ def parse_tiles(data: dict) -> dict[str, Any]:
     return result
 
 
-TENURE_LABELS = {
+TENURE_LABELS_LS = {
     "7": "18th Lok Sabha",
     "5": "17th Lok Sabha",
-    "6": "Rajya Sabha 2024",
+}
+
+TENURE_LABELS_RS = {
+    "7": "Rajya Sabha 18",
+    "5": "Rajya Sabha 17",
 }
 
 
@@ -175,7 +179,10 @@ def main() -> None:
         return
     logger.info(f"Found {len(states)} states")
 
-    tenure_label = TENURE_LABELS.get(args.tenure_id, f"Tenure {args.tenure_id}")
+    if args.house == 2:
+        tenure_label = TENURE_LABELS_LS.get(args.tenure_id, f"Lok Sabha {args.tenure_id}")
+    else:
+        tenure_label = TENURE_LABELS_RS.get(args.tenure_id, f"Rajya Sabha {args.tenure_id}")
 
     rows = []
     cols = [

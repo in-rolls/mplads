@@ -21,6 +21,8 @@ import pandas as pd
 MPLADS_FILES = {
     "18th Lok Sabha": "mplads_18ls.csv",
     "17th Lok Sabha": "mplads_17ls.csv",
+    "Rajya Sabha 18": "mplads_rs18.csv",
+    "Rajya Sabha 17": "mplads_rs17.csv",
 }
 
 ELECTION_FILES = {
@@ -98,8 +100,30 @@ def normalize_state(name: str) -> str:
     return replacements.get(s, s)
 
 
-def load_mplads(data_dir: Path) -> pd.DataFrame:
-    """Load MPLADS data from CSV files."""
+def load_mplads(data_dir: Path, aggregate_file: str | None = None) -> pd.DataFrame:
+    """Load MPLADS data from CSV files.
+
+    If aggregate_file is provided, loads from that single file.
+    Otherwise, loads from individual tenure files.
+    """
+    if aggregate_file:
+        path = data_dir / aggregate_file
+        if path.exists():
+            df = pd.read_csv(path)
+            df = df.rename(
+                columns={
+                    "allocated_cr": "allocated",
+                    "recommended_cr": "recommended",
+                    "sanctioned_cr": "sanctioned",
+                    "completed_cr": "completed",
+                    "tenure_label": "tenure",
+                }
+            )
+            print(f"Loaded {len(df)} MPs from {aggregate_file}")
+            df = df[df["allocated"] > 0].copy()
+            return df
+        print(f"Aggregate file {aggregate_file} not found, falling back to individual files")
+
     dfs = []
     for tenure, filename in MPLADS_FILES.items():
         path = data_dir / filename
@@ -208,16 +232,23 @@ def print_tenure_summary(df: pd.DataFrame, tenure: str) -> None:
 
 
 def print_competitiveness_analysis(df: pd.DataFrame) -> None:
-    """Print competitiveness analysis."""
-    if "competitiveness" not in df.columns or df["competitiveness"].isna().all():
+    """Print competitiveness analysis (Lok Sabha only)."""
+    ls_tenures = [t for t in df["tenure"].unique() if "Lok Sabha" in str(t)]
+    ls_df = df[df["tenure"].isin(ls_tenures)]
+
+    if ls_df.empty:
+        print("\n(No Lok Sabha data for competitiveness analysis)")
+        return
+
+    if "competitiveness" not in ls_df.columns or ls_df["competitiveness"].isna().all():
         print("\n(Election data not available for competitiveness analysis)")
         return
 
     print("\n" + "-" * 65)
-    print("COMPETITIVENESS ANALYSIS")
+    print("COMPETITIVENESS ANALYSIS (Lok Sabha only)")
     print("-" * 65)
 
-    for tenure in df["tenure"].unique():
+    for tenure in ls_tenures:
         subset = df[(df["tenure"] == tenure) & df["competitiveness"].notna()]
         if subset.empty:
             continue
@@ -252,10 +283,10 @@ def print_competitiveness_analysis(df: pd.DataFrame) -> None:
                 print(f"\n  Correlation (margin% vs completion%): {r:.3f}")
 
     print("\n" + "-" * 65)
-    print("PARTY-WISE COMPLETION")
+    print("PARTY-WISE COMPLETION (Lok Sabha only)")
     print("-" * 65)
 
-    for tenure in df["tenure"].unique():
+    for tenure in ls_tenures:
         subset = df[(df["tenure"] == tenure) & df["winner_party"].notna()]
         if subset.empty:
             continue
@@ -388,12 +419,13 @@ COMPLETION BUCKETS:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-dir", default="data")
+    ap.add_argument("--aggregate", default=None, help="Use consolidated aggregate file")
     ap.add_argument("--out", help="Save per-MP data to CSV")
     args = ap.parse_args()
 
     data_dir = Path(args.data_dir)
 
-    df = load_mplads(data_dir)
+    df = load_mplads(data_dir, args.aggregate)
     if df.empty:
         print("No data found. Run fetch_mplads.py first and export to CSV.")
         return

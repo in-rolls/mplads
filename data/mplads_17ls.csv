@@ -81,6 +81,7 @@ tenure_label,tenure_id,house,state_id,state_name,constituency_id,constituency_na
 17th Lok Sabha,5,Lok Sabha,6,Bihar,79,PASCHIM CHAMPARAN,3018960,Sanjay Jaiswal,11.77,11.1684,11.1284,10.8984,10.9,0.0,240,239,234
 17th Lok Sabha,5,Lok Sabha,6,Bihar,80,BUXAR,3018962,Ashwini Kumar Choubey,7.36,5.8234,5.8234,4.9439,5.03,0.0,70,70,62
 17th Lok Sabha,5,Lok Sabha,6,Bihar,81,NAWADA,3018963,Chandan Singh,11.77,11.6314,11.5989,10.8986,11.01,0.0,339,334,318
+17th Lok Sabha,5,Lok Sabha,6,Bihar,82,GAYA (SC),3018361,vijay kumar,7.36,6.8485,6.8485,6.6735,6.75,0.0,90,90,87
 17th Lok Sabha,5,Lok Sabha,6,Bihar,83,GOPALGANJ (SC),3018350,Alok Kumar Suman,7.36,7.0372,7.0372,7.0372,7.04,0.0,104,104,104
 17th Lok Sabha,5,Lok Sabha,7,Chandigarh,84,CHANDIGARH,3018982,Smt Kirron Kher,6.75,5.2988,5.2988,4.0575,4.71,0.0,28,28,23
 17th Lok Sabha,5,Lok Sabha,8,Chhattisgarh,85,RAIGARH(ST),3018987,Smt Gomati Sai,5.38,4.1128,4.1128,3.6504,3.86,0.0,64,64,51
@@ -387,3 +388,171 @@ tenure_label,tenure_id,house,state_id,state_name,constituency_id,constituency_na
 17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,377,THENI,3019159,P Raveendranath Kumar(17th Lok Sabha),9.81,9.749,8.5755,0.422,8.37,0.0,88,78,3
 17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,378,CHENNAI CENTRAL,3017455,Thiru Dayanidhi Maran (17th Lok Sabha),9.81,9.6488,9.0488,1.7988,8.98,0.0,10,9,4
 17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,379,CHENNAI NORTH,3019643,Kalanidhi Veeraswamy (17th Lok Sabha),11.77,11.6733,11.6733,3.1349,11.56,0.0,32,32,13
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,380,CHENNAI SOUTH,3018396,T Sumathy (A) Thamizhachi Thangapandian,14.71,14.6169,14.4169,1.4161,11.89,0.0,42,39,14
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,381,MAYILADUTHURAI,3018393,S Ramalingam,11.74,11.7402,10.7229,3.6494,10.26,0.0,126,115,58
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,382,THANJAVUR,3021882,S.S. Palanimanickam (17th Lok Sabha),9.81,9.7312,9.7312,7.3921,9.48,0.0,37,37,30
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,383,ARANI,3019148,MK Vishnu Prasad(17th Lok Sabha),4.9,4.893,4.893,4.33,4.76,0.0,103,103,94
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,384,TIRUVANNAMALAI,3019242,CN Annadurai(17TH Lok Sabha),4.82,4.7959,4.7959,3.0524,4.64,0.0,127,127,105
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,385,KARUR,3019169,Smt S Jothimani(17th Lok Sabha),7.36,7.2086,7.2041,4.1763,7.09,0.0,178,169,104
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,386,DINDIGUL,3019160,P Velusamy(17th Lok Sabha),9.81,9.7716,9.392,1.8253,9.22,0.0,129,125,18
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,387,KANNIYAKUMARI,3017458,vijayakumar Vasanth,9.81,9.8,8.9412,0.0,8.81,0.0,82,73,0
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,388,ERODE,3019149,A Ganeshamurthi(17th Lok Sabha),9.81,9.6396,9.4646,8.3122,9.43,0.0,104,102,89
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,389,DHARAMAPURI,3019153,Dnv Senthilkumar S(17th Lok Sabha),9.68,9.5237,9.3237,5.4542,9.23,0.0,127,124,66
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,390,COIMBATORE,3019243,PR Natarajan(17TH Lok Sabha),9.77,9.7693,9.728,1.8613,9.49,0.0,62,57,15
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,391,POLLACHI,3019155,K Shanmuga Sundaram(17th Lok Sabha),9.79,9.774,9.6586,1.9625,9.35,0.0,143,141,26
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,392,TIRUVALLUR(SC),3019146,K Jayakumar(17th Lok Sabha),11.77,11.7504,11.5084,10.9314,11.45,0.0,171,166,161
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,393,THOOTHUKKUDI,3018395,Kanimozhi Karunanidhi,9.81,9.7977,9.4977,0.3577,9.21,0.0,65,62,4
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,394,SIVAGANGA,3017457,Shri Karti P Chidambaram (17th Lok Sabha),8.6,8.5259,8.5259,5.7894,8.34,0.0,165,165,110
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,395,RAMANATHAPURAM,3019157,Kani K Navas(17th Lok Sabha),11.77,11.7167,11.6737,4.1818,11.54,0.0,185,184,72
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,396,NILGIRIS(SC),3019151,Andimuthu Raja(17th Lok Sabha),9.81,9.7252,8.8452,5.4468,8.65,0.0,127,115,76
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,397,NAGAPATTINAM(SC),3019168,M Selvaraj(17th Lok Sabha),7.36,7.3298,7.2623,4.0818,7.26,0.0,78,76,33
+17th Lok Sabha,5,Lok Sabha,30,Tamil Nadu,398,PERAMBALUR,3019147,T R Paarivendhar(17th Lok Sabha),9.81,9.5173,8.1601,5.6394,7.76,0.0,51,43,30
+17th Lok Sabha,5,Lok Sabha,129,Telangana,399,ADILABAD(ST),3018399,Soyam Babu Rao,13.03,12.4753,11.2635,0.1099,10.2,0.0,378,320,2
+17th Lok Sabha,5,Lok Sabha,129,Telangana,400,HYDERABAD,3019173,Asaduddin Owaisi(17th Lok Sabha),15.51,14.8636,13.6642,6.647,10.29,0.0,69,57,29
+17th Lok Sabha,5,Lok Sabha,129,Telangana,401,SECUNDERABAD,3019176,Kishan Reddy Gangapuram(17th Lok Sabha),12.78,10.973,10.2594,3.6252,6.56,0.0,91,80,29
+17th Lok Sabha,5,Lok Sabha,129,Telangana,402,KARIMNAGAR,3019181,Sanjay Kumar Bandi(17th Lok Sabha),15.46,15.388,13.265,0.6769,8.41,0.0,534,456,31
+17th Lok Sabha,5,Lok Sabha,129,Telangana,403,KHAMMAM,3019179,Nama Nageswara Rao(17th Lok Sabha),12.39,11.4021,10.8051,5.2691,8.48,0.0,256,242,131
+17th Lok Sabha,5,Lok Sabha,129,Telangana,404,MAHABUBNAGAR,3017459,Shri Manne Srinivas Reddy (17th Lok Sabha),2.06,1.751,1.0392,0.1742,0.6916,0.0,41,24,5
+17th Lok Sabha,5,Lok Sabha,129,Telangana,404,MAHABUBNAGAR,3019178,Manne Srinivas Reddy(17th Lok Sabha),12.26,12.2015,11.3915,0.5671,8.75,0.0,267,246,15
+17th Lok Sabha,5,Lok Sabha,129,Telangana,405,MEDAK,3019177,Kotha Prabhakar Reddy(Ex 17th Lok Sabha),9.9,9.1916,5.1362,1.8788,4.99,0.0,187,106,42
+17th Lok Sabha,5,Lok Sabha,129,Telangana,406,NIZAMABAD,3019172,Arvind Dharmapuri(17th Lok Sabha),0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+17th Lok Sabha,5,Lok Sabha,129,Telangana,407,CHELVELLA,3019170,Gaddam Ranjith Reddy(17th Lok Sabha),10.72,10.6863,10.3932,6.299,8.53,0.0,208,201,134
+17th Lok Sabha,5,Lok Sabha,129,Telangana,408,WARANGEL(SC),3019175,Dayakar Pasunoori(17th Lok Sabha),10.69,10.31,9.4324,5.9383,9.35,0.0,294,274,188
+17th Lok Sabha,5,Lok Sabha,129,Telangana,409,MAHABUBABAD,3019183,Smt Kavitha Malothu(17th Lok Sabha),9.81,9.7809,8.9574,0.83,7.77,0.0,199,181,18
+17th Lok Sabha,5,Lok Sabha,129,Telangana,410,NAGARKURNOOL(SC),3019180,Ramulu Pothuganti(17th Lok Sabha),7.7,7.6594,7.5594,5.7316,6.13,0.0,193,191,149
+17th Lok Sabha,5,Lok Sabha,129,Telangana,411,MALKAJGIRI,3019171,Anumula Revanth Reddy(17th Lok Sabha),3.13,2.4822,1.9722,1.1105,1.63,0.0,41,34,14
+17th Lok Sabha,5,Lok Sabha,129,Telangana,412,ZAHIRABAD,3018397,Bheemrao Baswanthrao Patil,12.32,11.5542,7.9734,2.6554,6.99,0.0,573,455,173
+17th Lok Sabha,5,Lok Sabha,129,Telangana,413,PEDDAPALLE,3018398,Venkatesh Netha Borlakunta,10.85,10.7767,10.5107,0.9826,7.98,0.0,342,335,23
+17th Lok Sabha,5,Lok Sabha,129,Telangana,414,NALGONDA,3019182,Uttam Kumar Nalamada Reddy(17th Lok Sabha),10.96,10.9484,10.9384,9.7339,10.51,0.0,287,286,251
+17th Lok Sabha,5,Lok Sabha,129,Telangana,415,BHONGIR,3017460,Shri Komati Reddy Venkat Reddy (17th Lok Sabha),9.8,8.7479,8.637,3.656,8.5,0.0,374,359,155
+17th Lok Sabha,5,Lok Sabha,10,The Dadra And Nagar Haveli And Daman And Diu,97,DAMAN and DIU,3039176,Lalubhai B Patel (17th Lok Sabha),0.11,0.0,0.0,0.0,0.0,0.0,0,0,0
+17th Lok Sabha,5,Lok Sabha,31,Tripura,416,TRIPURA WEST,3019184,Ms Pratima Bhoumik(17th Lok Sabha),11.77,11.6155,11.5855,3.8529,10.44,0.0,198,197,112
+17th Lok Sabha,5,Lok Sabha,31,Tripura,417,TRIPURA EAST(ST),3018400,Rebati Tripura,9.81,9.7996,9.7996,0.0,9.59,0.0,19,19,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,418,ALIGARH,3017466,Shri Satish Kumar Gautam (17th Lok Sabha),4.91,4.7044,4.7044,4.7044,4.7,0.0,67,67,67
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,419,BARABANKI(SC),3019219,Upendra Singh Rawat(17th Lok Sabha),7.24,7.2365,7.2335,6.4742,7.03,0.0,1341,1339,1255
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,420,ETAWAH(SC),3019190,Prof Ram Shankar Katheria(17th Lok Sabha),7.36,7.0757,7.0757,6.3805,6.85,0.0,295,295,263
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,421,FATEHPUR,3019224,Niranjan Jyoti(17th Lok Sabha),7.83,7.5278,7.2023,5.84,6.68,0.0,66,62,50
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,422,FIROZABAD,3017476,Dr Chandra Sen Jadon (17th Lok Sabha),4.91,4.6773,4.6773,0.0,4.38,0.0,33,33,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,423,BANSGAON(SC),3019202,Kamlesh Paswan(17th Lok Sabha),7.75,7.6674,7.6674,6.9986,7.49,0.0,173,173,152
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,424,GORAKHPUR,3019214,Ravindra Shyamnarayan Alias Ravi Kishan Shukla(17th Lok Sabha),7.98,7.408,7.408,2.2493,6.3,0.0,135,135,35
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,425,HARDOI (SC),3019201,Jai Prakash(17th Lok Sabha),7.36,7.3307,7.3307,0.0,6.08,0.0,29,29,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,426,MISRIKH(SC),3019244,Ashok Kumar Rawat(17TH Lok Sabha),7.36,7.3318,7.2018,3.5543,6.27,0.0,14,10,4
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,427,UNNAO,3018402,Swami Sachchidanandhari Sakshi ji Maharaj,10.23,9.3016,9.2958,8.6843,9.27,0.0,83,82,66
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,428,JAUNPUR,3019640,Shyam Singh Yadav (17th Lok Sabha),9.91,9.4349,9.4349,9.2036,9.4,0.0,221,221,219
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,429,MACHHLISHAHR(SC),3018406,BP Saroj Bholanath,4.96,4.846,4.846,4.6718,4.83,0.0,752,752,743
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,430,MEERUT,3017465,Shri Rajendra Agrawal (17th Lok Sabha),7.36,7.2098,7.2098,2.1738,7.07,0.0,87,87,37
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,431,ROBERTSGANJ(SC),3019206,Pakauri Lal(17th Lok Sabha),5.26,4.9142,4.8804,0.7385,4.74,0.0,102,99,12
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,432,AMROHA,3017472,Shri Kunwar Danish Ali (17th Lok Sabha),7.36,7.3273,7.3273,7.1523,7.16,0.0,328,328,325
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,433,GHOSI,3019193,Atul Kumar Singh(17th Lok Sabha),9.81,9.7451,9.7451,6.5826,9.11,0.0,151,151,120
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,434,SANT KABIR NAGAR,3019209,Praveen Kumar Nishad(17th Lok Sabha),9.81,9.5568,9.5568,6.8794,9.14,0.0,145,145,107
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,435,BAGHPAT,3019241,Satya Pal Singh(17TH Lok Sabha),9.81,9.7931,9.766,1.0837,9.36,0.0,87,86,13
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,436,CHANDAULI,3019186,Mahendra Nath Pandey(17th Lok Sabha),7.5,7.2638,7.2638,6.1222,7.2,0.0,268,268,209
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,437,BADAUN,3019188,Sanghamitra Maurya(17th Lok Sabha),7.36,7.2658,7.0939,4.6996,6.96,0.0,121,66,39
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,438,GONDA,3019203,Kirti Vardhan Singh(17th Lok Sabha),9.81,9.4469,9.4469,8.7069,9.44,0.0,135,135,126
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,439,KAISERGANJ,3019195,Brijbhushan Sharan Singh(17th Lok Sabha),7.36,7.3389,7.3389,6.2179,7.2,0.0,50,50,40
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,440,KANNAUJ,3019218,Subrata Pathak(17th Lok Sabha),7.4,7.0804,6.8304,3.756,6.29,0.0,119,114,60
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,441,MUZAFFARNAGAR,3019189,Sanjeev Kumar Balyan(17th Lok Sabha),4.91,4.8475,4.8475,1.0688,4.37,0.0,66,66,17
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,442,AGRA(SC),3017473,Prof SP Singh Baghel (17th Lok Sabha),4.91,4.8949,4.8949,4.8949,4.89,0.0,36,36,36
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,443,FATEHPUR SIKRI,3019530,Rajkumar Chahar (17th Lok Sabha),4.91,4.8512,4.8512,4.8512,4.85,0.0,46,46,46
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,444,ALLAHABAD,3019191,Prof Rita Bahuguna Joshi(17th Lok Sabha),7.7,7.5859,7.1695,1.1272,5.57,0.0,829,822,83
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,445,PHULPUR,3019228,Smt Keshari Devi Patel(17th Lok Sabha),9.76,9.7622,9.7222,4.6132,8.87,0.0,444,443,239
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,446,BAHRAICH(SC),3018404,Akshaibar Lal,9.81,9.6924,9.6924,7.4296,9.67,0.0,63,63,48
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,447,BALLIA,3019221,Virendra Singh(17th Lok Sabha),9.49,9.4918,9.3418,4.2318,8.61,0.0,56,54,23
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,448,SALEMPUR,3019213,Ravindra Kushawaha(17th Lok Sabha),9.7,9.6733,9.6233,2.9633,9.38,0.0,107,106,31
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,449,FARRUKHABAD,3019205,Mukesh Rajput(17th Lok Sabha),7.36,7.1079,7.1079,6.9979,7.11,0.0,347,347,346
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,450,GHAZIABAD,3017464,Dr. Vijay Kumar Singh  (Retd) General,7.36,6.2789,6.2789,6.2789,6.28,0.0,32,32,32
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,451,AKBARPUR,3019196,Devendra Alias Bhole Singh(17th Lok Sabha),7.65,7.1985,7.1985,7.1985,7.2,0.0,87,87,87
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,452,KANPUR,3019217,Satyadev Pachauri(17th Lok Sabha),4.98,4.746,4.746,4.746,4.75,0.0,23,23,23
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,453,MATHURA,3019227,Smt Hema Malini(17th Lok Sabha),9.81,9.6671,9.6671,9.4161,9.64,0.0,110,110,102
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,454,MIRZAPUR,3019225,Smt Anupriya Patel(17th Lok Sabha),10.27,9.5205,9.5205,6.6211,9.21,0.0,20,20,6
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,455,RAMPUR,3019198,Ghanshyam Singh Lodhi(17th Lok Sabha),4.91,4.8922,4.8922,4.7271,4.73,0.0,352,352,350
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,456,SITAPUR,3017166,Rajesh Verma,7.36,7.3457,7.3457,7.3457,7.35,0.0,22,22,22
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,457,VARANASI,3017469,Shri Narendra Modi (17th Lok Sabha),10.77,10.7494,10.7494,10.7494,10.75,0.0,296,296,296
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,458,AMETHI,3018412,Smriti Irani,9.81,8.6919,8.4219,7.6124,8.13,0.0,74,69,57
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,459,KUSHI NAGAR,3019220,Vijay Kumar Dubey(17th Lok Sabha),4.72,4.7088,4.6974,0.3538,4.61,0.0,161,160,5
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,460,FAIZABAD,3017461,Shri Lallu Singh (17th Lok Sabha),7.36,7.2207,7.2207,6.4682,6.94,0.0,65,65,60
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,461,GHAZIPUR,3019192,Afzal Ansari(17th Lok Sabha),1.62,0.7259,0.2326,0.0,0.2326,0.0,45,3,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,462,LUCKNOW,3019311,Rajnath Singh(17th Lok Sabha),4.13,4.1255,4.1255,4.1255,4.13,0.0,42,42,42
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,463,MOHANLALGANJ(SC),3018408,Kaushal Kishore,4.91,4.6678,4.6678,3.5938,4.51,0.0,49,49,46
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,464,PILIBHIT,3018407,Feroze Varun Gandhi,7.36,7.3373,7.3373,7.2173,7.22,0.0,142,142,138
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,465,SAHARANPUR,3017475,Shri Haji Fazlur Rehman (17th Lok Sabha),7.36,7.0041,7.0041,6.7848,6.78,0.0,77,77,72
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,466,KAUSHAMBI(SC),3017463,Shri Vinod Kumar Sonkar (17th Lok Sabha),4.91,4.8967,4.6791,3.8691,4.58,0.0,98,92,78
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,467,HAMIRPUR_UP,3018403,Kunwar Pushpendra Singh Chandel,9.81,9.6156,9.6156,0.8465,6.03,0.0,151,151,16
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,468,AZAMGARH,3019528,Dinesh Lal Yadav (17th Lok Sabha),5.16,5.1433,5.1088,1.4495,4.64,0.0,77,74,7
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,468,AZAMGARH,3059268,Shri Akhilesh Yadav (EX17LS),0.2099,0.044,0.012,0.0,0.012,0.0,3,1,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,469,LALGANJ (SC),3018411,Sangeeta Azad,5.22,5.1819,5.0902,0.0,3.86,0.0,136,131,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,470,AONLA,3019197,Dharmendra Kumar Kashyap(17th Lok Sabha),7.56,7.2806,7.2806,7.2806,7.28,0.0,166,166,166
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,471,BAREILLY,3019216,Santosh Kumar Gangwar(17th Lok Sabha),7.45,7.2504,7.2504,7.2504,7.25,0.0,75,75,75
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,472,DEORIA,3019212,Ramapati Ram Tripathi(17th Lok Sabha),7.36,7.3499,7.0799,0.0579,6.72,0.0,104,97,1
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,473,JHANSI,3018405,Anurag Sharma,9.81,9.3065,9.3065,9.1725,9.27,0.0,138,138,135
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,474,KHERI,3017468,Shri Ajay (Teni) Misra (17th Lok Sabha),4.91,4.7482,4.7482,4.7482,4.75,0.0,51,51,51
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,475,DHAURAHRA,3017470,Smt Rekha Arun Verma (17th Lok Sabha),4.91,4.8629,4.8629,4.8629,4.86,0.0,32,32,32
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,476,PRATAPGARH,3019215,Sangam Lal Gupta(17th Lok Sabha),7.36,7.2074,7.2074,6.5212,6.95,0.0,235,235,222
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,477,SHAHJAHANPUR(SC),3017471,Shri Arun Kumar Sagar (17th Lok Sabha),7.36,7.3346,7.3346,7.3346,7.33,0.0,416,416,416
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,478,GAUTAM BUDDHA NAGAR,3019187,Mahesh Sharma(17th Lok Sabha),7.36,7.1748,7.1748,2.8326,6.96,0.0,89,89,35
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,479,MAHARAJGANJ_UP,3019207,Pankaj Chaudhary(17th Lok Sabha),7.36,7.242,7.242,5.4319,6.9,0.0,53,53,26
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,480,SAMBHAL,3017467,Shri Shafiqur Rahman Barq (17th Lok Sabha),4.91,4.8587,4.7692,4.4099,4.74,0.0,209,207,200
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,481,BANDA,3019210,RK Singh Patel(17th Lok Sabha),7.36,7.3056,7.2658,5.7728,6.79,0.0,184,183,154
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,482,ETAH,3018409,Rajveer Raju Bhaiya Singh,7.36,7.3131,7.3131,5.2073,7.28,0.0,107,107,93
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,483,KAIRANA,3019208,Pradeep Kumar Chaudhary(17th Lok Sabha),7.36,7.1389,7.1389,6.8382,7.06,0.0,60,60,57
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,484,BASTI,3017474,Shri Harish Dwivedi (17th Lok Sabha),6.05,6.0487,6.0487,0.0,5.56,0.0,7,7,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,485,BIJNOR,3019204,Malook Nagar(17th Lok Sabha),9.81,9.7943,9.7943,4.1899,9.73,0.0,168,168,77
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,486,NAGINA(SC),3019199,Girish Chandra(17th Lok Sabha),7.74,7.3389,7.3389,7.3389,7.34,0.0,238,238,238
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,487,BULANDSHAHR(SC),3019222,Bhola Singh(17th Lok Sabha),7.39,7.2238,7.2238,7.2238,7.22,0.0,344,344,344
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,488,JALAUN(SC),3019194,Bhanu Pratap Singh Verma(17th Lok Sabha),9.84,9.7354,9.7354,4.0238,8.69,0.0,87,87,38
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,489,MAINPURI,3019226,Smt Dimple Yadav(17th Lok Sabha),,,,,,,,,
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,489,MAINPURI,3060357,Mulayam Singh Yadav (17LS),0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,490,RAE BARELI,3018413,Smt. Sonia Gandhi (2019-24),12.72,11.7114,11.083,4.5368,8.29,0.0,1478,1474,1111
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,491,DOMARIYAGANJ,3019200,Jagdambika Pal(17th Lok Sabha),9.81,8.442,8.422,0.0,7.97,0.0,93,92,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,492,AMBEDKAR NAGAR,3017462,Shri Ritesh Pandey (17th Lok Sabha),7.36,7.07,7.07,6.4965,6.98,0.0,88,88,85
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,493,BHADOHI,3019185,Ramesh Chand Bind(17th Lok Sabha),7.36,7.35,7.35,0.0,7.02,0.0,60,60,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,494,MORADABAD,3018401,Seyed Tufail Hasan,,,,,,,,,
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,495,SULTANPUR,3018410,Maneka Sanjay Gandhi,6.93,6.9332,6.9332,0.0,5.66,0.0,80,80,0
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,496,SHRAWASTI,3019223,Ram Shiromani(17th Lok Sabha),11.29,11.2917,11.2917,6.061,11.19,0.0,1064,1064,726
+17th Lok Sabha,5,Lok Sabha,33,Uttar Pradesh,497,HATHRAS (SC),3019211,Rajvir Diler,,,,,,,,,
+17th Lok Sabha,5,Lok Sabha,32,Uttarakhand,498,NAINITAL UDHAM SINGH NAG.,3017176,Ajay Bhatt,9.81,9.5364,9.2266,3.9553,7.94,0.0,325,312,125
+17th Lok Sabha,5,Lok Sabha,32,Uttarakhand,499,GARHWAL,3019230,Tirath Singh Rawat(17th Lok Sabha),9.89,9.6122,9.1122,1.7172,6.94,0.0,366,350,67
+17th Lok Sabha,5,Lok Sabha,32,Uttarakhand,500,HARDWAR,3019229,Ramesh Pokhriyal Nishank(17th Lok Sabha),10.38,10.3675,9.665,0.0,8.48,0.0,232,216,0
+17th Lok Sabha,5,Lok Sabha,32,Uttarakhand,502,ALMORA(SC),3018414,Ajay Tamta,17.16,16.8662,16.7512,12.4074,15.42,0.0,1232,1226,847
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,503,ARAMBAG(SC),3018420,Aparupa Poddar,7.36,7.3161,7.3161,6.6446,7.29,0.0,181,181,169
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,504,HOOGHLY,3017481,Smt Locket Chatterjee (17th Lok Sabha),9.81,9.7685,9.7685,9.6295,9.77,0.0,307,307,304
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,505,SREERAMPUR,3019373,Kalyan Banerjee (17th Lok Sabha),7.36,7.0361,7.0058,5.5374,6.87,0.0,114,113,89
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,506,PURULIA,3017483,Shri Jyotirmay Singh Mahato (17th Lok Sabha),11.77,11.6078,9.2802,1.2204,2.95,0.0,144,131,18
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,507,BANKURA,3019299,Subhash Sarkar (17th Lok Sabha),14.14,13.9926,13.9926,1.1628,9.79,0.0,289,289,110
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,508,BISHNUPUR(SC),3018416,Saumitra khan,9.81,9.7573,9.4453,6.0961,8.09,0.0,105,97,58
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,509,KRISHNANAGAR,3019231,Ms Mahua Moitra(17th Lok Sabha),4.43,4.4264,4.4264,4.4264,4.43,0.0,27,27,27
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,510,RANAGHAT(SC),3019236,Jagannath Sarkar(17th Lok Sabha),7.36,6.8521,6.8521,4.8914,6.07,0.0,143,142,109
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,511,DARJEELING,3019234,Raju Bista(17th Lok Sabha),9.81,8.3213,7.7113,2.3543,6.26,0.0,126,116,41
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,512,BIRBHUM,3017478,Smt Satabdi Roy (Banerjee) (17th Lok Sabha),7.36,6.8855,6.8855,6.408,6.8,0.0,130,130,117
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,513,BOLPUR(SC),3019335,Asit Kumar Mal (17th Lok Sabha),7.11,7.1084,7.1084,4.4293,6.69,0.0,59,59,36
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,514,COOCHBEHAR(SC),3018419,Nisith Pramanik,5.2,3.149,2.139,0.0,2.1,0.0,31,26,0
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,515,KANTHI,3017484,Shri Sisir Kumar Adhikari (17th Lok Sabha),9.81,9.6042,9.6042,6.8842,9.3,0.0,85,85,57
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,516,TAMLUK,3017482,Shri Dibyendu Adhikari (17th Lok Sabha),9.81,9.1177,9.1177,5.6971,8.87,0.0,229,229,146
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,517,ALIPURDUARS(ST),3018417,John Barla,9.81,8.667,8.2255,2.1548,6.38,0.0,118,112,25
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,518,HOWRAH,3019233,Prasun Banerjee(17th Lok Sabha),9.81,8.9653,8.5153,7.9436,8.06,0.0,157,151,148
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,519,ULUBERIA,3019237,Smt Sajda Ahmed(17th Lok Sabha),7.36,7.1246,7.1246,6.517,6.85,0.0,180,180,171
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,520,BALURGHAT,3017477,Dr Sukanta Majumdar (17th Lok Sabha),7.36,7.0903,7.0903,2.9161,5.47,0.0,360,360,178
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,521,BAHARAMPUR,3019531,Adhir Ranjan Chowdhury (17th Lok Sabha),22.06,17.1469,14.4633,5.8735,13.09,0.0,223,198,66
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,522,JANGIPUR,3018418,Khalilur Rahaman,19.61,19.4397,19.3897,0.5773,15.58,0.0,306,305,5
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,523,MURSHIDABAD,3019300,Abu Taher Khan(17th Lok Sabha),22.06,21.1381,20.4291,10.5606,17.94,0.0,213,208,177
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,524,DIAMOND HARBOUR,3017487,Shri Abhishek Banerjee (17th Lok Sabha),7.36,7.179,7.179,2.8554,6.99,0.0,154,154,59
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,525,JADAVPUR,3017496,Ms Mimi Chakraborty (17th Lok Sabha),7.36,7.0708,7.0208,3.2208,6.76,0.0,258,257,119
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,526,JOYNAGAR(SC),3018422,Pratima Mondal,7.36,7.3348,7.3348,2.0006,6.99,0.0,146,146,18
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,527,MATHURAPUR(SC),3017490,Shri Choudhury Mohan Jatua (17th Lok Sabha),7.36,7.3275,7.1975,1.1455,6.19,0.0,123,122,27
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,528,KOLKATA DAKSHIN,3018421,Mala Roy,7.36,7.0517,7.0517,2.4052,5.55,0.0,57,57,23
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,529,KOLKATA UTTAR,3019533,Sudip Bandyopadhyay (17th Lok Sabha),9.81,8.9406,8.3376,3.7217,6.57,0.0,67,57,24
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,530,JALPAIGURI(SC),3017486,Dr Jayanta Kumar Roy (17th Lok Sabha),11.77,9.2167,6.3218,0.6441,4.44,0.0,71,50,5
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,531,MALDAHA DAKSHIN,3017488,Shri Abu Hasem Khan Choudhury (17th Lok Sabha),14.71,13.5359,12.4649,3.3679,7.36,0.0,329,305,99
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,532,MALDAHA UTTAR,3019301,Khagen Murmu(17th Lok Sabha),9.81,6.7829,5.1969,1.0705,3.1,0.0,270,233,44
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,533,MEDINIPUR,3017492,Shri Dilip Ghosh (17th Lok Sabha),9.81,9.2657,7.9826,1.4886,6.54,0.0,178,149,33
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,534,GHATAL,3017491,Shri Deepak (Dev) Adhikari (17th Lok Sabha),9.81,9.2314,8.9934,4.8789,7.87,0.0,204,202,132
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,535,BARASAT,3017485,Dr Kakoli Ghosh Dastidar,7.36,7.3268,7.2618,3.691,6.55,0.0,73,72,37
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,536,BARRACKPUR,3017489,Shri Arjun Singh (17th Lok Sabha),9.81,9.3935,9.3935,7.8009,8.98,0.0,53,53,41
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,537,BASIRHAT,3017495,Ms Nusrat Jahan Ruhi (17th Lok Sabha),7.36,7.3446,7.3446,3.2774,7.29,0.0,29,29,11
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,538,DUM DUM,3017493,Prof Saugata Roy (17th Lok Sabha),7.36,7.3137,7.1239,3.3937,6.08,0.0,72,69,31
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,539,BANGAON(SC),3017479,Shri Shantanu Thakur (17th Lok Sabha),9.81,9.7863,9.7863,3.4713,9.28,0.0,41,41,13
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,540,RAIGANJ,3019232,Ms Debasree Chaudhuri(17th Lok Sabha),4.91,4.6446,2.053,0.8849,1.74,0.0,77,35,17
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,541,JHARGRAM(ST),3017480,Shri Kunar Hembram (17th Lok Sabha),7.36,7.3355,7.3355,5.5799,7.31,0.0,31,31,17
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,542,ASANSOL,3019235,Shatrughan Sinha(17th Lok Sabha),7.36,6.7368,6.6428,1.6004,4.77,0.0,84,81,12
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,543,BARDHAMAN-DURGAPUR,3017494,Shri SS Ahluwalia (17th Lok Sabha),14.22,11.9116,11.7258,2.7852,8.4,0.0,195,193,55
+17th Lok Sabha,5,Lok Sabha,34,West Bengal,544,BARDHAMAN PURBA(SC),3019641,Sunil Kumar Mondal (17th Lok Sabha),9.81,9.7353,9.7353,5.1956,8.64,0.0,45,45,26

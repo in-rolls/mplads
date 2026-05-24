@@ -2,26 +2,76 @@
 
 Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area Development Scheme).
 
-## Key Findings (18th Lok Sabha, 543 MPs)
+## Data Coverage
 
-| Stage | Amount | Rate |
-|-------|--------|------|
-| Allocated | ₹8,269 Cr | 100% |
-| Recommended | ₹4,775 Cr | 58% of allocated |
-| Sanctioned | ₹3,544 Cr | 43% of allocated |
-| Completed | ₹1,051 Cr | 13% of allocated |
+| Body | Tenure | MPs | Status |
+|------|--------|-----|--------|
+| Lok Sabha | 18th (2024-present) | 543 | Complete |
+| Lok Sabha | 17th (2019-2024) | ~543 | In progress |
+| Rajya Sabha | 18th term | ~245 | Pending |
+| Rajya Sabha | 17th term | ~245 | Pending |
 
-**Per-MP Statistics:**
-- Median completion rate: **7.3%** (mean 12.6%)
-- 18% of MPs have **zero completions** (96 MPs)
-- Only 22 MPs (4%) have >50% completion rate
-- 88,611 works recommended → 21,775 completed (25% conversion)
+## Analysis 1: Tenure-Level Summary
 
-**Bottleneck:** Recommendation (only 58% of allocation recommended) and execution (only 32% of sanctioned works completed).
+**Estimand:** Total allocation utilization rate per tenure.
 
-## Competitiveness Analysis
+**Methodology:** Sum all MP-level amounts within each tenure and compute aggregate rates.
 
-Does electoral competition drive MPLADS spending? We merged 2024 election results to test whether MPs in closer races complete more works.
+**Unit of Analysis:** Parliamentary tenure (Lok Sabha term or Rajya Sabha term).
+
+**Results (Lok Sabha):**
+
+| Tenure | MPs | Allocated | Recommended | Sanctioned | Completed | Completion Rate |
+|--------|-----|-----------|-------------|------------|-----------|-----------------|
+| 18th LS (current) | 543 | Rs 8,269 Cr | Rs 4,775 Cr (58%) | Rs 3,544 Cr (43%) | Rs 1,051 Cr | **12.7%** |
+| 17th LS (2019-24) | 372* | Rs 3,348 Cr | Rs 3,104 Cr (93%) | Rs 2,975 Cr (89%) | Rs 1,660 Cr | **49.6%** |
+
+*Partial data; scraping in progress.
+
+**Key Finding:** The 17th LS shows much higher completion rates because MPs had a full 5-year term. The 18th LS began in June 2024 and works are still in progress.
+
+## Analysis 2: MP-Level Completion Distribution
+
+**Estimand:** Distribution of individual MP completion rates.
+
+**Methodology:** For each MP, compute `completion_rate = completed_amount / allocated_amount`, then examine the distribution across all MPs.
+
+**Unit of Analysis:** Individual MP.
+
+**Results (18th Lok Sabha):**
+
+| Percentile | Completion Rate |
+|------------|-----------------|
+| 0th (min) | 0.0% |
+| 10th | 0.0% |
+| 25th | 3.4% |
+| 50th (median) | 7.3% |
+| 75th | 17.8% |
+| 90th | 34.9% |
+| 100th (max) | 66.0% |
+
+**Completion Buckets:**
+- Zero completion: 96 MPs (18%)
+- 0-10%: 253 MPs
+- 10-25%: 106 MPs
+- 25-50%: 72 MPs
+- >50%: 16 MPs (3%)
+
+## Analysis 3: Competitiveness Analysis (Lok Sabha only)
+
+**Estimand:** Correlation between electoral competitiveness and MPLADS spending completion.
+
+**Hypothesis:** MPs in marginal seats may complete more works to strengthen electoral position.
+
+**Methodology:**
+1. Merge election results (vote margin = winner% - runner-up%) with MPLADS data
+2. Categorize seats: marginal (<5% margin), competitive (5-15%), safe (>15%)
+3. Compare mean/median completion rates across categories
+4. Compute Pearson correlation between margin and completion rate
+
+**Unit of Analysis:** Lok Sabha MP-constituency pair.
+
+**Results (18th Lok Sabha):**
 
 | Seat Type | N | Mean Completion | Median Completion |
 |-----------|---|-----------------|-------------------|
@@ -29,41 +79,58 @@ Does electoral competition drive MPLADS spending? We merged 2024 election result
 | Competitive (5-15%) | 218 | 11.9% | 6.8% |
 | Marginal (<5%) | 131 | 14.8% | 8.8% |
 
-**Finding:** Weak relationship. Correlation between vote margin and completion is -0.03. Marginal seats show slightly higher completion, but the effect is small.
+**Correlation (margin vs completion):** r = -0.03
 
-**Party-wise (top 5 by N):**
-| Party | MPs | Mean Completion |
-|-------|-----|-----------------|
-| BJP | 237 | 12.0% |
-| INC | 99 | 9.9% |
-| SP | 38 | 17.2% |
-| TMC | 29 | 10.0% |
-| DMK | 22 | 19.3% |
+**Conclusion:** Weak relationship. Marginal seats show slightly higher completion (+2-3 percentage points), but the effect is small and statistically weak.
+
+## Analysis 4: Party-wise Completion (Lok Sabha only)
+
+**Estimand:** Mean completion rate by political party.
+
+**Methodology:** Group MPs by winning party, compute mean/median completion rates.
+
+**Unit of Analysis:** Political party within tenure.
+
+**Results (18th Lok Sabha, top parties by N):**
+
+| Party | MPs | Mean Completion | Median Completion |
+|-------|-----|-----------------|-------------------|
+| BJP | 237 | 12.0% | 7.3% |
+| INC | 99 | 9.9% | 6.8% |
+| SP | 38 | 17.2% | 11.2% |
+| TMC | 29 | 10.0% | 6.4% |
+| DMK | 22 | 19.3% | 15.5% |
+
+## Data Files
+
+```
+data/
+├── mplads_18ls.csv          # 18th Lok Sabha aggregate spending
+├── mplads_17ls.csv          # 17th Lok Sabha aggregate spending
+├── mplads_rs18.csv          # Rajya Sabha 18th term (when available)
+├── mplads_rs17.csv          # Rajya Sabha 17th term (when available)
+├── mplads_aggregate.csv     # Combined aggregate data (all tenures)
+├── mplads_works.csv         # Work-level detail data (all tenures)
+├── works_ls18.csv           # Work details for 18th LS
+├── works_ls17.csv           # Work details for 17th LS
+├── elections/
+│   ├── elections_18ls.csv   # 2024 election results with margins
+│   └── elections_17ls.csv   # 2019 election results with margins
+└── raw/
+    └── *_cache.jsonl        # API response caches for resumability
+```
 
 ## Scripts
 
 ```
 src/
 ├── _client.py          # Shared HTTP client, throttling, caching
-├── fetch_mplads.py     # Main scraper: gets MPs + spending tiles in one pass
-├── fetch_works.py      # Fetch work-level details (optional)
-├── fetch_elections.py  # Download election results (2019, 2024)
-├── analyze.py          # Spending + competitiveness analysis
+├── fetch_mplads.py     # Scrape MP aggregate spending data
+├── fetch_works.py      # Scrape work-level details
+├── fetch_elections.py  # Download election results
+├── consolidate.py      # Combine source files into aggregate outputs
+├── analyze.py          # Analysis and reporting
 └── check_data.py       # Check data collection progress
-```
-
-## Data Files
-
-```
-data/
-├── mplads_18ls.csv                  # 18th Lok Sabha spending data
-├── mplads_17ls.csv                  # 17th Lok Sabha spending data (when available)
-├── final/
-│   └── mp_spending_with_elections.csv  # Merged with election competitiveness
-└── raw/
-    ├── elections_18ls.csv           # 2024 election results with margins
-    ├── elections_17ls.csv           # 2019 election results with margins
-    └── mplads_*_cache.jsonl         # Cache for resumability
 ```
 
 ## Quick Start
@@ -71,18 +138,21 @@ data/
 ```bash
 uv sync
 
-# Fetch all MP spending data (resumable)
-uv run python src/fetch_mplads.py --tenure-id 7  # 18th LS
-uv run python src/fetch_mplads.py --tenure-id 5  # 17th LS
+# Fetch aggregate spending data
+uv run python src/fetch_mplads.py --tenure-id 7 --house 2 --out data/mplads_18ls.csv   # 18th LS
+uv run python src/fetch_mplads.py --tenure-id 5 --house 2 --out data/mplads_17ls.csv   # 17th LS
+uv run python src/fetch_mplads.py --tenure-id 7 --house 1 --out data/mplads_rs18.csv   # RS 18
+uv run python src/fetch_mplads.py --tenure-id 5 --house 1 --out data/mplads_rs17.csv   # RS 17
 
 # Fetch election results
 uv run python src/fetch_elections.py
 
-# Analyze (includes competitiveness)
-uv run python src/analyze.py
+# Consolidate into single files
+uv run python src/consolidate.py
 
-# Check progress
-uv run python src/check_data.py
+# Analyze
+uv run python src/analyze.py
+uv run python src/analyze.py --aggregate mplads_aggregate.csv  # Use consolidated file
 ```
 
 ## The Spending Funnel
@@ -118,5 +188,5 @@ Requires session cookies from `/digigov/dashboard.html`.
 
 - **Resumability:** JSONL cache. Re-running skips cached data.
 - **Rate Limiting:** Server rate-limits aggressively. Scripts retry with exponential backoff.
-- **Data Model:** Primary key is (mp_id, tenure_id). Same MP across tenures = separate rows.
+- **Data Model:** Primary key is (mp_id, tenure_id, house). Same MP across tenures = separate rows.
 - **17th vs 18th LS:** The 18th Lok Sabha began in June 2024 with works still in progress. The 17th LS ran full tenure (2019-2024), hence higher completion rates.
