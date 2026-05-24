@@ -35,8 +35,10 @@ uv.lock
 *.swo
 *~
 
-# Data directories
-data/
+# Data - ignore raw cache, keep final outputs
+data/raw/
+data/interim/
+!data/final/
 
 # Cache
 .cache/
