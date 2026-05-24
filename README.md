@@ -2,17 +2,23 @@
 
 Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area Development Scheme).
 
-## Key Findings (Partial: 30 MPs, 3 States, 18th Lok Sabha)
+## Key Findings (18th Lok Sabha, 398 MPs)
 
-| Metric | Value |
-|--------|-------|
-| Total Allocated | ₹433 Cr |
-| Total Recommended | ₹218 Cr (50%) |
-| Total Sanctioned | ₹195 Cr (89% of recommended) |
-| Total Completed | ₹39 Cr (20% of sanctioned) |
-| **Overall Utilization** | **9%** |
+| Stage | Amount | Rate |
+|-------|--------|------|
+| Allocated | ₹6,038 Cr | 100% |
+| Recommended | ₹3,424 Cr | 57% of allocated |
+| Sanctioned | ₹2,482 Cr | 72% of recommended |
+| Completed | ₹714 Cr | 25% of sanctioned |
+| **Utilization** | | **11.8%** |
 
-**The Bottleneck:** Sanction→Completion is the weakest link. 89% of recommendations get sanctioned, but only 20% of sanctioned works are completed.
+**Per-MP Statistics:**
+- Median completion rate: **6.8%** (mean 11.8% - skewed by top performers)
+- 17% of MPs have **zero completions** (67 MPs)
+- Only 15 MPs (4%) have >50% completion rate
+- 62,125 works recommended → 14,550 completed (23% conversion)
+
+**Bottleneck:** Recommendation (only 57% of allocation recommended) and execution (only 25% of sanctioned works completed).
 
 ## Scripts
 
