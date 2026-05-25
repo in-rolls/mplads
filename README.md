@@ -7,9 +7,10 @@ Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area D
 | Body | Tenure | MPs | Status |
 |------|--------|-----|--------|
 | Lok Sabha | 18th (2024-present) | 543 | Complete |
-| Lok Sabha | 17th (2019-2024) | ~543 | In progress |
-| Rajya Sabha | 18th term | ~245 | Pending |
-| Rajya Sabha | 17th term | ~245 | Pending |
+| Lok Sabha | 17th (2019-2024) | 557 | Complete |
+| Rajya Sabha | All current | 219 | Complete |
+
+Note: Rajya Sabha data is not tenure-separated in the portal API. All current RS MPs are fetched together, with individual tenure info (e.g., "2020-26") embedded in MP names.
 
 ## Analysis 1: Tenure-Level Summary
 
@@ -19,14 +20,13 @@ Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area D
 
 **Unit of Analysis:** Parliamentary tenure (Lok Sabha term or Rajya Sabha term).
 
-**Results (Lok Sabha):**
+**Results:**
 
-| Tenure | MPs | Allocated | Recommended | Sanctioned | Completed | Completion Rate |
-|--------|-----|-----------|-------------|------------|-----------|-----------------|
-| 18th LS (current) | 543 | Rs 8,269 Cr | Rs 4,775 Cr (58%) | Rs 3,544 Cr (43%) | Rs 1,051 Cr | **12.7%** |
-| 17th LS (2019-24) | 372* | Rs 3,348 Cr | Rs 3,104 Cr (93%) | Rs 2,975 Cr (89%) | Rs 1,660 Cr | **49.6%** |
-
-*Partial data; scraping in progress.
+| Tenure | MPs | Allocated | Completed | Completion Rate |
+|--------|-----|-----------|-----------|-----------------|
+| 18th LS (current) | 553 | Rs 8,248 Cr | Rs 1,044 Cr | **12.7%** |
+| 17th LS (2019-24) | 557 | Rs 4,768 Cr | Rs 2,358 Cr | **49.5%** |
+| Rajya Sabha | 219 | Rs 3,619 Cr | Rs 694 Cr | **19.2%** |
 
 **Key Finding:** The 17th LS shows much higher completion rates because MPs had a full 5-year term. The 18th LS began in June 2024 and works are still in progress.
 
@@ -107,12 +107,12 @@ Pipeline to analyze MP spending under MPLADS (Members of Parliament Local Area D
 data/
 ├── mplads_18ls.csv          # 18th Lok Sabha aggregate spending
 ├── mplads_17ls.csv          # 17th Lok Sabha aggregate spending
-├── mplads_rs18.csv          # Rajya Sabha 18th term (when available)
-├── mplads_rs17.csv          # Rajya Sabha 17th term (when available)
-├── mplads_aggregate.csv     # Combined aggregate data (all tenures)
-├── mplads_works.csv         # Work-level detail data (all tenures)
+├── mplads_rs.csv            # Rajya Sabha aggregate spending (all current MPs)
+├── mplads_aggregate.csv     # Combined aggregate data (all bodies)
+├── mplads_works.csv         # Work-level detail data (all bodies)
 ├── works_ls18.csv           # Work details for 18th LS
 ├── works_ls17.csv           # Work details for 17th LS
+├── works_rs.csv             # Work details for RS
 ├── elections/
 │   ├── elections_18ls.csv   # 2024 election results with margins
 │   └── elections_17ls.csv   # 2019 election results with margins
@@ -125,7 +125,8 @@ data/
 ```
 src/
 ├── _client.py          # Shared HTTP client, throttling, caching
-├── fetch_mplads.py     # Scrape MP aggregate spending data
+├── fetch_mplads.py     # Scrape Lok Sabha aggregate spending data
+├── fetch_mplads_rs.py  # Scrape Rajya Sabha aggregate spending data
 ├── fetch_works.py      # Scrape work-level details
 ├── fetch_elections.py  # Download election results
 ├── consolidate.py      # Combine source files into aggregate outputs
@@ -138,11 +139,12 @@ src/
 ```bash
 uv sync
 
-# Fetch aggregate spending data
+# Fetch Lok Sabha aggregate spending data
 uv run python src/fetch_mplads.py --tenure-id 7 --house 2 --out data/mplads_18ls.csv   # 18th LS
 uv run python src/fetch_mplads.py --tenure-id 5 --house 2 --out data/mplads_17ls.csv   # 17th LS
-uv run python src/fetch_mplads.py --tenure-id 7 --house 1 --out data/mplads_rs18.csv   # RS 18
-uv run python src/fetch_mplads.py --tenure-id 5 --house 1 --out data/mplads_rs17.csv   # RS 17
+
+# Fetch Rajya Sabha aggregate spending data (separate script, no tenure separation)
+uv run python src/fetch_mplads_rs.py --out data/mplads_rs.csv
 
 # Fetch election results
 uv run python src/fetch_elections.py
@@ -180,7 +182,17 @@ The eSAKSHI portal (live since April 2023) tracks the workflow. Only FY 2023-24 
 POST endpoints at `mplads.mospi.gov.in/rest/PreLoginDashboardData/`:
 - `getTilesData` - Six dashboard tiles per MP
 - `getTilesReportData` - Work-level details
-- `getStateData`, `getConstituencyData`, `getMpAndConstCombo` - Lookups
+- `getStateData`, `getConstituencyData` - State/constituency lookups
+- `getMpAndConstCombo` - MPs by constituency (Lok Sabha)
+- `getMpNamesData` - MPs by state (Rajya Sabha)
+
+**Lok Sabha API format:**
+- MPs: `getMpAndConstCombo` with `const_combo = "constituency_id,2,tenure_id"`
+- Tiles: `getTilesData` with `uname = "state_id,const_id,mp_id,2,tenure_id"`
+
+**Rajya Sabha API format:**
+- MPs: `getMpNamesData` with `state_combo = "state_id,1"`
+- Tiles: `getTilesData` with `uname = "state_id,0,mp_id,1"` (no tenure parameter)
 
 Requires session cookies from `/digigov/dashboard.html`.
 

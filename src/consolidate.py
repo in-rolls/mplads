@@ -16,15 +16,13 @@ import pandas as pd
 AGGREGATE_FILES = {
     "18th Lok Sabha": "mplads_18ls.csv",
     "17th Lok Sabha": "mplads_17ls.csv",
-    "Rajya Sabha 18": "mplads_rs18.csv",
-    "Rajya Sabha 17": "mplads_rs17.csv",
+    "Rajya Sabha": "mplads_rs.csv",
 }
 
 WORKS_FILES = {
     "18th Lok Sabha": "works_ls18.csv",
     "17th Lok Sabha": "works_ls17.csv",
-    "Rajya Sabha 18": "works_rs18.csv",
-    "Rajya Sabha 17": "works_rs17.csv",
+    "Rajya Sabha": "works_rs.csv",
 }
 
 
@@ -47,14 +45,12 @@ def consolidate_aggregate(data_dir: Path, output_path: Path) -> None:
 
     combined = pd.concat(dfs, ignore_index=True)
 
-    key_cols = ["mp_id", "house", "tenure_id", "constituency_id"]
-    available_keys = [c for c in key_cols if c in combined.columns]
-    if available_keys:
-        dups = combined.duplicated(subset=available_keys, keep=False)
-        if dups.any():
-            print(f"  WARNING: {dups.sum()} duplicate rows by {available_keys}")
-            combined = combined.drop_duplicates(subset=available_keys, keep="first")
-            print(f"  Kept first occurrence, now {len(combined)} rows")
+    key_cols = ["mp_id", "tenure_label"]
+    dups = combined.duplicated(subset=key_cols, keep=False)
+    if dups.any():
+        print(f"  WARNING: {dups.sum()} duplicate rows by {key_cols}")
+        combined = combined.drop_duplicates(subset=key_cols, keep="first")
+        print(f"  Kept first occurrence, now {len(combined)} rows")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     combined.to_csv(output_path, index=False)
