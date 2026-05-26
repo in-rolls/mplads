@@ -14,40 +14,39 @@ Of every Rs 100 allocated to MPs:
 | Completed | Rs 25 | Work marked finished |
 | Expenditure | Rs 44 | Actual money released (includes ongoing works) |
 
-**75% of allocated funds never reach completion.** The biggest drop is Sanctioned → Completed (only 42% pass through). Expenditure > Completed because expenditure includes payments for works still in progress.
+**75% of allocated funds never reach completion.** Of every Rs 100, Rs 31 is lost at recommendation, Rs 11 at sanction, and Rs 33 between sanction and completion. Expenditure > Completed because expenditure includes payments for works still in progress.
 
 *"From the perspective of a profit- and vote-maximizing politician, it is not clear why allocated money would remain unspent."*
 
 ## TL;DR: The Political Angle
 
-**What explains variation in completion rates? Almost nothing except tenure maturity.**
+**What explains variation? Almost nothing except tenure maturity.**
 
 | Factor | Effect | Notes |
 |--------|--------|-------|
-| Tenure maturity | Huge | 17th LS (full term): 51% completion. 18th LS (new): 13% |
+| Tenure maturity | Huge | 17th LS (full term): 49% completion. 18th LS (new): 13% |
 | Electoral competitiveness | Near zero | r = -0.02. Marginal vs safe seats: no meaningful difference |
 | Party | Small, noisy | Some variation but high within-party variance dominates |
 
 **Competitiveness (18th LS):**
 
-| Seat Type | N | Mean Completion |
-|-----------|---|-----------------|
-| Safe (>15% margin) | 182 | 12.4% |
-| Competitive (5-15%) | 198 | 12.0% |
-| Marginal (<5%) | 116 | 14.7% |
+| Seat Type | N | Rec % | Exp % | Comp % |
+|-----------|---|-------|-------|--------|
+| Safe (>15% margin) | 191 | 56% | 26% | 12% |
+| Competitive (5-15%) | 218 | 57% | 25% | 12% |
+| Marginal (<5%) | 131 | 61% | 30% | 15% |
 
-Correlation (margin vs completion): **r = -0.02** → essentially zero
+Correlation (margin vs completion): **r = -0.02** → essentially zero. The pattern holds across all funnel stages.
 
 **Party (18th LS, top parties):**
 
-| Party | N | Mean Completion |
-|-------|---|-----------------|
-| JD(U) | 12 | 34% |
-| DMK | 21 | 20% |
-| SP | 36 | 17% |
-| BJP | 218 | 12% |
-| INC | 93 | 10% |
-| TMC | 27 | 9% |
+| Party | N | Rec % | Exp % | Comp % |
+|-------|---|-------|-------|--------|
+| BJP | 237 | 55% | 25% | 12% |
+| INC | 99 | 61% | 25% | 10% |
+| SP | 38 | 64% | 37% | 17% |
+| TMC | 29 | 64% | 32% | 11% |
+| DMK | 22 | 65% | 35% | 20% |
 
 Within-party std dev = 30%, so party label explains little. The electoral incentive story doesn't hold: MPs in marginal seats don't spend more to shore up support. Most variation is idiosyncratic or tenure-driven.
 
@@ -175,13 +174,13 @@ uv run jupyter execute analysis/02_electoral_targeting.ipynb  # Regression analy
 
 ### Tenure-Level Summary
 
-| Tenure | MPs | Allocated | Completed | Completion Rate |
-|--------|-----|-----------|-----------|-----------------|
-| 18th LS (current) | 553 | Rs 8,248 Cr | Rs 1,044 Cr | **12.7%** |
-| 17th LS (2019-24) | 557 | Rs 4,768 Cr | Rs 2,358 Cr | **49.5%** |
-| Rajya Sabha | 219 | Rs 3,619 Cr | Rs 694 Cr | **19.2%** |
+| Tenure | Allocated | Rec % | Sanc % | Expend % | Comp % |
+|--------|-----------|-------|--------|----------|--------|
+| 17th LS (2019-24) | Rs 4,768 Cr | 94% | 90% | 79% | 49% |
+| 18th LS (2024-) | Rs 8,248 Cr | 58% | 43% | 26% | 13% |
+| Rajya Sabha | Rs 3,619 Cr | 64% | 50% | 36% | 19% |
 
-The 17th LS shows higher completion because MPs had a full 5-year term. The 18th LS began June 2024 with works still in progress.
+The 17th LS shows higher rates because MPs had a full 5-year term. For the 18th LS (ongoing), **expenditure (26%) is a better progress measure than completion (13%)** since works take time to finish.
 
 ### MP-Level Completion Distribution (18th Lok Sabha)
 
