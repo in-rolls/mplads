@@ -35,15 +35,33 @@ Project type distribution (17th LS, 186K recommendations):
 
 ![Project Types](data/fig_08_project_types.png)
 
-**Completion time by project type:**
+**Completion rates (survival-style, counting ALL recommendations):**
 
-![Completion Time](data/fig_09_completion_time.png)
+| Body | N Activities | 1yr | 2yr |
+|------|-------------|-----|-----|
+| 17th LS | 91K | 20% | 42% |
+| 18th LS | 67K | 27% | — |
+| Rajya Sabha | 22K | 31% | 55% |
 
-Vehicle purchases (542d median) take nearly as long as CC roads (621d). Purchases take **106%** as long as construction. Completion time is driven by bureaucratic process, not project complexity.
+Rajya Sabha has higher completion rates than Lok Sabha despite less electoral pressure. This suggests completion is driven by state bureaucratic capacity, not political incentives.
+
+**By project type (17th LS):**
+
+| Type | N | 1yr | 2yr |
+|------|---|-----|-----|
+| Tubewell/Handpump | 3.8K | 28% | 51% |
+| Solar Installation | 6.6K | 16% | 53% |
+| Other Road | 21.6K | 21% | 43% |
+| CC Road | 7.5K | 19% | 40% |
+| Community Hall | 9.4K | 7% | 22% |
+
+![Completion Rate Over Time](data/fig_10_survival_completion.png)
+
+Community halls have low completion (22% by 2 years) despite being 10% of recommendations—larger construction projects take longer and fail more often.
 
 ### 3. Political Incentives Don't Matter Much
 
-**Lok Sabha vs Rajya Sabha:** LS MPs have direct electoral accountability. If political incentives drove spending, LS should outperform RS. Data is mixed—17th LS (94% recommended) beats RS (64%), but RS completion (19%) is closer to 18th LS (13%) than 17th LS (49%). Tenure maturity dominates.
+**Lok Sabha vs Rajya Sabha:** LS MPs have direct electoral accountability. If political incentives drove spending, LS should outperform RS. But survival analysis shows RS actually completes projects faster (31% at 1yr, 55% at 2yr) than LS (20% at 1yr, 42% at 2yr). State administrative capacity matters more than electoral pressure.
 
 **Competitive vs Safe Seats:** MPs in marginal seats should spend more to shore up support. Data shows no meaningful effect:
 
