@@ -7,10 +7,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from _config import COLORS, SOURCES, STAGES, STAGE_LABELS
+
 DATA_DIR = Path(__file__).parent.parent / "data"
-SOURCES = ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]
-STAGES = ["allocated_cr", "recommended_cr", "sanctioned_cr", "completed_cr"]
-STAGE_LABELS = ["Allocated", "Recommended", "Sanctioned", "Completed"]
 
 
 def load_data() -> pd.DataFrame:
@@ -19,8 +18,8 @@ def load_data() -> pd.DataFrame:
     ls17 = pd.read_csv(DATA_DIR / "mplads_17ls.csv")
     rs = pd.read_csv(DATA_DIR / "mplads_rs.csv")
 
-    ls18["source"] = "LS 18 (2019-24)"
-    ls17["source"] = "LS 17 (2014-19)"
+    ls18["source"] = "LS 18 (2024-)"
+    ls17["source"] = "LS 17 (2019-24)"
     rs["source"] = "Rajya Sabha"
 
     return pd.concat([ls18, ls17, rs], ignore_index=True)
@@ -37,7 +36,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print("-" * 90)
     print(f"{'Source':<20} {'N MPs':>8} {'Allocated':>12} {'Recommended':>12} {'Sanctioned':>12} {'Completed':>12}")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         print(f"{src:<20} {len(s):>8} {s['allocated_cr'].sum():>12.0f} {s['recommended_cr'].sum():>12.0f} {s['sanctioned_cr'].sum():>12.0f} {s['completed_cr'].sum():>12.0f}")
 
@@ -45,7 +44,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print("-" * 90)
     print(f"{'Source':<20} {'Recommended %':>15} {'Sanctioned %':>15} {'Completed %':>15}")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         alloc = s["allocated_cr"].sum()
         rec_pct = s["recommended_cr"].sum() / alloc * 100
@@ -57,7 +56,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print("-" * 90)
     print(f"{'Source':<20} {'Rec/Alloc':>12} {'Sanc/Rec':>12} {'Comp/Sanc':>12}")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         alloc = s["allocated_cr"].sum()
         rec = s["recommended_cr"].sum()
@@ -72,7 +71,7 @@ def print_summary(df: pd.DataFrame) -> None:
     print("-" * 90)
     print(f"{'Source':<20} {'Allocated':>12} {'Recommended':>12} {'Sanctioned':>12} {'Completed':>12}")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         print(f"{src:<20} {s['allocated_cr'].mean():>12.2f} {s['recommended_cr'].mean():>12.2f} {s['sanctioned_cr'].mean():>12.2f} {s['completed_cr'].mean():>12.2f}")
 
@@ -80,13 +79,13 @@ def print_summary(df: pd.DataFrame) -> None:
     print("-" * 90)
     print(f"{'Source':<20} {'Recommended':>15} {'Sanctioned':>15} {'Completed':>15}")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         print(f"{src:<20} {int(s['n_recommended'].sum()):>15,} {int(s['n_sanctioned'].sum()):>15,} {int(s['n_completed'].sum()):>15,}")
 
     print("\n6. ZERO ACTIVITY MPs")
     print("-" * 90)
-    for src in ["LS 17 (2014-19)", "LS 18 (2019-24)", "Rajya Sabha"]:
+    for src in SOURCES:
         s = df[df["source"] == src]
         zero_rec = (s["recommended_cr"] == 0).sum()
         zero_comp = (s["completed_cr"] == 0).sum()
@@ -106,11 +105,10 @@ def plot_funnel(df: pd.DataFrame) -> None:
 
     x = range(len(STAGE_LABELS))
     width = 0.25
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]
 
     for i, (src, data) in enumerate(zip(SOURCES, funnel_data)):
         offset = (i - 1) * width
-        ax.bar([xi + offset for xi in x], data, width, label=src, color=colors[i])
+        ax.bar([xi + offset for xi in x], data, width, label=src, color=COLORS[i])
 
     ax.set_xlabel("Stage")
     ax.set_ylabel("Amount (Rs. Crores)")
@@ -121,9 +119,9 @@ def plot_funnel(df: pd.DataFrame) -> None:
     ax.grid(axis="y", alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(DATA_DIR / "descriptive_funnel.png", dpi=150)
+    plt.savefig(DATA_DIR / "fig_01_funnel.png", dpi=150)
     plt.close()
-    print(f"Saved: {DATA_DIR / 'descriptive_funnel.png'}")
+    print(f"Saved: {DATA_DIR / 'fig_01_funnel.png'}")
 
 
 def plot_distributions(df: pd.DataFrame) -> None:
@@ -136,8 +134,7 @@ def plot_distributions(df: pd.DataFrame) -> None:
 
     # Histograms
     ax = axes[0]
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]
-    for src, color in zip(SOURCES, colors):
+    for src, color in zip(SOURCES, COLORS):
         subset = df[df["source"] == src]["completion_rate"]
         ax.hist(subset, bins=20, alpha=0.5, label=src, color=color, edgecolor="black")
     ax.set_xlabel("Completion Rate (%)")
@@ -148,16 +145,16 @@ def plot_distributions(df: pd.DataFrame) -> None:
 
     # Box plots
     ax = axes[1]
-    sns.boxplot(data=df, x="source", y="completion_rate", hue="source", ax=ax, palette=colors, legend=False)
+    sns.boxplot(data=df, x="source", y="completion_rate", hue="source", ax=ax, palette=COLORS, legend=False)
     ax.set_xlabel("Source")
     ax.set_ylabel("Completion Rate (%)")
     ax.set_title("Completion Rate Comparison by Source")
     ax.grid(axis="y", alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(DATA_DIR / "descriptive_distributions.png", dpi=150)
+    plt.savefig(DATA_DIR / "fig_02_distributions.png", dpi=150)
     plt.close()
-    print(f"Saved: {DATA_DIR / 'descriptive_distributions.png'}")
+    print(f"Saved: {DATA_DIR / 'fig_02_distributions.png'}")
 
 
 def plot_percentiles(df: pd.DataFrame) -> None:
@@ -180,27 +177,26 @@ def plot_percentiles(df: pd.DataFrame) -> None:
     # Violin plots
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
     axes = axes.flatten()
-    colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]
 
     for i, (stage, label) in enumerate(zip(STAGES, STAGE_LABELS)):
         ax = axes[i]
-        sns.violinplot(data=df, x="source", y=stage, hue="source", ax=ax, palette=colors, legend=False)
+        sns.violinplot(data=df, x="source", y=stage, hue="source", ax=ax, palette=COLORS, legend=False)
         ax.set_xlabel("Source")
         ax.set_ylabel(f"{label} (Rs. Crores)")
         ax.set_title(f"Per-MP {label} Distribution")
         ax.grid(axis="y", alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(DATA_DIR / "descriptive_percentiles.png", dpi=150)
+    plt.savefig(DATA_DIR / "fig_03_percentiles.png", dpi=150)
     plt.close()
-    print(f"Saved: {DATA_DIR / 'descriptive_percentiles.png'}")
+    print(f"Saved: {DATA_DIR / 'fig_03_percentiles.png'}")
 
 
 def plot_scatter(df: pd.DataFrame) -> None:
     """Scatter plot of recommended vs completed amounts by source."""
     fig, ax = plt.subplots(figsize=(10, 8))
 
-    colors = {"LS 17 (2014-19)": "#1f77b4", "LS 18 (2019-24)": "#ff7f0e", "Rajya Sabha": "#2ca02c"}
+    color_map = dict(zip(SOURCES, COLORS))
 
     for src in SOURCES:
         subset = df[df["source"] == src]
@@ -209,7 +205,7 @@ def plot_scatter(df: pd.DataFrame) -> None:
             subset["completed_cr"],
             alpha=0.5,
             label=src,
-            color=colors[src],
+            color=color_map[src],
             s=30,
         )
 
@@ -224,9 +220,9 @@ def plot_scatter(df: pd.DataFrame) -> None:
     ax.grid(alpha=0.3)
 
     plt.tight_layout()
-    plt.savefig(DATA_DIR / "descriptive_scatter.png", dpi=150)
+    plt.savefig(DATA_DIR / "fig_04_scatter.png", dpi=150)
     plt.close()
-    print(f"Saved: {DATA_DIR / 'descriptive_scatter.png'}")
+    print(f"Saved: {DATA_DIR / 'fig_04_scatter.png'}")
 
 
 def main() -> None:

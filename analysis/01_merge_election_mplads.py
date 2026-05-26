@@ -3,15 +3,18 @@ Merge MPLADS works data (18th Lok Sabha) with 2019 election results.
 
 Since 18th LS election data is not available, we use 2019 (17th LS) results
 as a proxy for constituency competitiveness characteristics.
+
+This is a data prep step. Run before 02_electoral_targeting.ipynb.
 """
 
 import re
-import pandas as pd
-import numpy as np
 from pathlib import Path
 
+import numpy as np
+import pandas as pd
+
 DATA_DIR = Path(__file__).parent.parent / "data"
-ELECTION_DATA_PATH = Path("/Users/soodoku/Documents/GitHub/all-tuned-in/jensenius_data/gen_election_data/gen_election_data.csv")
+ELECTION_DATA_PATH = DATA_DIR / "elections" / "gen_election_data.csv"
 
 
 def clean_constituency_name(name: str) -> str:

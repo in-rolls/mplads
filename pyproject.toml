@@ -22,6 +22,11 @@ dependencies = [
     "pandas>=2.0",
     "rapidfuzz>=3.0",
     "tqdm>=4.66",
+    "matplotlib>=3.10.9",
+    "seaborn>=0.13.2",
+    "jupyter>=1.1.1",
+    "nbclient>=0.10.4",
+    "statsmodels>=0.14.6",
 ]
 
 [project.optional-dependencies]
