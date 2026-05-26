@@ -18,7 +18,9 @@ Most allocated funds never reach completion:
 
 ![Funding Funnel](data/fig_01_funnel.png)
 
-The 17th LS (2019-24) shows higher rates because MPs had a full 5-year term. For the 18th LS (ongoing), expenditure is a better progress measure than completion since works take time to finish.
+**Note on allocation amounts:** The 18th LS shows higher total allocation than 17th LS despite being a shorter tenure. This is because eSAKSHI went live in April 2023, so 17th LS data only captures ~1 year (FY 2023-24) of their 5-year term, while 18th LS has ~2 full years (Jun 2024 - present). The percentages in the table above are still meaningful as they show conversion rates within each tenure's captured data.
+
+The 17th LS (2019-24) shows higher completion *rates* because MPs had a full 5-year term. For the 18th LS (ongoing), expenditure is a better progress measure than completion since works take time to finish.
 
 ### 2. What Gets Funded
 
@@ -85,6 +87,17 @@ Correlation (margin vs completion): **r = -0.03**
 | DMK | 22 | 65% | 34% | 19% |
 
 **Experience/Tenure:** First-term vs returning MPs shows no significant difference.
+
+**Election Year Effect:** Comparing pre-election (Dec 2023 - May 2024, 17th LS) vs post-election (Jun - Nov 2024, 18th LS):
+
+| Period | Recs/MP/month | Completions/month |
+|--------|---------------|-------------------|
+| Pre-election (outgoing) | 35 | 1,604 |
+| Post-election (new MPs) | 18 | 1,105 |
+
+Outgoing MPs recommend 2x as much per MP as new MPs, and completions run 1.5x higher before elections. This suggests bureaucratic push to finish before transition rather than new MP enthusiasm.
+
+![Monthly Recommendations](data/fig_11_monthly_recommendations.png)
 
 ### 4. Multivariate Results
 
@@ -210,6 +223,9 @@ uv run jupyter execute analysis/02_electoral_targeting.ipynb  # Regression analy
 - `fig_07_incumbent.png` - Incumbent vs first-term comparison
 - `fig_08_project_types.png` - Project type distribution
 - `fig_09_completion_time.png` - Completion time by project type
+- `fig_10_survival_completion.png` - Cumulative completion by project type
+- `fig_11_monthly_recommendations.png` - Monthly recommendations timeline
+- `fig_12_monthly_completions.png` - Monthly completions timeline
 
 ## Technical Notes
 
