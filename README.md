@@ -37,13 +37,13 @@ Project type distribution (17th LS, 186K recommendations):
 
 **Completion rates (survival-style, counting ALL recommendations):**
 
-| Body | N Activities | 1yr | 2yr |
-|------|-------------|-----|-----|
-| 17th LS | 91K | 20% | 42% |
-| 18th LS | 67K | 27% | — |
-| Rajya Sabha | 22K | 31% | 55% |
+| Body | N | 1yr | 18mo | 2yr |
+|------|---|-----|------|-----|
+| 17th LS | 91K | 20% | 26% | 42% |
+| 18th LS | 67K | 28% | 53% | — |
+| Rajya Sabha | 22K | 33% | 44% | 55% |
 
-Rajya Sabha has higher completion rates than Lok Sabha despite less electoral pressure. This suggests completion is driven by state bureaucratic capacity, not political incentives.
+18th LS is completing projects much faster than 17th LS did (53% vs 26% at 18 months). Rajya Sabha also outperforms Lok Sabha despite less electoral pressure—state administrative capacity matters more than political incentives.
 
 **By project type (17th LS):**
 
