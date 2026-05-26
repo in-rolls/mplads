@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Fetch detailed work-level data for each MP.
+"""Fetch detailed work-level data for Rajya Sabha MPs.
 
-For each MP, fetches the work records underlying each tile type
+For each RS MP, fetches the work records underlying each tile type
 (Recommended, Sanctioned, Completed works).
 
-Supports both Lok Sabha and Rajya Sabha inputs:
-  - LS: requires tenure_id, constituency_id
-  - RS: uses mp_tenure, no constituency (auto-detected)
+RS-specific format:
+  - No constituency - MPs are state-based
+  - combo format: "state_id,0,mp_id,1"
 
-Input: aggregate CSV (mplads_18ls.csv, mplads_17ls.csv, or mplads_rs.csv)
-Output: works CSV and cache JSONL
+Input: data/mplads_rs.csv (aggregate RS data)
+Output: data/works_rs.csv
 """
 
 from __future__ import annotations
@@ -97,24 +97,24 @@ def api_post(
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", default="data/mplads_full.csv")
-    ap.add_argument("--cache", default="data/raw/mplads_works_cache.jsonl")
-    ap.add_argument("--out", default="data/interim/mplads_works.csv")
+    ap.add_argument("--input", default="data/mplads_rs.csv")
+    ap.add_argument("--cache", default="data/raw/mplads_works_rs_cache.jsonl")
+    ap.add_argument("--out", default="data/works_rs.csv")
     ap.add_argument("--delay", type=float, default=2.0)
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args()
 
-    logger.info(f"Starting work-level fetch at {datetime.now()}")
+    logger.info(f"Starting RS work-level fetch at {datetime.now()}")
 
     if not Path(args.input).exists():
-        logger.error(f"Input file not found: {args.input}. Run fetch_mplads.py first.")
+        logger.error(f"Input file not found: {args.input}. Run fetch_mplads_rs.py first.")
         return
 
     df = pd.read_csv(args.input, dtype=str).fillna("")
     if args.limit:
         df = df.head(args.limit)
 
-    logger.info(f"Processing {len(df)} MPs")
+    logger.info(f"Processing {len(df)} RS MPs")
 
     cache = JsonlCache(Path(args.cache))
     logger.info(f"Cache has {len(cache)} entries")
@@ -127,21 +127,10 @@ def main() -> None:
     all_records: list[dict[str, Any]] = []
     all_columns: set[str] = set()
 
-    is_rs = "mp_tenure" in df.columns or "constituency_id" not in df.columns
-    logger.info(f"Mode: {'Rajya Sabha' if is_rs else 'Lok Sabha'}")
-
-    for _, row in tqdm(list(df.iterrows()), desc="MPs"):
+    for _, row in tqdm(list(df.iterrows()), desc="RS MPs"):
         state_id = row["state_id"]
         mp_id = row["mp_id"]
-
-        if is_rs:
-            combo = f"{state_id},0,{mp_id},1"
-            const_id = ""
-            tenure_id = ""
-        else:
-            const_id = row["constituency_id"]
-            tenure_id = row["tenure_id"]
-            combo = f"{state_id},{const_id},{mp_id},2,{tenure_id}"
+        combo = f"{state_id},0,{mp_id},1"
 
         for tile_label in TILE_LABELS:
             cache_key = f"{combo}||{tile_label}"
@@ -174,78 +163,49 @@ def main() -> None:
                             pass
                     elif isinstance(val, list):
                         records.extend(val)
+
             for rec in records or []:
                 if not isinstance(rec, dict):
                     continue
-                if is_rs:
-                    flat: dict[str, Any] = {
-                        "tenure_label": row.get("tenure_label", ""),
-                        "house": row.get("house", ""),
-                        "state_id": state_id,
-                        "state_name": row.get("state_name", ""),
-                        "mp_id": mp_id,
-                        "mp_name": row.get("mp_name", ""),
-                        "mp_tenure": row.get("mp_tenure", ""),
-                        "tile_label": tile_label,
-                        **{
-                            k: (v.strip() if isinstance(v, str) else v)
-                            for k, v in rec.items()
-                        },
-                    }
-                else:
-                    flat = {
-                        "tenure_label": row.get("tenure_label", ""),
-                        "tenure_id": tenure_id,
-                        "house": row.get("house", ""),
-                        "state_id": state_id,
-                        "state_name": row.get("state_name", ""),
-                        "constituency_id": const_id,
-                        "constituency_name": row.get("constituency_name", ""),
-                        "mp_id": mp_id,
-                        "mp_name": row.get("mp_name", ""),
-                        "tile_label": tile_label,
-                        **{
-                            k: (v.strip() if isinstance(v, str) else v)
-                            for k, v in rec.items()
-                        },
-                    }
+                flat: dict[str, Any] = {
+                    "tenure_label": row.get("tenure_label", "Rajya Sabha"),
+                    "house": row.get("house", "Rajya Sabha"),
+                    "state_id": state_id,
+                    "state_name": row.get("state_name", ""),
+                    "mp_id": mp_id,
+                    "mp_name": row.get("mp_name", ""),
+                    "mp_tenure": row.get("mp_tenure", ""),
+                    "tile_label": tile_label,
+                    **{
+                        k: (v.strip() if isinstance(v, str) else v)
+                        for k, v in rec.items()
+                    },
+                }
                 all_records.append(flat)
                 all_columns.update(flat.keys())
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    if is_rs:
-        prefix = [
-            "tenure_label",
-            "house",
-            "state_id",
-            "state_name",
-            "mp_id",
-            "mp_name",
-            "mp_tenure",
-            "tile_label",
-        ]
-    else:
-        prefix = [
-            "tenure_label",
-            "tenure_id",
-            "house",
-            "state_id",
-            "state_name",
-            "constituency_id",
-            "constituency_name",
-            "mp_id",
-            "mp_name",
-            "tile_label",
-        ]
+
+    prefix = [
+        "tenure_label",
+        "house",
+        "state_id",
+        "state_name",
+        "mp_id",
+        "mp_name",
+        "mp_tenure",
+        "tile_label",
+    ]
     rest = sorted(c for c in all_columns if c not in prefix)
     cols = prefix + rest
+
     with out_path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
         w.writerows(all_records)
 
-    logger.info(f"Done: {len(all_records)} work records -> {out_path}")
+    logger.info(f"Done: {len(all_records)} RS work records -> {out_path}")
 
 
 if __name__ == "__main__":
