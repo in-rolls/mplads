@@ -94,13 +94,22 @@ def clean_works(
         stats["cross_mp_ambiguous"] = int(cross_mp_mask.sum())
         df = df[~cross_mp_mask].copy()
 
-    # Drop zero recommended amounts (only for recommendation records, not completion records)
-    # Works Completed records have RECOMMENDED_AMOUNT=0 by design (amount is tracked via ACTUAL_AMOUNT)
+    # Drop records with zero/missing amounts (stage-aware)
+    # - Works Recommended: check RECOMMENDED_AMOUNT
+    # - Works Completed: check ACTUAL_AMOUNT
+    # This catches empty placeholder records across all stages
     is_recommendation = df["tile_label"] == "Works Recommended"
-    zero_amount = is_recommendation & (
+    is_completion = df["tile_label"] == "Works Completed"
+
+    zero_rec_amount = is_recommendation & (
         (df["RECOMMENDED_AMOUNT"] == 0) | df["RECOMMENDED_AMOUNT"].isna()
     )
-    stats["zero_recommended_amount"] = zero_amount.sum()
+    zero_comp_amount = is_completion & (
+        (df["ACTUAL_AMOUNT"] == 0) | df["ACTUAL_AMOUNT"].isna()
+    )
+    zero_amount = zero_rec_amount | zero_comp_amount
+    stats["zero_recommended_amount"] = zero_rec_amount.sum()
+    stats["zero_actual_amount"] = zero_comp_amount.sum()
     df = df[~zero_amount].copy()
 
     # Drop invalid recommendation dates (out of range)
@@ -209,6 +218,7 @@ def get_cleaning_report(stats: dict) -> str:
         f"Not linkable (flagged):{stats['flagged_not_linkable']:>10,}",
         f"Cross-MP ambiguous:    {stats.get('cross_mp_ambiguous', 0):>10,}",
         f"Zero RECOMMENDED_AMT:  {stats['zero_recommended_amount']:>10,}",
+        f"Zero ACTUAL_AMT:       {stats.get('zero_actual_amount', 0):>10,}",
         f"Invalid rec dates:     {stats['invalid_rec_dates']:>10,}",
         f"Future comp dates:     {stats['future_completion_dates']:>10,} (flagged)",
     ]

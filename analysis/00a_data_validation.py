@@ -167,14 +167,18 @@ def check_data_anomalies() -> None:
     print("4. ANOMALY CHECK: Data Quality Flags")
     print("=" * 80)
 
-    ls17, _ = load_works_data("ls17", clean=False)
+    ls17, stats = load_works_data("ls17", clean=True)
 
-    print("\n4.1 Date Ranges:")
+    print("\n4.1 Date Ranges (cleaned data):")
     ls17["rec_date"] = pd.to_datetime(ls17["RECOMMENDATION_DATE"], format="%d-%b-%Y", errors="coerce")
     ls17["comp_date"] = pd.to_datetime(ls17["ACTUAL_END_DATE"], format="%d-%b-%Y", errors="coerce")
 
     print(f"  Recommendation dates: {ls17['rec_date'].min()} to {ls17['rec_date'].max()}")
     print(f"  Completion dates: {ls17['comp_date'].min()} to {ls17['comp_date'].max()}")
+
+    future_count = stats.get("future_completion_dates", 0)
+    if future_count > 0:
+        print(f"  NOTE: {future_count} future completion dates flagged (not dropped)")
 
     print("\n4.2 Amount Ranges:")
     rec_amounts = ls17[ls17["RECOMMENDED_AMOUNT"].notna()]["RECOMMENDED_AMOUNT"]
@@ -185,10 +189,12 @@ def check_data_anomalies() -> None:
     if large_amounts > 0:
         print(f"  WARNING: {large_amounts} recommendations > Rs 1 Cr")
 
-    print("\n4.3 Missing Critical Fields:")
-    print(f"  RECOMMENDATION_DATE missing: {ls17['RECOMMENDATION_DATE'].isna().sum():,} ({ls17['RECOMMENDATION_DATE'].isna().mean()*100:.1f}%)")
-    print(f"  ACTUAL_END_DATE missing: {ls17['ACTUAL_END_DATE'].isna().sum():,} ({ls17['ACTUAL_END_DATE'].isna().mean()*100:.1f}%)")
-    print(f"  ACTIVITY_NAME missing: {ls17['ACTIVITY_NAME'].isna().sum():,} ({ls17['ACTIVITY_NAME'].isna().mean()*100:.1f}%)")
+    print("\n4.3 Missing Fields (expected due to workflow structure):")
+    rec_stage = ls17[ls17["tile_label"] == "Works Recommended"]
+    comp_stage = ls17[ls17["tile_label"] == "Works Completed"]
+    print(f"  RECOMMENDATION_DATE missing in Recommended: {rec_stage['RECOMMENDATION_DATE'].isna().sum():,}/{len(rec_stage):,}")
+    print(f"  ACTUAL_END_DATE missing in Completed: {comp_stage['ACTUAL_END_DATE'].isna().sum():,}/{len(comp_stage):,}")
+    print(f"  WORK_RECOMMENDATION_DTL_ID missing: {ls17['WORK_RECOMMENDATION_DTL_ID'].isna().sum():,} ({ls17['WORK_RECOMMENDATION_DTL_ID'].isna().mean()*100:.1f}%)")
 
     print("\n4.4 State Coverage:")
     state_counts = ls17.groupby("state_name")["ACTIVITY_NAME"].count()

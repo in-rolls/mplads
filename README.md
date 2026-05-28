@@ -154,11 +154,11 @@ Note: Rajya Sabha data is not tenure-separated in the portal API. All current RS
 
 The work-level data has a **workflow pipeline** structure with 3 stages stored as separate rows:
 
-| Stage (tile_label) | Records | Has REC_DATE | Has COMP_DATE | Has WORK_ID |
-|--------------------|---------|--------------|---------------|-------------|
-| Works Recommended | ~95K | ✓ | ✗ | ✓ |
-| Works Sanctioned | ~92K | ✓ | ✗ | ✓ |
-| Works Completed | ~55K | ✗ | ✓ | ✓ |
+| Stage (tile_label) | Records (17th LS) | Has REC_DATE | Has COMP_DATE | Has RECOMMENDED_AMT | Has ACTUAL_AMT |
+|--------------------|-------------------|--------------|---------------|---------------------|----------------|
+| Works Recommended | 95K | ✓ (99%) | ✗ | ✓ (99%) | ✗ |
+| Works Sanctioned | 92K | ✓ (99%) | ✗ | ✓ (99%) | ✗ |
+| Works Completed | 55K | ✗ | ✓ (99%) | ✗ | ✓ (99%) |
 
 **Critical:** No record has BOTH dates - they are always separate rows representing different workflow stages.
 
@@ -171,35 +171,61 @@ Records are linked via `WORK_RECOMMENDATION_DTL_ID` (unique project identifier),
 
 To compute time-to-completion, we join on `WORK_RECOMMENDATION_DTL_ID`. Records missing this field cannot be linked across the funnel.
 
-### Cleaning Decisions
+### Known Data Issues
 
-**Dropped:**
-- **Rs 0 recommended amount** — placeholders or data entry errors, no actual project
-- **Dates before May 2019 or after 2030** — pre-17th LS or clearly erroneous
-- **Cross-MP ambiguous records** — ~126 records where the same `WORK_RECOMMENDATION_DTL_ID` appears under different MPs (cannot determine correct attribution)
+**1. Empty placeholder records (~557 per body)**
+- ~0.6% of records have ALL fields as NaN (no WORK_ID, no amounts, no dates)
+- Appear in all three workflow stages with same count
+- **Handling:** Dropped by zero-amount filter (only applied to Works Recommended stage)
 
-**Flagged (not dropped):**
-- **Missing WORK_RECOMMENDATION_DTL_ID** — flagged as `_linkable=False`; cannot link recommendation → completion without this key, but retained for analyses that don't need linking
-- **Future completion dates** — flagged but not dropped; likely "estimated completion" dates
+**2. Cross-MP ambiguous records (~126 project IDs)**
+- Same `WORK_RECOMMENDATION_DTL_ID` appears under 2+ different MPs
+- Total ~414 records across 126 project IDs
+- Likely data entry errors or projects that were reassigned
+- **Handling:** Dropped during cleaning (cannot attribute to correct MP)
 
-**Kept:**
-- **Early 17th LS data (Apr-Jun 2023)** — sparse but not invalid; portal went live April 2023
+**3. Different amounts per stage**
+- `RECOMMENDED_AMOUNT` only populated for Recommended/Sanctioned stages
+- `ACTUAL_AMOUNT` only populated for Completed stage
+- **Handling:** Use appropriate amount column per stage; don't filter completion records by RECOMMENDED_AMOUNT
+
+**4. ACTIVITY_NAME is NOT a unique identifier**
+- It's a category label (e.g., "Construction of roads")
+- Same ACTIVITY_NAME appears 100s of times across different projects
+- **Handling:** Use `WORK_RECOMMENDATION_DTL_ID` for linking, not ACTIVITY_NAME
+
+**5. Negative completion times (~1,000 records)**
+- Some projects show completion date BEFORE recommendation date
+- Likely date entry errors or backdated completions
+- **Handling:** Filtered out in completion time analysis (require days_to_complete > 0)
+
+**6. Data sparsity (Apr-Jun 2023)**
+- eSAKSHI portal went live April 2023
+- Early months have ~3K records vs ~180K for later months
+- **Handling:** Kept but noted; survival analysis accounts for time available
+
+### Cleaning Strategy
+
+**Stage-aware cleaning:** Different stages have different fields populated, so we apply rules appropriately:
+- Zero-amount filter: Only for Works Recommended (completion records legitimately have RECOMMENDED_AMOUNT=0)
+- Cross-MP filter: Applied to all stages
+
+| Rule | Applied To | Records Affected (17th LS) |
+|------|-----------|------------------|
+| Zero RECOMMENDED_AMOUNT | Works Recommended | ~562 |
+| Zero ACTUAL_AMOUNT | Works Completed | ~562 |
+| Cross-MP ambiguous IDs | All stages | ~414 |
+| Invalid dates (pre-2019, post-2030) | All stages | ~0 |
+
+**Result:** 99.4% retention (241K of 242K records for 17th LS)
 
 ### Cleaning Summary
 
 | Dataset | Original | Dropped | Retained | Retention |
 |---------|----------|---------|----------|-----------|
-| 17th Lok Sabha | 242,358 | 976 | 241,382 | 99.6% |
-| 18th Lok Sabha | 179,415 | 554 | 178,861 | 99.7% |
-| Rajya Sabha | 58,995 | 498 | 58,497 | 99.2% |
-
-**What gets dropped:**
-- Zero RECOMMENDED_AMOUNT records (only for recommendation stage, not completion records)
-- Cross-MP ambiguous records (~126 IDs appearing under multiple MPs)
-
-**What gets flagged (`_linkable=False`):**
-- Records missing `WORK_RECOMMENDATION_DTL_ID` cannot be linked across workflow stages
-- Note: Most records with missing linking key also have zero RECOMMENDED_AMOUNT, so they are dropped anyway
+| 17th Lok Sabha | 242,358 | 1,538 | 240,820 | 99.4% |
+| 18th Lok Sabha | 179,415 | 1,106 | 178,309 | 99.4% |
+| Rajya Sabha | 58,995 | 718 | 58,277 | 98.8% |
 
 ### Reproducibility
 
@@ -210,10 +236,6 @@ from analysis._data import load_works_data
 
 # Load cleaned data (default)
 df, stats = load_works_data("ls17", clean=True)
-
-# Check linkability flag - indicates if record has WORK_RECOMMENDATION_DTL_ID
-print(df["_linkable"].value_counts())
-# True     186,xxx  (can be linked for survival analysis)
 
 # Separate workflow stages for analysis
 rec_df = df[df["tile_label"] == "Works Recommended"]
