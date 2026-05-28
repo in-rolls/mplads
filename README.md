@@ -162,14 +162,15 @@ The work-level data has a **workflow pipeline** structure with 3 stages stored a
 
 **Critical:** No record has BOTH dates - they are always separate rows representing different workflow stages.
 
-Records are linked via `WORK_RECOMMENDATION_DTL_ID` (unique project identifier), not `ACTIVITY_NAME` (which is a category label like "Construction of roads"):
+Records are linked via a composite key `(WORK_RECOMMENDATION_DTL_ID, mp_id)`, not `ACTIVITY_NAME` (which is a category label like "Construction of roads"). **Note:** `WORK_RECOMMENDATION_DTL_ID` is unique **per-MP**, not globally—the same ID value can appear under different MPs for different projects.
 
-| WORK_RECOMMENDATION_DTL_ID | tile_label | RECOMMENDATION_DATE | ACTUAL_END_DATE |
-|----------------------------|------------|--------------------|--------------------|
-| 12345 | Works Recommended | 15-Jul-2023 | — |
-| 12345 | Works Completed | — | 20-Mar-2024 |
+| WORK_RECOMMENDATION_DTL_ID | mp_id | tile_label | RECOMMENDATION_DATE | ACTUAL_END_DATE |
+|----------------------------|-------|------------|--------------------|--------------------|
+| 12345 | 100 | Works Recommended | 15-Jul-2023 | — |
+| 12345 | 100 | Works Completed | — | 20-Mar-2024 |
+| 12345 | 200 | Works Recommended | 10-Aug-2023 | — |  ← Different project, same ID
 
-To compute time-to-completion, we join on `WORK_RECOMMENDATION_DTL_ID`. Records missing this field cannot be linked across the funnel.
+To compute time-to-completion, we join on `(WORK_RECOMMENDATION_DTL_ID, mp_id)`. Records missing WORK_RECOMMENDATION_DTL_ID cannot be linked across the funnel.
 
 ### Known Data Issues
 
@@ -178,11 +179,11 @@ To compute time-to-completion, we join on `WORK_RECOMMENDATION_DTL_ID`. Records 
 - Appear in all three workflow stages with same count
 - **Handling:** Dropped by zero-amount filter (only applied to Works Recommended stage)
 
-**2. Cross-MP ambiguous records (~126 project IDs)**
-- Same `WORK_RECOMMENDATION_DTL_ID` appears under 2+ different MPs
-- Total ~414 records across 126 project IDs
-- Likely data entry errors or projects that were reassigned
-- **Handling:** Dropped during cleaning (cannot attribute to correct MP)
+**2. WORK_RECOMMENDATION_DTL_ID is MP-scoped**
+- The same `WORK_RECOMMENDATION_DTL_ID` value can appear under different MPs
+- These are NOT duplicates—the ID is unique per-MP, not globally
+- Example: ID=201 under MP_A is a community hall; ID=201 under MP_B is a street light
+- **Handling:** Use composite key `(WORK_RECOMMENDATION_DTL_ID, mp_id)` for linking
 
 **3. Different amounts per stage**
 - `RECOMMENDED_AMOUNT` only populated for Recommended/Sanctioned stages
@@ -208,24 +209,23 @@ To compute time-to-completion, we join on `WORK_RECOMMENDATION_DTL_ID`. Records 
 
 **Stage-aware cleaning:** Different stages have different fields populated, so we apply rules appropriately:
 - Zero-amount filter: Only for Works Recommended (completion records legitimately have RECOMMENDED_AMOUNT=0)
-- Cross-MP filter: Applied to all stages
+- Zero-amount filter: Only for Works Completed (recommendation records legitimately have ACTUAL_AMOUNT=0)
 
 | Rule | Applied To | Records Affected (17th LS) |
 |------|-----------|------------------|
 | Zero RECOMMENDED_AMOUNT | Works Recommended | ~562 |
 | Zero ACTUAL_AMOUNT | Works Completed | ~562 |
-| Cross-MP ambiguous IDs | All stages | ~414 |
 | Invalid dates (pre-2019, post-2030) | All stages | ~0 |
 
-**Result:** 99.4% retention (241K of 242K records for 17th LS)
+**Result:** 99.5% retention (241K of 242K records for 17th LS)
 
 ### Cleaning Summary
 
 | Dataset | Original | Dropped | Retained | Retention |
 |---------|----------|---------|----------|-----------|
-| 17th Lok Sabha | 242,358 | 1,538 | 240,820 | 99.4% |
+| 17th Lok Sabha | 242,358 | 1,124 | 241,234 | 99.5% |
 | 18th Lok Sabha | 179,415 | 1,106 | 178,309 | 99.4% |
-| Rajya Sabha | 58,995 | 718 | 58,277 | 98.8% |
+| Rajya Sabha | 58,995 | 440 | 58,555 | 99.3% |
 
 ### Reproducibility
 
@@ -241,9 +241,9 @@ df, stats = load_works_data("ls17", clean=True)
 rec_df = df[df["tile_label"] == "Works Recommended"]
 comp_df = df[df["tile_label"] == "Works Completed"]
 
-# Link using WORK_RECOMMENDATION_DTL_ID
-link_key = "WORK_RECOMMENDATION_DTL_ID"
-merged = rec_df.merge(comp_df, on=link_key, suffixes=("_rec", "_comp"))
+# Link using composite key (WORK_RECOMMENDATION_DTL_ID is per-MP, not global)
+link_cols = ["WORK_RECOMMENDATION_DTL_ID", "mp_id"]
+merged = rec_df.merge(comp_df, on=link_cols, suffixes=("_rec", "_comp"))
 
 # Load raw data for validation
 df_raw, _ = load_works_data("ls17", clean=False)

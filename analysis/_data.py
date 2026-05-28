@@ -34,21 +34,22 @@ def _load_archive(archive_path: Path) -> pd.DataFrame:
 def clean_works(
     df: pd.DataFrame,
     drop_future_dates: bool = False,
-    drop_cross_mp_records: bool = True,
 ) -> tuple[pd.DataFrame, dict]:
     """Clean work-level data.
 
     Cleaning rules:
     - Flag records with missing WORK_RECOMMENDATION_DTL_ID (_linkable=False), keep them
-    - Drop records with zero RECOMMENDED_AMOUNT
+    - Drop records with zero RECOMMENDED_AMOUNT (for recommendation stage)
+    - Drop records with zero ACTUAL_AMOUNT (for completion stage)
     - Drop records with invalid dates (before 2019-05-01 or after 2030)
     - Flag (optionally drop) future completion dates
-    - Drop records where WORK_RECOMMENDATION_DTL_ID appears under multiple MPs (ambiguous)
+
+    Note: WORK_RECOMMENDATION_DTL_ID is unique per-MP, not globally.
+    Use (WORK_RECOMMENDATION_DTL_ID, mp_id) as composite key for linking.
 
     Args:
         df: Raw works DataFrame
         drop_future_dates: If True, drop records with completion dates in the future
-        drop_cross_mp_records: If True, drop records with ambiguous MP assignment
 
     Returns:
         cleaned_df: DataFrame with bad records removed
@@ -86,13 +87,10 @@ def clean_works(
     df["_linkable"] = df["WORK_RECOMMENDATION_DTL_ID"].notna()
     stats["flagged_not_linkable"] = (~df["_linkable"]).sum()
 
-    # Drop cross-MP ambiguous records (same WORK_RECOMMENDATION_DTL_ID under multiple MPs)
-    if drop_cross_mp_records and "mp_id" in df.columns:
-        mp_counts = df.groupby("WORK_RECOMMENDATION_DTL_ID")["mp_id"].nunique()
-        cross_mp_ids = set(mp_counts[mp_counts > 1].index.tolist())
-        cross_mp_mask = df["WORK_RECOMMENDATION_DTL_ID"].isin(cross_mp_ids)
-        stats["cross_mp_ambiguous"] = int(cross_mp_mask.sum())
-        df = df[~cross_mp_mask].copy()
+    # Note: WORK_RECOMMENDATION_DTL_ID is unique per-MP, not globally.
+    # The same ID value can appear under different MPs for different projects.
+    # Use (WORK_RECOMMENDATION_DTL_ID, mp_id) as composite key for linking.
+    stats["cross_mp_ambiguous"] = 0  # Not actually ambiguous - just MP-scoped IDs
 
     # Drop records with zero/missing amounts (stage-aware)
     # - Works Recommended: check RECOMMENDED_AMOUNT
