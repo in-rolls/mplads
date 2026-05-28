@@ -20,7 +20,7 @@ Most allocated funds never reach completion:
 
 **Note on allocation amounts:** The 18th LS shows higher total allocation than 17th LS despite being a shorter tenure. This is because eSAKSHI went live in April 2023, so 17th LS data only captures ~1 year (FY 2023-24) of their 5-year term, while 18th LS has ~2 full years (Jun 2024 - present). The percentages in the table above are still meaningful as they show conversion rates within each tenure's captured data.
 
-The 17th LS (2019-24) shows higher completion *rates* because MPs had a full 5-year term. For the 18th LS (ongoing), expenditure is a better progress measure than completion since works take time to finish.
+The 17th LS shows higher completion rates because projects had more time to reach completion (recommendation data from Apr 2023 - May 2024, with completion tracking through May 2026). For 18th LS (ongoing since Jun 2024), many projects are still in progress.
 
 ### 2. What Gets Funded
 
@@ -45,7 +45,9 @@ Project type distribution (17th LS, 186K recommendations):
 | 18th LS | 67K | 28% | 53% | — |
 | Rajya Sabha | 22K | 33% | 44% | 55% |
 
-18th LS is completing projects much faster than 17th LS did (53% vs 26% at 18 months). Rajya Sabha also outperforms Lok Sabha despite less electoral pressure—state administrative capacity matters more than political incentives.
+**Note on Rajya Sabha:** RS data lacks tenure separation—all current MPs are pooled regardless of when their 6-year term started. RS completion rates are shown for reference but direct comparison with LS is not meaningful.
+
+18th LS is completing projects much faster than 17th LS did (53% vs 26% at 18 months).
 
 **By project type (17th LS):**
 
@@ -62,8 +64,6 @@ Project type distribution (17th LS, 186K recommendations):
 Community halls have low completion (22% by 2 years) despite being 10% of recommendations—larger construction projects take longer and fail more often.
 
 ### 3. Political Incentives Don't Matter Much
-
-**Lok Sabha vs Rajya Sabha:** LS MPs have direct electoral accountability. If political incentives drove spending, LS should outperform RS. But survival analysis shows RS actually completes projects faster (31% at 1yr, 55% at 2yr) than LS (20% at 1yr, 42% at 2yr). State administrative capacity matters more than electoral pressure.
 
 **Competitive vs Safe Seats:** MPs in marginal seats should spend more to shore up support. Data shows no meaningful effect:
 
@@ -114,6 +114,27 @@ From regression analysis predicting recommended amount (in Crores):
 Model R² = 0.05—these factors explain almost nothing.
 
 **Bottom line:** MPLADS spending is a bureaucratic/capacity story, not a political incentives story.
+
+### Fund Rules
+
+MPLADS funds are **non-lapsable**:
+- Unspent funds roll over to subsequent years (no "use it or lose it" pressure)
+- When an MP's term ends, unreleased funds first complete the former MP's recommendations, then transfer to successor
+- Since 2024, interest on MPLADS funds must be remitted to Consolidated Fund of India
+
+This reduces urgency to spend before term ends—MPs can recommend projects knowing funds will be available even if completion extends beyond their tenure.
+
+**Funds at 17th LS Transition (2024):**
+
+| Metric | Amount |
+|--------|--------|
+| Total allocated | Rs 4,768 Cr |
+| Total expenditure | Rs 3,783 Cr |
+| **Unspent (rolled over)** | **Rs 985 Cr (21%)** |
+
+Distribution: 377 MPs (68%) left <25% unspent, while 38 MPs (7%) left >50% unspent.
+
+Since funds are non-lapsable, the Rs 985 Cr rolled over to complete pending 17th LS projects, then transferred to successor MPs.
 
 ---
 
