@@ -148,6 +148,93 @@ Since funds are non-lapsable, the Rs 985 Cr rolled over to complete pending 17th
 
 Note: Rajya Sabha data is not tenure-separated in the portal API. All current RS MPs are fetched together, with individual tenure info (e.g., "2020-26") embedded in MP names.
 
+## Data Processing Notes
+
+### Understanding the Data Structure
+
+The work-level data has a **workflow pipeline** structure with 3 stages stored as separate rows:
+
+| Stage (tile_label) | Records | Has REC_DATE | Has COMP_DATE | Has WORK_ID |
+|--------------------|---------|--------------|---------------|-------------|
+| Works Recommended | ~95K | ✓ | ✗ | ✓ |
+| Works Sanctioned | ~92K | ✓ | ✗ | ✓ |
+| Works Completed | ~55K | ✗ | ✓ | ✓ |
+
+**Critical:** No record has BOTH dates - they are always separate rows representing different workflow stages.
+
+Records are linked via `WORK_RECOMMENDATION_DTL_ID` (unique project identifier), not `ACTIVITY_NAME` (which is a category label like "Construction of roads"):
+
+| WORK_RECOMMENDATION_DTL_ID | tile_label | RECOMMENDATION_DATE | ACTUAL_END_DATE |
+|----------------------------|------------|--------------------|--------------------|
+| 12345 | Works Recommended | 15-Jul-2023 | — |
+| 12345 | Works Completed | — | 20-Mar-2024 |
+
+To compute time-to-completion, we join on `WORK_RECOMMENDATION_DTL_ID`. Records missing this field cannot be linked across the funnel.
+
+### Cleaning Decisions
+
+**Dropped:**
+- **Rs 0 recommended amount** — placeholders or data entry errors, no actual project
+- **Dates before May 2019 or after 2030** — pre-17th LS or clearly erroneous
+- **Cross-MP ambiguous records** — ~126 records where the same `WORK_RECOMMENDATION_DTL_ID` appears under different MPs (cannot determine correct attribution)
+
+**Flagged (not dropped):**
+- **Missing WORK_RECOMMENDATION_DTL_ID** — flagged as `_linkable=False`; cannot link recommendation → completion without this key, but retained for analyses that don't need linking
+- **Future completion dates** — flagged but not dropped; likely "estimated completion" dates
+
+**Kept:**
+- **Early 17th LS data (Apr-Jun 2023)** — sparse but not invalid; portal went live April 2023
+
+### Cleaning Summary
+
+| Dataset | Original | Dropped | Retained | Retention |
+|---------|----------|---------|----------|-----------|
+| 17th Lok Sabha | 242,358 | 976 | 241,382 | 99.6% |
+| 18th Lok Sabha | 179,415 | 554 | 178,861 | 99.7% |
+| Rajya Sabha | 58,995 | 498 | 58,497 | 99.2% |
+
+**What gets dropped:**
+- Zero RECOMMENDED_AMOUNT records (only for recommendation stage, not completion records)
+- Cross-MP ambiguous records (~126 IDs appearing under multiple MPs)
+
+**What gets flagged (`_linkable=False`):**
+- Records missing `WORK_RECOMMENDATION_DTL_ID` cannot be linked across workflow stages
+- Note: Most records with missing linking key also have zero RECOMMENDED_AMOUNT, so they are dropped anyway
+
+### Reproducibility
+
+All cleaning is applied via `analysis/_data.py`:
+
+```python
+from analysis._data import load_works_data
+
+# Load cleaned data (default)
+df, stats = load_works_data("ls17", clean=True)
+
+# Check linkability flag - indicates if record has WORK_RECOMMENDATION_DTL_ID
+print(df["_linkable"].value_counts())
+# True     186,xxx  (can be linked for survival analysis)
+
+# Separate workflow stages for analysis
+rec_df = df[df["tile_label"] == "Works Recommended"]
+comp_df = df[df["tile_label"] == "Works Completed"]
+
+# Link using WORK_RECOMMENDATION_DTL_ID
+link_key = "WORK_RECOMMENDATION_DTL_ID"
+merged = rec_df.merge(comp_df, on=link_key, suffixes=("_rec", "_comp"))
+
+# Load raw data for validation
+df_raw, _ = load_works_data("ls17", clean=False)
+
+# Optionally drop future dates
+df_strict, stats = load_works_data("ls17", drop_future_dates=True)
+```
+
+Run validation to see full cleaning report:
+```bash
+uv run python analysis/00a_data_validation.py
+```
+
 ## Project Structure
 
 ```

@@ -34,18 +34,21 @@ def _load_archive(archive_path: Path) -> pd.DataFrame:
 def clean_works(
     df: pd.DataFrame,
     drop_future_dates: bool = False,
+    drop_cross_mp_records: bool = True,
 ) -> tuple[pd.DataFrame, dict]:
     """Clean work-level data.
 
     Cleaning rules:
-    - Drop records with missing ACTIVITY_NAME
+    - Flag records with missing WORK_RECOMMENDATION_DTL_ID (_linkable=False), keep them
     - Drop records with zero RECOMMENDED_AMOUNT
     - Drop records with invalid dates (before 2019-05-01 or after 2030)
     - Flag (optionally drop) future completion dates
+    - Drop records where WORK_RECOMMENDATION_DTL_ID appears under multiple MPs (ambiguous)
 
     Args:
         df: Raw works DataFrame
         drop_future_dates: If True, drop records with completion dates in the future
+        drop_cross_mp_records: If True, drop records with ambiguous MP assignment
 
     Returns:
         cleaned_df: DataFrame with bad records removed
@@ -54,7 +57,8 @@ def clean_works(
     original_count = len(df)
     stats = {
         "original_count": original_count,
-        "missing_activity_name": 0,
+        "flagged_not_linkable": 0,
+        "cross_mp_ambiguous": 0,
         "zero_recommended_amount": 0,
         "invalid_rec_dates": 0,
         "future_completion_dates": 0,
@@ -78,15 +82,26 @@ def clean_works(
     max_valid_date = pd.Timestamp("2030-01-01")
     today = pd.Timestamp(datetime.now().date())
 
-    # Drop missing ACTIVITY_NAME
-    missing_activity = df["ACTIVITY_NAME"].isna()
-    stats["missing_activity_name"] = missing_activity.sum()
-    df = df[~missing_activity]
+    # Flag missing WORK_RECOMMENDATION_DTL_ID (not linkable for survival analysis)
+    df["_linkable"] = df["WORK_RECOMMENDATION_DTL_ID"].notna()
+    stats["flagged_not_linkable"] = (~df["_linkable"]).sum()
 
-    # Drop zero recommended amounts
-    zero_amount = (df["RECOMMENDED_AMOUNT"] == 0) | df["RECOMMENDED_AMOUNT"].isna()
+    # Drop cross-MP ambiguous records (same WORK_RECOMMENDATION_DTL_ID under multiple MPs)
+    if drop_cross_mp_records and "mp_id" in df.columns:
+        mp_counts = df.groupby("WORK_RECOMMENDATION_DTL_ID")["mp_id"].nunique()
+        cross_mp_ids = set(mp_counts[mp_counts > 1].index.tolist())
+        cross_mp_mask = df["WORK_RECOMMENDATION_DTL_ID"].isin(cross_mp_ids)
+        stats["cross_mp_ambiguous"] = int(cross_mp_mask.sum())
+        df = df[~cross_mp_mask].copy()
+
+    # Drop zero recommended amounts (only for recommendation records, not completion records)
+    # Works Completed records have RECOMMENDED_AMOUNT=0 by design (amount is tracked via ACTUAL_AMOUNT)
+    is_recommendation = df["tile_label"] == "Works Recommended"
+    zero_amount = is_recommendation & (
+        (df["RECOMMENDED_AMOUNT"] == 0) | df["RECOMMENDED_AMOUNT"].isna()
+    )
     stats["zero_recommended_amount"] = zero_amount.sum()
-    df = df[~zero_amount]
+    df = df[~zero_amount].copy()
 
     # Drop invalid recommendation dates (out of range)
     # Only check records that have a recommendation date
@@ -191,7 +206,8 @@ def get_cleaning_report(stats: dict) -> str:
         "Data Cleaning Report",
         "=" * 40,
         f"Original records:      {stats['original_count']:>10,}",
-        f"Missing ACTIVITY_NAME: {stats['missing_activity_name']:>10,}",
+        f"Not linkable (flagged):{stats['flagged_not_linkable']:>10,}",
+        f"Cross-MP ambiguous:    {stats.get('cross_mp_ambiguous', 0):>10,}",
         f"Zero RECOMMENDED_AMT:  {stats['zero_recommended_amount']:>10,}",
         f"Invalid rec dates:     {stats['invalid_rec_dates']:>10,}",
         f"Future comp dates:     {stats['future_completion_dates']:>10,} (flagged)",

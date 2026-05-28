@@ -126,10 +126,10 @@ def cross_validate_aggregates() -> None:
         print("\nAll metrics within 5% tolerance.")
 
 
-def check_duplicate_activities() -> None:
-    """Check for duplicate ACTIVITY_NAMEs in work-level data."""
+def check_linking_key_coverage() -> None:
+    """Check WORK_RECOMMENDATION_DTL_ID coverage for linking workflow stages."""
     print("\n" + "=" * 80)
-    print("3. DUPLICATE CHECK: ACTIVITY_NAME Uniqueness")
+    print("3. LINKING KEY CHECK: WORK_RECOMMENDATION_DTL_ID Coverage")
     print("=" * 80)
 
     for source, label in [("ls17", "17th LS"), ("ls18", "18th LS"), ("rs", "Rajya Sabha")]:
@@ -139,20 +139,26 @@ def check_duplicate_activities() -> None:
             continue
 
         df, _ = load_works_data(source, clean=False)
-        total_records = len(df)
-        unique_activities = df["ACTIVITY_NAME"].nunique()
-        dup_rate = (total_records - unique_activities) / total_records * 100
+        link_key = "WORK_RECOMMENDATION_DTL_ID"
 
         print(f"\n{label}:")
-        print(f"  Total records: {total_records:,}")
-        print(f"  Unique ACTIVITY_NAMEs: {unique_activities:,}")
-        print(f"  Duplicate rate: {dup_rate:.1f}%")
+        print(f"  Total records: {len(df):,}")
 
-        if dup_rate > 0:
-            rec_activities = df[df["RECOMMENDATION_DATE"].notna()]["ACTIVITY_NAME"].nunique()
-            comp_activities = df[df["ACTUAL_END_DATE"].notna()]["ACTIVITY_NAME"].nunique()
-            print(f"  Activities with recommendation: {rec_activities:,}")
-            print(f"  Activities with completion: {comp_activities:,}")
+        # Coverage by workflow stage
+        for stage in ["Works Recommended", "Works Sanctioned", "Works Completed"]:
+            stage_df = df[df["tile_label"] == stage]
+            if len(stage_df) == 0:
+                continue
+            has_key = stage_df[link_key].notna().sum()
+            pct = has_key / len(stage_df) * 100
+            print(f"  {stage}: {has_key:,}/{len(stage_df):,} ({pct:.1f}%) have linking key")
+
+        # Check for cross-MP ambiguity
+        if "mp_id" in df.columns:
+            mp_counts = df.groupby(link_key)["mp_id"].nunique()
+            cross_mp = (mp_counts > 1).sum()
+            cross_mp_records = df[df[link_key].isin(mp_counts[mp_counts > 1].index)]
+            print(f"  Cross-MP ambiguous IDs: {cross_mp} IDs ({len(cross_mp_records):,} records)")
 
 
 def check_data_anomalies() -> None:
@@ -199,7 +205,7 @@ def main() -> None:
     show_cleaning_tally()
     check_trimming_decision()
     cross_validate_aggregates()
-    check_duplicate_activities()
+    check_linking_key_coverage()
     check_data_anomalies()
 
     print("\n" + "=" * 80)
