@@ -160,6 +160,55 @@ def check_linking_key_coverage() -> None:
             cross_mp_records = df[df[link_key].isin(mp_counts[mp_counts > 1].index)]
             print(f"  Cross-MP ambiguous IDs: {cross_mp} IDs ({len(cross_mp_records):,} records)")
 
+        # Bias check: compare characteristics of linkable vs non-linkable records
+        _check_linking_bias(df, link_key, label)
+
+
+def _check_linking_bias(df: pd.DataFrame, link_key: str, label: str) -> None:
+    """Check for systematic bias in records missing the linking key."""
+    missing = df[df[link_key].isna()]
+    linkable = df[df[link_key].notna()]
+
+    if len(missing) == 0:
+        print("  Bias check: No missing keys - all records linkable")
+        return
+
+    print(f"\n  BIAS CHECK for {label}:")
+    print(f"    Records missing linking key: {len(missing):,} ({len(missing)/len(df)*100:.1f}%)")
+
+    # Distribution by stage
+    print("    Missing by stage:")
+    for stage in ["Works Recommended", "Works Sanctioned", "Works Completed"]:
+        stage_missing = len(missing[missing["tile_label"] == stage])
+        stage_total = len(df[df["tile_label"] == stage])
+        if stage_total > 0:
+            pct = stage_missing / stage_total * 100
+            print(f"      {stage}: {stage_missing:,}/{stage_total:,} ({pct:.1f}%)")
+
+    # Distribution by state (top 5 with most missing)
+    if "state_name" in missing.columns and len(missing) > 0:
+        missing_by_state = missing.groupby("state_name").size().sort_values(ascending=False)
+        print("    Missing by state (top 5):")
+        for state, count in missing_by_state.head(5).items():
+            state_total = len(df[df["state_name"] == state])
+            pct = count / state_total * 100 if state_total > 0 else 0
+            print(f"      {state}: {count:,} ({pct:.1f}% of state's records)")
+
+    # Compare amounts between linkable and missing
+    if "RECOMMENDED_AMOUNT" in df.columns:
+        linkable_rec = linkable[linkable["tile_label"] == "Works Recommended"]
+        missing_rec = missing[missing["tile_label"] == "Works Recommended"]
+        if len(linkable_rec) > 0 and len(missing_rec) > 0:
+            linkable_amt = linkable_rec["RECOMMENDED_AMOUNT"].mean()
+            missing_amt = missing_rec["RECOMMENDED_AMOUNT"].mean()
+            if pd.notna(linkable_amt) and pd.notna(missing_amt):
+                print("    Amount comparison (recommendations only):")
+                print(f"      Linkable mean: Rs {linkable_amt:,.0f}")
+                print(f"      Missing mean: Rs {missing_amt:,.0f}")
+                ratio = missing_amt / linkable_amt if linkable_amt > 0 else 0
+                if abs(ratio - 1) > 0.1:
+                    print(f"      WARNING: {abs(ratio-1)*100:.0f}% difference suggests potential bias")
+
 
 def check_data_anomalies() -> None:
     """Flag any obvious data anomalies."""

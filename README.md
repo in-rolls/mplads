@@ -47,7 +47,11 @@ Project type distribution (17th LS, 186K recommendations):
 
 **Note on Rajya Sabha:** RS data lacks tenure separation—all current MPs are pooled regardless of when their 6-year term started. RS completion rates are shown for reference but direct comparison with LS is not meaningful.
 
-18th LS is completing projects much faster than 17th LS did (53% vs 26% at 18 months).
+**Caveat on cross-tenure comparison:** These rates are not directly comparable across tenures due to different observation windows:
+- **17th LS:** Only captures Apr 2023 - May 2024 (~14 months at end of 5-year term)
+- **18th LS:** Captures Jun 2024 - present (early tenure, ongoing)
+
+Projects recommended at end-of-tenure (17th LS) vs start-of-tenure (18th LS) face different completion dynamics. The apparent "faster completion" for 18th LS may reflect tenure-phase effects rather than genuine efficiency differences.
 
 **By project type (17th LS):**
 
@@ -95,7 +99,14 @@ Correlation (margin vs completion): **r = -0.03**
 | Pre-election (outgoing) | 35 | 1,604 |
 | Post-election (new MPs) | 18 | 1,105 |
 
-Outgoing MPs recommend 2x as much per MP as new MPs, and completions run 1.5x higher before elections. This suggests bureaucratic push to finish before transition rather than new MP enthusiasm.
+Outgoing MPs recommend 2x as much per MP as new MPs, and completions run 1.5x higher before elections.
+
+**Caveat:** This is an observational pattern, not a causal claim. The comparison has significant confounds:
+- Different MPs (incumbents vs new entrants with different capacities/networks)
+- Different tenure phases (end of term vs start of term)
+- eSAKSHI data limitations (only ~14 months of 17th LS captured)
+
+The pattern is consistent with bureaucratic push to complete projects before transition, but alternative explanations cannot be ruled out.
 
 ![Monthly Recommendations](data/fig_11_monthly_recommendations.png)
 
@@ -352,7 +363,9 @@ uv run jupyter execute analysis/02_electoral_targeting.ipynb  # Regression analy
 - `fig_06_party.png` - Party-wise allocation
 - `fig_07_incumbent.png` - Incumbent vs first-term comparison
 - `fig_08_project_types.png` - Project type distribution
-- `fig_09_completion_time.png` - Completion time by project type
+- `fig_09_completion_time.png` - Completion time by project type (completed projects only)
+- `fig_09_km_survival_all.png` - Kaplan-Meier survival curve (all projects, censored)
+- `fig_09_km_survival_by_type.png` - Kaplan-Meier survival curves by project type
 - `fig_10_survival_completion.png` - Cumulative completion by project type
 - `fig_11_monthly_recommendations.png` - Monthly recommendations timeline
 - `fig_12_monthly_completions.png` - Monthly completions timeline
