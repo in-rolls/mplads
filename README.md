@@ -2,6 +2,28 @@
 
 Scrapes MP Local Area Development Scheme (MPLADS) spending data from the [eSAKSHI portal](https://mplads.mospi.gov.in) and analyzes spending patterns, including electoral competitiveness effects.
 
+## Background
+
+### How MPLADS Works
+
+Each MP receives Rs 5 Cr annually to fund local development projects. MPs recommend projects, district authorities sanction and implement them, and funds flow from a central pool.
+
+**Fund rules:**
+- Funds are **non-lapsable**—unspent amounts roll over to subsequent years (no "use it or lose it" pressure)
+- When an MP's term ends, unreleased funds first complete the former MP's recommendations, then transfer to successor
+- Since 2024, interest on MPLADS funds must be remitted to Consolidated Fund of India
+
+This reduces urgency to spend before term ends—MPs can recommend projects knowing funds will be available even if completion extends beyond their tenure.
+
+**At the 17th LS transition (2024):** Rs 985 Cr (21%) of Rs 4,768 Cr allocated remained unspent. 377 MPs (68%) left <25% unspent, while 38 MPs (7%) left >50% unspent.
+
+### Data Source
+
+The eSAKSHI portal went live in April 2023, so historical data is limited:
+- **17th LS:** Only captures Apr 2023 - May 2024 (~14 months at end of 5-year term)
+- **18th LS:** Captures Jun 2024 - present (early tenure, ongoing)
+- **Rajya Sabha:** All current MPs pooled regardless of when their 6-year term started
+
 ## Key Findings
 
 ### 1. The Money Gap
@@ -16,7 +38,7 @@ Most allocated funds never reach completion:
 | Expenditure | 79% | 26% | 36% |
 | Completed | 49% | 13% | 19% |
 
-![Funding Funnel](data/fig_01_funnel.png)
+For every Rs 100 allocated, only Rs 49 worth of projects reach completion in 17th LS. The drop-off is steeper for 18th LS (Rs 13) and RS (Rs 19), though these have less time for completion.
 
 **Note on allocation amounts:** The 18th LS shows higher total allocation than 17th LS despite being a shorter tenure. This is because eSAKSHI went live in April 2023, so 17th LS data only captures ~1 year (FY 2023-24) of their 5-year term, while 18th LS has ~2 full years (Jun 2024 - present). The percentages in the table above are still meaningful as they show conversion rates within each tenure's captured data.
 
@@ -28,14 +50,16 @@ Project type distribution (17th LS, 186K recommendations):
 
 | Type | % | Median Rs |
 |------|---|-----------|
-| Roads (CC + other) | 32% | 3.5-4.0L |
+| Other Road | 23% | 3.4L |
 | Other Construction | 15% | 4.0L |
-| Community Hall | 10.5% | 5.0L |
-| CC Road | 8% | 4.6L |
+| Community Hall | 11% | 5.0L |
+| CC Road | 8% | 4.0L |
 | Solar Installation | 7% | 0.2L |
 | Tubewell/Handpump | 4% | 1.8L |
 
 ![Project Types](data/fig_08_project_types.png)
+
+### 3. Completion Dynamics
 
 **Completion rates (survival-style, counting ALL recommendations):**
 
@@ -67,7 +91,7 @@ Projects recommended at end-of-tenure (17th LS) vs start-of-tenure (18th LS) fac
 
 Community halls have low completion (22% by 2 years) despite being 10% of recommendations—larger construction projects take longer and fail more often.
 
-### 3. Political Incentives Don't Matter Much
+### 4. Political Incentives Don't Matter Much
 
 **Competitive vs Safe Seats:** MPs in marginal seats should spend more to shore up support. Data shows no meaningful effect:
 
@@ -92,25 +116,17 @@ Correlation (margin vs completion): **r = -0.03**
 
 **Experience/Tenure:** First-term vs returning MPs shows no significant difference.
 
-**Election Year Effect:** Comparing pre-election (Dec 2023 - May 2024, 17th LS) vs post-election (Jun - Nov 2024, 18th LS):
-
-| Period | Recs/MP/month | Completions/month |
-|--------|---------------|-------------------|
-| Pre-election (outgoing) | 35 | 1,604 |
-| Post-election (new MPs) | 18 | 1,105 |
-
-Outgoing MPs recommend 2x as much per MP as new MPs, and completions run 1.5x higher before elections.
-
-**Caveat:** This is an observational pattern, not a causal claim. The comparison has significant confounds:
-- Different MPs (incumbents vs new entrants with different capacities/networks)
-- Different tenure phases (end of term vs start of term)
-- eSAKSHI data limitations (only ~14 months of 17th LS captured)
-
-The pattern is consistent with bureaucratic push to complete projects before transition, but alternative explanations cannot be ruled out.
+**Election Year Effect:** Within 17th LS, do MPs recommend more as elections approach?
 
 ![Monthly Recommendations](data/fig_11_monthly_recommendations.png)
 
-### 4. Multivariate Results
+Figure shows two panels:
+- **Top**: Total monthly recommendations by body
+- **Bottom**: Recommendations per active MP per month
+
+For 17th LS (Apr 2023 - May 2024), the bottom panel shows a visible spike in recs/MP in the months leading up to the May 2024 election. This is consistent with MPs pushing more recommendations before transition, though the short observation window (14 months) limits confidence.
+
+### 5. Multivariate Results
 
 From regression analysis predicting recommended amount (in Crores):
 
@@ -125,27 +141,6 @@ From regression analysis predicting recommended amount (in Crores):
 Model R² = 0.05—these factors explain almost nothing.
 
 **Bottom line:** MPLADS spending is a bureaucratic/capacity story, not a political incentives story.
-
-### Fund Rules
-
-MPLADS funds are **non-lapsable**:
-- Unspent funds roll over to subsequent years (no "use it or lose it" pressure)
-- When an MP's term ends, unreleased funds first complete the former MP's recommendations, then transfer to successor
-- Since 2024, interest on MPLADS funds must be remitted to Consolidated Fund of India
-
-This reduces urgency to spend before term ends—MPs can recommend projects knowing funds will be available even if completion extends beyond their tenure.
-
-**Funds at 17th LS Transition (2024):**
-
-| Metric | Amount |
-|--------|--------|
-| Total allocated | Rs 4,768 Cr |
-| Total expenditure | Rs 3,783 Cr |
-| **Unspent (rolled over)** | **Rs 985 Cr (21%)** |
-
-Distribution: 377 MPs (68%) left <25% unspent, while 38 MPs (7%) left >50% unspent.
-
-Since funds are non-lapsable, the Rs 985 Cr rolled over to complete pending 17th LS projects, then transferred to successor MPs.
 
 ---
 
@@ -355,7 +350,6 @@ uv run jupyter execute analysis/02_electoral_targeting.ipynb  # Regression analy
 - `marginal`: margin < 5%
 
 ### Visualizations
-- `fig_01_funnel.png` - Funding funnel by tenure
 - `fig_02_distributions.png` - Completion rate distributions
 - `fig_03_percentiles.png` - Per-MP distribution violin plots
 - `fig_04_scatter.png` - Recommended vs completed scatter
