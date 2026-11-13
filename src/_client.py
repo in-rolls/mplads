@@ -1,6 +1,6 @@
 """Shared HTTP client for the MPLADS dashboard.
 
-Centralises session creation, retries, throttling, and a JSONL cache so
+Centralizes session creation, retries, throttling, and a JSONL cache so
 scripts can be re-run without re-hitting the upstream APIs.
 """
 
